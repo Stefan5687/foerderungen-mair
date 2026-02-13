@@ -203,6 +203,17 @@
 
 ---
 
+## 🔄 Review 2026-02-13 – 3. RUNDE (Weitere Verbesserungen)
+
+| Datum | Aufgabe | Status |
+|---|---|---|
+| **2026-02-13** | **og-image.svg erstellt** | ✅ ERLEDIGT |
+| **2026-02-13** | **feed.xml RSS-Feed erstellt** | ✅ ERLEDIGT |
+| **2026-02-13** | **LinkedIn Button im Hero hinzugefügt** | ✅ ERLEDIGT |
+| **2026-02-13** | **Website: og:image auf SVG geändert** | ✅ ERLEDIGT |
+
+---
+
 ## 🔄 Review 2026-02-13 – Fazit
 
 ### Website-Analyse:

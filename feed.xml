@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Förderungen Mair</title>
+    <description>Staatliche Förderungen für KMU in Südtirol</description>
+    <link>https://stefan5687.github.io/foerderungen-mair/</link>
+    <atom:link href="https://stefan5687.github.io/foerderungen-mair/feed.xml" rel="self" type="application/rss+xml"/>
+    <language>de</language>
+    <lastBuildDate>Fri, 13 Feb 2026 13:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Neue Förderprogramme 2026 verfügbar</title>
+      <description>Entdecken Sie die neuen Fördermöglichkeiten für Südtiroler Unternehmen im Jahr 2026.</description>
+      <link>https://stefan5687.github.io/foerderungen-mair/</link>
+      <pubDate>Fri, 13 Feb 2026 13:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
