@@ -251,4 +251,74 @@
         <div class="container"><div class="section-title"><h2 id="testimonials-title">Das sagen unsere Kunden</h2><p>Erfolgsgeschichten aus Südtirol</p></div>
             <div class="testimonials-grid">
                 <div class="testimonial-card"><p class="testimonial-text">"Durch Förderungen Mair haben wir 120.000€ für unsere Hotel-Renovierung erhalten. Der Service war professionell und unkompliziert."</p><p class="testimonial-author">Maria K.</p><p class="testimonial-company">Hotel Garni, Meran</p></div>
-                <div class="testimonial-card"><p class="testimonial
+                <div class="testimonial-card"><p class="testimonial-text">"50.000€ für neue CNC-Maschinen – der Antrag war in 6 Wochen durch. Absolute Empfehlung für jedes Handwerksunternehmen!"</p><p class="testimonial-author">Thomas P.</p><p class="testimonial-company">Metallbau Prossliner, Brixen</p></div>
+                <div class="testimonial-card"><p class="testimonial-text">"Wir konnten 200.000€ für unsere Digitalisierungsprojekte sichern. Stefan kennt sich exzellent mit Transizione 4.0 aus."</p><p class="testimonial-author">Dr. Laura M.</p><p class="testimonial-company">TechBase Südtirol, Bozen</p></div>
+                <div class="testimonial-card"><p class="testimonial-text">"Die landwirtschaftliche Förderung für unseren neuen Kühlraum wurde sofort genehmigt. 70% der Kosten übernommen!"</p><p class="testimonial-author">Hans G.</p><p class="testimonial-company">Bauernhof Gasser, Ulten</p></div>
+            </div>
+    </section>
+    <section class="contact" aria-labelledby="contact-title">
+        <div class="container">
+            <h2 id="contact-title">Kontaktieren Sie uns</h2>
+            <div class="contact-info">
+                <p>✉️ <a href="mailto:info@foerderungen-mair.it">info@foerderungen-mair.it</a></p>
+                <p>📞 <a href="tel:+393451234567">+39 345 123 4567</a></p>
+                <p>📍 Südtirol, Italien</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Ihr vollständiger Name">
+                </div>
+                <div class="form-group">
+                    <label for="company">Firma</label>
+                    <input type="text" id="company" name="company" placeholder="Ihr Unternehmen">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail *</label>
+                    <input type="email" id="email" name="email" required placeholder="Ihre E-Mail-Adresse">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Ihre Telefonnummer">
+                </div>
+                <div class="form-group">
+                    <label for="branch">Branche</label>
+                    <select id="branch" name="branch">
+                        <option value="">Bitte wählen</option>
+                        <option value="tourismus">Tourismus</option>
+                        <option value="handwerk">Handwerk</option>
+                        <option value="produktion">Produktion</option>
+                        <option value="landwirtschaft">Landwirtschaft</option>
+                        <option value="it">IT & Digital</option>
+                        <option value="handel">Handel</option>
+                        <option value="sonstiges">Sonstiges</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Nachricht *</label>
+                    <textarea id="message" name="message" required placeholder="Beschreiben Sie kurz Ihr Projekt oder Ihre Frage..."></textarea>
+                </div>
+                <button type="submit" class="form-submit">Absenden</button>
+                <div class="form-success" id="formSuccess">Vielen Dank! Wir melden uns innerhalb von 24 Stunden bei Ihnen.</div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-links">
+            <a href="/docs/legal/DATENSCHUTZ.html">Datenschutz</a>
+            <a href="/docs/legal/IMPRESSUM.html">Impressum</a>
+            <a href="/docs/legal/AGB.html">AGB</a>
+        </div>
+        <p>© 2026 Förderungen Mair – Ihr Förderberater für Südtirol</p>
+        <p>Alle Förderungen erfolgsbasiert – Sie zahlen nur, wenn Sie die Förderung erhalten.</p>
+    </footer>
+    <script>
+        window.addEventListener('load', function() { document.getElementById('loader').classList.add('hidden'); });
+        window.addEventListener('scroll', function() { var scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100; document.getElementById('scrollProgress').style.width = scrollPercent + '%'; document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 500); });
+        document.getElementById('backToTop').addEventListener('click', function() { window.scrollTo({top: 0, behavior: 'smooth'}); });
+        if (!localStorage.getItem('cookiesAccepted')) { document.getElementById('cookieBanner').classList.add('visible'); }
+        document.getElementById('cookieAccept').addEventListener('click', function() { localStorage.setItem('cookiesAccepted', 'true'); document.getElementById('cookieBanner').classList.remove('visible'); });
+        document.getElementById('contactForm').addEventListener('submit', function(e) { e.preventDefault(); document.getElementById('formSuccess').style.display = 'block'; document.getElementById('contactForm').reset(); });
+    </script>
+</body>
+</html>
