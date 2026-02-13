@@ -1,38 +1,68 @@
 # Förderungen Mair
 
-## Staatliche Förderungen für KMU in Südtirol
-
-**Erfolgsbasiert. Einfach. Effektiv.**
+**Staatliche Förderungen für KMU in Südtirol – erfolgsbasiert.**
 
 ---
 
-### Was wir tun
+## 📁 Ordnerstruktur
 
-Wir helfen Unternehmen in Südtirol, staatliche und EU-Förderungen zu finden, zu beantragen und zu erhalten.
-
-- **Kostenloses Erstgespräch** (15 Min)
-- **Individuelle Förderanalyse** für Ihr Unternehmen
-- **Komplette Antragsstellung** durch uns
-- **15% Erfolgshonorar** der genehmigten Förderung
+```
+foerderungen-mair/
+├── README.md                    # Dieser Overview
+├── STATUS.md                   # Aktueller Status, To-Dos
+├── docs/
+│   ├── business/
+│   │   ├── BUSINESSPLAN.md     # Businessplan
+│   │   ├── RECHTSFORM.md       # Ditta Individuale, Partita IVA
+│   │   ├── KOSTEN.md           # Kosten & Einnahmen
+│   │   └── KALENDER.md         # 30-Tage Zeitplan
+│   ├── marketing/
+│   │   ├── LEISTUNGSUEBERSICHT.md
+│   │   ├── EMAIL_TEMPLATES.md
+│   │   ├── CHECKLISTE.md
+│   │   └── VERTRIEB.md
+│   ├── legal/
+│   │   ├── AGB.md
+│   │   ├── DATENSCHUTZ.md
+│   │   └── IMPRESSUM.md
+│   └── foerderungen/
+│       └── FOERDERUNGEN.md     # Alle Förderprogramme
+├── website/
+│   └── index.html              # Landingpage
+├── src/                        # Skripte, Tools
+└── archive/                    # Alte Versionen
+```
 
 ---
 
-### Warum wir?
+## 🚀 Schnellstart
 
-| | |
+### Website besuchen
+```
+https://stefan5687.github.io/foerderungen-mair/
+```
+
+### Neueste Änderungen
+Siehe [STATUS.md](STATUS.md)
+
+---
+
+## 📊 Aktueller Status
+
+| Phase | Fortschritt |
 |---|---|
-| **Kein Risiko** | Wir verdienen nur, wenn Sie Förderung erhalten |
-| **Südtirol-Experten** | Kennen die regionalen, nationalen und EU-Programme |
-| **Komplettservice** | Von der Analyse bis zur Auszahlung |
-| **Bis zu 3,5 Mio.€** | Staatliche Förderungen pro Jahr möglich |
+| Foundation | In Arbeit (Tag 1) |
+| Content | Noch nicht gestartet |
+| Marketing | Noch nicht gestartet |
+| Launch | Geplant: 2026-03-14 |
 
 ---
 
-### Kontakt
+## 📞 Kontakt
 
+- Website: https://stefan5687.github.io/foerderungen-mair/
 - E-Mail: info@foerderungen-mair.it
-- Telefon: [Deine Nummer]
-- Website: [Domain]
+- GitHub: https://github.com/Stefan5687/foerderungen-mair
 
 ---
 
