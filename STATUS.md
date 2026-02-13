@@ -1,7 +1,7 @@
 # STATUS – Förderungen Mair
 
-**Letzte Aktualisierung:** 2026-02-13 09:10
-**Review:** Projekt-Review 2026-02-13
+**Letzte Aktualisierung:** 2026-02-13 09:30
+**Review:** Projekt-Review 2026-02-13 (15-Minuten-Check)
 
 ---
 
@@ -28,7 +28,7 @@
 | **2026-02-13** | **EMAIL_TEMPLATES.md erstellt** | **✅** |
 | **2026-02-13** | **Open Graph Image Tag hinzugefügt** | **✅** |
 
-### 🔄 Review 2026-02-13 – NEUE VERBESSERUNGEN
+### 🔄 Review 2026-02-13 – VERBESSERUNGEN
 
 | Datum | Aufgabe | Status |
 |---|---|---|
@@ -43,6 +43,17 @@
 | **2026-02-13** | **sitemap.xml erstellt** | **✅ NEU** |
 | **2026-02-13** | **Responsive Design optimiert** | **✅ NEU** |
 | **2026-02-13** | **Farbschema konsolidiert (CSS Variables)** | **✅ NEU** |
+
+### 🚀 Review 2026-02-13 – ERWEITERTE VERBESSERUNGEN
+
+| Datum | Aufgabe | Status |
+|---|---|---|
+| **2026-02-13** | **Schema.org OfferCatalog erweitert** | **✅ NEU** |
+| **2026-02-13** | **Meta Keywords mit Städten erweitert** | **✅ NEU** |
+| **2026-02-13** | **Bounce & Shimmer Animationen hinzugefügt** | **✅ NEU** |
+| **2026-02-13** | **Meta Description verbessert (CTA)** | **✅ NEU** |
+| **2026-02-13** | **viewport Meta-Tag explizit** | **✅ NEU** |
+| **2026-02-13** | **pulse Animation auf Highlight-Badge** | **✅ NEU** |
 
 ---
 
@@ -60,6 +71,7 @@
 | ✅ | **Website SEO & Design** | **Abgeschlossen** |
 | ✅ | **Förderprogramme 2026** | **Abgeschlossen** |
 | ✅ | **Marketing-Dokumente** | **Neu abgeschlossen** |
+| ✅ | **Schema.org erweitert** | **Abgeschlossen** |
 
 ---
 
@@ -91,13 +103,14 @@
 
 | Metrik | Ziel | Aktuell |
 |---|---|---|
-| Dokumente erstellt | 15+ | **13** |
+| Dokumente erstellt | 15+ | **13** ✅ |
 | Website online | ✅ | ✅ |
 | Website SEO-optimiert | ✅ | ✅ |
 | Domain gesichert | ❌ | - |
 | Kunden kontaktiert | 0 | - |
 | Förderprogramme recherchiert | 20+ | **12** |
 | Marketing-Vorlagen | 5+ | **8** ✅ |
+| Schema.org erweitert | ✅ | **Lokales Business + OfferCatalog** ✅ |
 
 ---
 
@@ -113,14 +126,21 @@
 - ✅ Konsistente Typography
 - ✅ CTA-Banner Sektion
 - ✅ Font Awesome Icons integriert
+- **NEU:** Bounce & Shimmer Keyframe-Animationen
+- **NEU:** pulse Animation auf Highlight-Badge
 
 **SEO & Technik:**
 - ✅ Favicon SVG hinzugefügt
 - ✅ Open Graph Tags erweitert (og:site_name, og:locale, twitter:title)
-- ✅ Meta Keywords erweitert
+- ✅ Meta Keywords erweitert (Bozen, Meran)
+- ✅ Meta Description mit CTA verbessert
+- ✅ viewport Meta-Tag explizit gesetzt
 - ✅ robots-Tag
 - ✅ sitemap.xml erstellt
 - ✅ Schema.org Structured Data (LocalBusiness, Breadcrumb)
+- ✅ **NEU:** OfferCatalog für Leistungen
+- ✅ **NEU:** PaymentAccepted & CurrenciesAccepted
+- ✅ **NEU:** Founder-Information
 - ✅ Font Awesome CDN integriert
 
 ### 📝 Dokument-Verbesserungen
@@ -129,12 +149,14 @@
 - ✅ LINKEDIN_POSTS.md: 14 Post-Vorlagen + Planung
 - ✅ PRESSEMITTEILUNG.md: Pressemitteilungen + Medienverteiler
 - ✅ EMAIL_TEMPLATES.md: 8 E-Mail-Vorlagen
+- ✅ VERTRIEB.md: Komplette Vertriebsstrategie
 
 **Business-Dokumente (NEU):**
 - ✅ WETTBEWERBSANALYSE.md: SWOT + Positionierung
 - ✅ BUSINESSPLAN.md: Vollständig und aktuell
 - ✅ RECHTSFORM.md: Ditta Individuale erklärt
 - ✅ KOSTEN.md: Detaillierte Kostenberechnung
+- ✅ KALENDER.md: Zeitplan mit Deadlines
 
 **Legal-Dokumente:**
 - ✅ AGB.md: Vollständige AGB

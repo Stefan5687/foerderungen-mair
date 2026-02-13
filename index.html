@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Förderungen Mair – Staatliche Förderungen für KMU in Südtirol 2026</title>
-    <meta name="description" content="Staatliche Förderungen für KMU in Südtirol – erfolgsbasiert. Wir beantragen EU-, Italia- und Landesförderungen für Ihr Unternehmen. Bis zu 3,5 Mio.€ pro Jahr.">
-    <meta name="keywords" content="Förderungen, Südtirol, KMU, EU-Förderung, Italia, Transizione 4.0, Credito d'Imposta, EFRE, Wirtschaftsförderung, Unternehmensberatung">
+    <meta name="description" content="Staatliche Förderungen für KMU in Südtirol – erfolgsbasiert. Wir beantragen EU-, Italia- und Landesförderungen für Ihr Unternehmen. Bis zu 3,5 Mio.€ pro Jahr. Kostenlose Erstprüfung innerhalb von 48 Stunden.">
+    <meta name="keywords" content="Förderungen, Südtirol, KMU, EU-Förderung, Italia, Transizione 4.0, Credito d'Imposta, EFRE, Wirtschaftsförderung, Unternehmensberatung, Förderberatung, Bozen, Meran">
     <meta name="author" content="Förderungen Mair">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#1e3a5f">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💶</text></svg>">
     <link rel="canonical" href="https://stefan5687.github.io/foerderungen-mair/">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
@@ -39,6 +40,7 @@
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Südtirol",
+            "addressRegion": " Trentino-Alto Adige",
             "addressCountry": "IT"
         },
         "areaServed": {
@@ -47,9 +49,36 @@
         },
         "priceRange": "15% der Fördersumme",
         "openingHours": "Mo-Fr 09:00-18:00",
+        "paymentAccepted": "Nach Erfolg der Förderung",
+        "currenciesAccepted": "EUR",
+        "founder": {
+            "@type": "Person",
+            "name": "Stefan Mair"
+        },
         "sameAs": [
             "https://www.linkedin.com/in/foerderungen-mair"
-        ]
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Förderberatung Leistungen",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "name": "Kostenlose Erstprüfung",
+                    "price": "0"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Förderanalyse",
+                    "price": "0"
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Antragsstellung",
+                    "price": "15% der Fördersumme"
+                }
+            ]
+        }
     }
     </script>
     <script type="application/ld+json">
@@ -134,6 +163,15 @@
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-10px); }
         }
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-15px); }
+            60% { transform: translateY(-7px); }
+        }
         .animate-on-scroll {
             opacity: 0;
             transform: translateY(30px);
@@ -142,6 +180,12 @@
         .animate-on-scroll.visible {
             opacity: 1;
             transform: translateY(0);
+        }
+        .animate-bounce {
+            animation: bounce 2s infinite;
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
         }
         
         /* Hero Section */
@@ -200,7 +244,7 @@
             background: rgba(255, 215, 0, 0.15);
             border-radius: 50px;
             margin-bottom: 25px;
-            animation: fadeInUp 1s ease-out 0.4s both;
+            animation: fadeInUp 1s ease-out 0.4s both, pulse 2s ease-in-out infinite;
             border: 1px solid rgba(255, 215, 0, 0.3);
         }
         .cta {
