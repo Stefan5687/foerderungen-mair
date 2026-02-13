@@ -1,6 +1,7 @@
 # STATUS – Förderungen Mair
 
-**Letzte Aktualisierung:** 2026-02-13 08:30
+**Letzte Aktualisierung:** 2026-02-13 09:00
+**Review:** Projekt-Review 2026-02-13
 
 ---
 
@@ -23,6 +24,9 @@
 | 2026-02-13 | Ordnerstruktur organisiert | ✅ |
 | **2026-02-13** | **Website SEO & Design verbessert** | **✅** |
 | **2026-02-13** | **Neue Förderprogramme 2026 hinzugefügt** | **✅** |
+| **2026-02-13** | **Schema.org Structured Data hinzugefügt** | **✅** |
+| **2026-02-13** | **EMAIL_TEMPLATES.md erstellt** | **✅** |
+| **2026-02-13** | **Open Graph Image Tag hinzugefügt** | **✅** |
 
 ---
 
@@ -94,6 +98,9 @@
 - ✅ **NEU: "So funktioniert's" Sektion (4 Steps)**
 - ✅ **NEU: Echte Telefonnummer eingefügt**
 - ✅ **NEU: Schema.org Structured Data für SEO**
+- ✅ **NEU: Breadcrumb Schema hinzugefügt**
+- ✅ **NEU: Open Graph Image Tag**
+- ✅ **NEU: LocalBusiness Schema für Google My Business**
 
 ### Dokumente
 - ✅ FOERDERUNGEN.md: Neue 2026 Programme (PNRR, Nuova Sabatini, Fondo Innovazione)

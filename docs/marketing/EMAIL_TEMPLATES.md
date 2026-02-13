@@ -1,159 +1,341 @@
-# E-Mail-Vorlagen für Kaltakquise
+# E-Mail-Vorlagen – Förderungen Mair
 
-## Vorlage 1: Erstmail (Kaltakquise)
+## Übersicht
 
-**Betreff:** Staatliche Förderungen für [Unternehmen] – bis zu 3,5 Mio.€ pro Jahr
+| Vorlage | Zweck | Seite |
+|---|---|---|
+| Erstmail | Kaltakquise | 2 |
+| Follow-up 1 | Nach 5 Tagen | 3 |
+| Follow-up 2 | Nach 10 Tagen | 4 |
+| Newsletter | Monatlich | 5 |
+| Angebot | Nach Gespräch | 6 |
+| Danke | Nach Auftrag | 7 |
+| Erfolg | Förderung erhalten | 8 |
 
 ---
 
-Hallo [Name],
+## 1. Erstmail – Kaltakquise
 
-mein Name ist [Dein Name] und ich bin spezialisiert auf staatliche Förderungen für Unternehmen in Südtirol.
+### Betreff
+```
+Staatliche Förderungen für [UNTERNEHMEN] – bis 3,5 Mio.€ möglich?
+```
 
-Ich bin auf Ihr Unternehmen [Unternehmensname] aufmerksam geworden und möchte Ihnen eine Frage stellen:
+### Text
+```
+Hallo [NAME],
 
-**Wissen Sie, welche staatlichen Förderungen Ihnen zustehen?**
+mein Name ist [DEIN NAME] und ich helfe Unternehmen in Südtirol dabei,
+staatliche Förderungen zu beantragen – erfolgsbasiert.
 
-Die meisten Unternehmen in Südtirol haben Anspruch auf Förderungen – nutzen aber nur ein Bruchteil davon. Mit unserer Hilfe holen Sie das Maximum heraus.
+Ich bin auf Ihre Website gestoßen und sehe, dass [UNTERNEHMEN] [AKTION plant].
 
-**Was wir bieten:**
-- ✓ Kostenlose Erstprüfung Ihres Förderpotenzials
-- ✓ Wir kennen alle EU-, nationalen und regionalen Programme
-- ✓ Wir stellen den Antrag komplett für Sie
-- ✓ Sie zahlen nur 15% der genehmigten Förderung
+**Das könnte Sie interessieren:**
 
-**Ein Beispiel:** Ein Hotel mit 200.000€ Investition konnte 60.000€ Förderung sichern – nach Abzug unseres Honorars blieben dem Hotel 51.000€ netto.
+✓ Bis zu 3,5 Mio.€ Förderung pro Jahr möglich
+✓ Sie zahlen nur 15% – erst wenn Sie die Förderung erhalten
+✓ Wir kümmern uns um alles: Von A bis Z
 
-Hätten Sie 15 Minuten Zeit für ein kurzes Gespräch? Ich erkläre Ihnen gerne, welche Förderungen für Sie infrage kommen.
+**Aktuelle Förderprogramme 2026:**
+• Transizione 4.0 – bis 50% für Digitalisierung
+• Credito d'Imposta R&S – bis 35% für F&E
+• EFRE – bis 50% für Investitionen
+• Landesförderungen Südtirol – bis 50%
+
+Ich biete eine kostenlose Erstprüfung an. Innerhalb von 48 Stunden wissen Sie,
+welche Förderungen für [UNTERNEHMEN] möglich sind.
+
+Hätten Sie 10 Minuten Zeit für ein kurzes Gespräch?
 
 Viele Grüße
-[Dein Name]
+[DEIN NAME]
 Förderungen Mair
-[Telefonnummer]
-[E-Mail]
+Tel: +39 345 123 45 67
+E-Mail: info@foerderungen-mair.it
+```
 
 ---
 
-## Vorlage 2: Follow-up (nach 5 Tagen)
+## 2. Follow-up 1 – Nach 5 Tagen
 
-**Betreff:** Re: Staatliche Förderungen für [Unternehmen]
+### Betreff
+```
+Wollte kurz nachfragen: Förderungen für [UNTERNEHMEN]?
+```
 
----
+### Text
+```
+Hallo [NAME],
 
-Hallo [Name],
+ich wollte kurz nachfragen, ob Sie meine letzte E-Mail erhalten haben.
 
-wollte kurz nachfragen, ob Sie meine E-Mail erhalten haben.
+Falls staatliche Förderungen für [UNTERNEHMEN] interessant sind,
+biete ich weiterhin eine kostenlose Erstprüfung an.
 
-Falls Sie interessiert sind, hier die wichtigsten Fakten in Kürze:
+**Kurz zu mir:**
+• Spezialisiert auf Südtiroler KMU
+• 15% Erfolgshonorar – zahlen nur bei Erfolg
+• Komplettservice von Antrag bis Auszahlung
 
-**Mögliche Förderungen:**
-- EU-Förderungen (EFRE): bis 50% Investitionskosten
-- Italienische Förderungen (Credito d'Imposta): bis 35% F&E-Kosten
-- Südtiroler Landesförderungen: 10-50% je nach Maßnahme
-
-**Unser Modell:**
-- Kostenlose Erstberatung
-- 15% Erfolgshonorar nur bei Genehmigung
-
-Ich stehe Ihnen gerne für ein 15-minütiges Gespräch zur Verfügung.
+Haben Sie 5 Minuten Zeit für ein kurzes Telefonat?
 
 Viele Grüße
-[Dein Name]
+[DEIN NAME]
+```
 
 ---
 
-## Vorlage 3: Terminbestätigung
+## 3. Follow-up 2 – Nach 10 Tagen
 
-**Betreff:** Bestätigung: Förderberatung am [Datum]
+### Betreff
+```
+Letzte Nachfrage: Förderungen noch aktuell?
+```
 
----
+### Text
+```
+Hallo [NAME],
 
-Hallo [Name],
+ich melde mich noch einmal kurz bezüglich staatlicher Förderungen.
 
-vielen Dank für das Interesse an unserem Service.
+Falls Sie bereits andere Lösungen gefunden haben, wünsche ich Ihnen viel
+Erfolg!
 
-Hier die Bestätigung für unser Gespräch:
+Falls nicht, hier die wichtigsten Punkte:
 
-**Datum:** [Datum]
-**Uhrzeit:** [Uhrzeit]
-**Dauer:** 15 Minuten
-**Art:** Telefonat / Zoom
+**Warum Förderungen nutzen?**
+• Kostenlose Geldquellen nutzen
+• Investitionen zu 30-70% finanzieren
+• Wettbewerbsfähigkeit steigern
 
-**Vor dem Gespräch:**
-- Haben Sie geplante Investitionen im Jahr 2026?
-- Gibt es laufende oder geplante Projekte (Digitalisierung, Renovierung, etc.)?
+**Mein Angebot:**
+✓ Kostenlose Erstprüfung
+✓ 15% bei Erfolg – sonst nichts
+✓ Keine versteckten Kosten
 
-Falls Sie den Termin verschieben möchten, geben Sie mir bitte Bescheid.
+Sagen Sie einfach Bescheid, wenn Sie interesse haben.
 
 Viele Grüße
-[Dein Name]
+[DEIN NAME]
+```
 
 ---
 
-## Vorlage 4: Nach dem Gespräch – Angebotsemail
+## 4. Newsletter – Monatlich
 
-**Betreff:** Förderanalyse für [Unternehmen] – Nächste Schritte
+### Betreff
+```
+[MONAT] Förder-Update: Neue Programme für Südtirol
+
+### Text
+```
+Hallo [NAME],
+
+monatliches Förder-Update für Südtiroler KMU.
+
+**🎯 Highlight im [MONAT]**
+
+[AKTUELLES PROGRAMM EINFÜGEN]
+
+**📊 Förder-Tipp:**
+
+[BRIEF TIPP EINFÜGEN]
+
+**📅 Nächste Schritte:**
+
+Falls Sie Fragen haben oder eine kostenlose Erstprüfung wünschen,
+bin ich gerne für Sie da.
+
+Kostenlose Erstprüfung anfragen: [LINK]
+
+Viele Grüße
+[DEIN NAME]
+Förderungen Mair
+
+---
+Sie möchten diesen Newsletter nicht mehr erhalten? [Abmelden]
+```
 
 ---
 
-Hallo [Name],
+## 5. Angebot – Nach Erstgespräch
 
-vielen Dank für das Gespräch heute. Es war sehr produktiv!
+### Betreff
+```
+Ihr Förder-Angebot: [UNTERNEHMEN] – [DATUM]
+
+### Text
+```
+Hallo [NAME],
+
+vielen Dank für das Gespräch! Hier mein Angebot für [UNTERNEHMEN].
 
 **Zusammenfassung:**
-- Sie planen: [Investition/Projekt]
-- Mögliche Förderungen: [Programm 1], [Programm 2]
-- Geschätzte Förderung: [Betrag]€
-
-**Nächste Schritte:**
-1. Wir prüfen alle Details (2-3 Tage)
-2. Wir erstellen einen detaillierten Förderplan
-3. Sie entscheiden, ob wir den Antrag stellen sollen
-
-Falls Sie Fragen haben, melden Sie sich gerne.
-
-Viele Grüße
-[Dein Name]
-
----
-
-## Vorlage 5: Erfolgsmail (nach Genehmigung)
-
-**Betreff:** 🎉 Förderung genehmigt! [Betrag]€ für [Unternehmen]
-
----
-
-Hallo [Name],
-
-herzlichen Glückwunsch! Ihre Förderung wurde genehmigt.
-
-**Genehmigte Förderung:** [Betrag]€
-**Förderprogramm:** [Programmname]
-**Auszahlung:** [Zeitpunkt]
-
-**Unser Honorar (15%):** [Betrag]€
-**Ihre Rechnung:** [Betrag]€
-
-Bitte überweisen Sie das Honorar innerhalb von 14 Tagen auf:
-[Bankverbindung]
-
-Wir freuen uns auf die weitere Zusammenarbeit!
-
-Viele Grüße
-[Dein Name]
-
----
-
-## Tipps für den Erfolg
 
 | | |
 |---|---|
-| **Personalisieren** | Name, Unternehmen, Projekt erwähnen |
-| **Kurz halten** | max. 10-15 Zeilen pro E-Mail |
-| **Call-to-Action** | Immer um Antwort/Termin bitten |
-| **Geduld** | 2-3 Follow-ups sind normal |
-| **Professionell** | Aber nicht steif |
+| **Unternehmen** | [UNTERNEHMEN] |
+| **Branche** | [BRANCHE] |
+| **Ziel** | [FÖRDERZIEL] |
+| **Erwartete Förderung** | [BETRAG]€ |
+| **Unser Honorar** | [HONORAR]€ |
+
+**Nächste Schritte:**
+
+1. ✓ Kostenlose Erstprüfung (abgeschlossen)
+2. ⬜ Förderstrategie finalisieren
+3. ⬜ Dokumente zusammenstellen
+4. ⬜ Antrag einreichen
+5. ⬜ Förderung erhalten
+
+**Ihre Vorteile:**
+✓ Kein Risiko – zahlen nur bei Erfolg
+✓ Zeitersparnis – wir machen alles
+✓ Maximale Förderung – kennen alle Programme
+
+Bitte bestätigen Sie mir die Zusammenarbeit per E-Mail oder Telefon.
+
+Viele Grüße
+[DEIN NAME]
+Förderungen Mair
+Tel: +39 345 123 45 67
+```
 
 ---
 
-*Ihre E-Mails sollten immer den Empfänger ansprechen – nicht generisch klingen.*
+## 6. Danke – Nach Auftrag
+
+### Betreff
+```
+Willkommen bei Förderungen Mair! – Nächste Schritte
+
+### Text
+```
+Hallo [NAME],
+
+herzlichen Dank für das Vertrauen! Ich freue mich, [UNTERNEHMEN] bei der
+Förderung zu unterstützen.
+
+**Was passiert als Nächstes?**
+
+| Wann? | Was? |
+|---|---|
+| Innerhalb 24h | Bestätigungs-E-Mail |
+| Tag 1-3 | Dokumente anfordern |
+| Tag 3-7 | Förderstrategie erstellen |
+| Tag 7-14 | Antrag vorbereiten |
+| Ab Tag 14 | Antrag einreichen |
+
+**Ich brauche von Ihnen:**
+
+[KURZE LISTE DER BENÖTIGTEN DOKUMENTE]
+
+Bei Fragen stehe ich gerne zur Verfügung!
+
+Viele Grüße
+[DEIN NAME]
+Förderungen Mair
+Tel: +39 345 123 45 67
+```
+
+---
+
+## 7. Erfolg – Förderung erhalten
+
+### Betreff
+```
+🎉 Förderung genehmigt! [BETRAGG]€ für [UNTERNEHMEN]
+
+### Text
+```
+Hallo [NAME],
+
+**HERZLICHEN GLÜCKWUNSCH!**
+
+Ihre Förderung wurde genehmigt:
+
+| | |
+|---|---|
+| **Förderprogramm** | [PROGRAMM] |
+| **Genehmigter Betrag** | [BETRAGG]€ |
+| **Förderquote** | [QUOTE]% |
+| **Datum** | [DATUM] |
+
+**Ihr Gewinn:**
+
+Da die Förderung genehmigt ist, beträgt unser Honorar:
+**[HONORAR]€** (15% der Fördersumme)
+
+Die Rechnung sende ich Ihnen in den nächsten Tagen zu.
+
+**Vielen Dank für die Zusammenarbeit!**
+
+Ich wünsche Ihnen viel Erfolg mit Ihrer Investition.
+
+Viele Grüße
+[DEIN NAME]
+Förderungen Mair
+
+P.S. Falls Sie weitere Projekte planen oder jemanden kennen, der auch
+staatliche Förderungen nutzen möchte, bin ich gerne für Sie da.
+```
+
+---
+
+## 8. Erinnerung – Förderung auszahlen
+
+### Betreff
+```
+Wichtiger Hinweis: Förderung [UNTERNEHMEN] – Auszahlung
+
+### Text
+```
+Hallo [NAME],
+
+ein wichtiger Hinweis zu Ihrer Förderung:
+
+**Förderung:** [BETRAGG]€
+**Auszahlung:** [DATUM] oder in [WOCHEN] Wochen
+
+**Bitte beachten Sie:**
+
+[DOKUMENTE ODER SCHRITTE EINFGEN]
+
+Bei Fragen stehe ich gerne zur Verfügung!
+
+Viele Grüße
+[DEIN NAME]
+Förderungen Mair
+```
+
+---
+
+## Quick-Reference
+
+### E-Mail-Einstellungen
+
+| | |
+|---|---|
+| **Absender** | info@foerderungen-mair.it |
+| **Name** | Förderungen Mair |
+| **Signatur** | Siehe unten |
+
+### Signatur-Vorlage
+
+```
+Viele Grüße
+[DEIN NAME]
+
+Förderungen Mair
+Ihr Partner für staatliche Förderungen in Südtirol
+
+📞 +39 345 123 45 67
+✉️ info@foerderungen-mair.it
+🌐 https://foerderungen-mair.it
+
+Bis zu 3,5 Mio.€ pro Jahr – erfolgsbasiert.
+```
+
+---
+
+*Letzte Aktualisierung: 2026-02-13*
