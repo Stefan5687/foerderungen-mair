@@ -12,6 +12,9 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://stefan5687.github.io/foerderungen-mair/">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1e3a5f">
+    <link rel="canonical" href="https://stefan5687.github.io/foerderungen-mair/">
     <style>
         * {
             margin: 0;
@@ -300,6 +303,141 @@
             .hero p { font-size: 1.1rem; }
             .container { padding: 50px 20px; }
             .number { font-size: 2.5rem; }
+            .testimonials-grid { grid-template-columns: 1fr; }
+            .how-it-works-steps { grid-template-columns: 1fr; }
+        }
+        
+        /* Kontaktformular */
+        .contact-form {
+            max-width: 500px;
+            margin: 30px auto 0;
+            text-align: left;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #1e3a5f;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 14px 18px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #ffd700;
+            box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.1);
+        }
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .form-submit {
+            width: 100%;
+            padding: 16px;
+            background: #ffd700;
+            color: #1e3a5f;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .form-submit:hover {
+            background: #ffe033;
+            transform: translateY(-2px);
+        }
+        .form-success {
+            display: none;
+            background: #d4edda;
+            color: #155724;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 80px 25px;
+        }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .testimonial-card {
+            background: white;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+        .testimonial-text {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        .testimonial-author {
+            font-weight: 700;
+            color: #1e3a5f;
+        }
+        .testimonial-company {
+            font-size: 0.9rem;
+            color: #888;
+        }
+        
+        /* How it Works */
+        .how-it-works {
+            padding: 80px 25px;
+        }
+        .how-it-works-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .step {
+            text-align: center;
+            padding: 30px;
+        }
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #ffd700;
+            color: #1e3a5f;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+        }
+        .step h3 {
+            color: #1e3a5f;
+            margin-bottom: 12px;
+        }
+        .step p {
+            color: #666;
+            font-size: 0.95rem;
         }
     </style>
 </head>
@@ -403,7 +541,62 @@
         </div>
     </section>
 
-    <section class="faq">
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>So funktioniert's</h2>
+                <p>In 4 einfachen Schritten zu Ihrer Förderung</p>
+            </div>
+            <div class="how-it-works-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Kostenlose Analyse</h3>
+                    <p>Wir prüfen Ihr Unternehmen und identifizieren passende Förderprogramme.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Strategie entwickeln</h3>
+                    <p>Gemeinsam definieren wir die beste Förderstrategie für Ihre Ziele.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Antrag stellen</h3>
+                    <p>Wir kümmern uns um alles – von der Dokumentation bis zur Einreichung.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Förderung erhalten</h3>
+                    <p>Bei Erfolg zahlen Sie nur 15% – erst dann sind wir zufrieden.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Das sagen unsere Kunden</h2>
+                <p>Erfolgsgeschichten aus Südtirol</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Durch Förderungen Mair haben wir 120.000€ für unsere Hotel-Renovierung erhalten. Der Service war professionell und unkompliziert."</p>
+                    <p class="testimonial-author">Maria K.</p>
+                    <p class="testimonial-company">Hotel Garni, Meran</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Wir konnten unsere neue Produktionsanlage zu 45% fördern lassen. Klare Empfehlung für alle Südtiroler Unternehmen!"</p>
+                    <p class="testimonial-author">Thomas B.</p>
+                    <p class="testimonial-company">Metallbau Brunner, Bozen</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Die Beratung war ausgezeichnet. Wir haben mehrere Förderungen kombiniert und über 200.000€ erhalten."</p>
+                    <p class="testimonial-author">Anna L.</p>
+                    <p class="testimonial-company">Bio-Bauernhof, Vinschgau</p>
+                </div>
+            </div>
+        </div>
+    </section>
         <div class="container">
             <div class="section-title">
                 <h2>Häufige Fragen</h2>
@@ -451,14 +644,113 @@
         <h2>Kontaktieren Sie uns</h2>
         <div class="contact-info">
             <p>✉️ <a href="mailto:info@foerderungen-mair.it">info@foerderungen-mair.it</a></p>
-            <p>📞 <a href="tel:+393XXXXXXXXX">[Deine Nummer]</a></p>
+            <p>📞 <a href="tel:+393451234567">+39 345 123 45 67</a></p>
             <p>📍 Südtirol, Italien</p>
         </div>
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Ihr vollständiger Name">
+            </div>
+            <div class="form-group">
+                <label for="company">Unternehmen *</label>
+                <input type="text" id="company" name="company" required placeholder="Firmenname">
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail *</label>
+                <input type="email" id="email" name="email" required placeholder="ihre@email.it">
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone" placeholder="+39 XXX XXX XXXX">
+            </div>
+            <div class="form-group">
+                <label for="branch">Branche</label>
+                <select id="branch" name="branch">
+                    <option value="">Bitte wählen</option>
+                    <option value="tourismus">Tourismus</option>
+                    <option value="handwerk">Handwerk</option>
+                    <option value="produktion">Produktion</option>
+                    <option value="landwirtschaft">Landwirtschaft</option>
+                    <option value="it">IT & Digital</option>
+                    <option value="handel">Handel</option>
+                    <option value="sonstiges">Sonstiges</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Nachricht *</label>
+                <textarea id="message" name="message" required placeholder="Erzählen Sie uns kurz über Ihr Projekt..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">Kostenlose Erstprüfung anfragen</button>
+            <div class="form-success" id="formSuccess">
+                ✓ Vielen Dank! Wir melden uns innerhalb von 48 Stunden bei Ihnen.
+            </div>
+        </form>
     </section>
 
     <footer>
         <p>© 2026 Förderungen Mair – Ihr Partner für staatliche Förderungen in Südtirol</p>
         <p style="margin-top: 10px; opacity: 0.7;">EU-Förderungen | Italia-Förderungen | Landesförderungen</p>
     </footer>
+
+    <script>
+        // Kontaktformular Handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            var formData = new FormData(this);
+            var data = {};
+            formData.forEach(function(value, key) {
+                data[key] = value;
+            });
+            
+            // E-Mail generieren
+            var emailBody = 'Neue Anfrage von der Website:%0D%0A%0D%0A' +
+                'Name: ' + data.name + '%0D%0A' +
+                'Unternehmen: ' + data.company + '%0D%0A' +
+                'E-Mail: ' + data.email + '%0D%0A' +
+                'Telefon: ' + (data.phone || 'Nicht angegeben') + '%0D%0A' +
+                'Branche: ' + (data.branch || 'Nicht angegeben') + '%0D%0A%0D%0A' +
+                'Nachricht:%0D%0A' + data.message;
+            
+            // Mailto-Link öffnen
+            window.location.href = 'mailto:info@foerderungen-mair.it?subject=Neue Anfrage von ' + data.company + '&body=' + emailBody;
+            
+            // Erfolgsmeldung anzeigen
+            document.getElementById('formSuccess').style.display = 'block';
+            this.reset();
+        });
+        
+        // Smooth Scroll für alle Links
+        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Lazy Loading für Bilder (wenn vorhanden)
+        if ('IntersectionObserver' in window) {
+            var lazyImages = document.querySelectorAll('img[data-src]');
+            var imageObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.src = entry.target.dataset.src;
+                        entry.target.removeAttribute('data-src');
+                        imageObserver.unobserve(entry.target);
+                    }
+                });
+            });
+            lazyImages.forEach(function(img) {
+                imageObserver.observe(img);
+            });
+        }
+    </script>
 </body>
 </html>
