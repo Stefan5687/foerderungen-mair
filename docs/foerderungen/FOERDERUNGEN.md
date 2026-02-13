@@ -145,14 +145,34 @@
 
 ---
 
-## Zusammenfassung: Förderhöhen
+## 2026 Updates – Neue Förderungen
 
-| Programm | % | Maximal |
-|---|---|---|
-| Credito d'Imposta R&S | bis 35% | 20 Mio.€/Jahr |
-| Transizione 4.0 | bis 50% | Variabel |
-| EFRE | bis 50% | 200.000-500.000€ |
-| Landesförderungen | 10-50% | Variabel |
+### Piano Nazionale di Ripresa e Resilienza (PNRR)
+
+| | |
+|---|---|
+| **Was** | NextGenerationEU-Mittel für Italien |
+| **Wer** | KMU in allen Bereichen |
+| **Förderung** | Variabel nach call |
+| **Status** | Laufend bis 2026 |
+
+### Nuova Sabatini (Investitionsförderung)
+
+| | |
+|---|---|
+| **Was** | Zuschüsse für Maschinen und Anlagen |
+| **Wer** | KMU (nur kontinentales Italien, NICHT Südtirol!) |
+| **Förderung** | bis 10% der Investition |
+| **Achtung** | **Südtirol nicht förderfähig** |
+
+### Fondo Innovazione (Innovationsfonds 2026)
+
+| | |
+|---|---|
+| **Was** | Förderung für Innovation und Digitalisierung |
+| **Wer** | KMU |
+| **Förderung** | 30-50% |
+| **Neu 2026** | Vereinfachte Beantragung |
 
 ---
 
