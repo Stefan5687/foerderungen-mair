@@ -12,9 +12,8 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💶</text></svg>">
     <link rel="canonical" href="https://stefan5687.github.io/foerderungen-mair/">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <link rel="alternate" type="application/rss+xml" title="Förderungen Mair Blog" href="/feed.xml">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Förderungen Mair – Ihr Förderberater für Südtirol">
     <meta property="og:description" content="Staatliche Förderungen für KMU – erfolgsbasiert. Bis zu 3,5 Mio.€ pro Jahr.">
     <meta property="og:type" content="website">
@@ -25,8 +24,6 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Förderungen Mair">
     <meta name="twitter:description" content="Staatliche Förderungen für KMU in Südtirol – erfolgsbasiert.">
-    
-    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -36,1346 +33,207 @@
         "url": "https://stefan5687.github.io/foerderungen-mair/",
         "telephone": "+393451234567",
         "email": "info@foerderungen-mair.it",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Südtirol",
-            "addressRegion": " Trentino-Alto Adige",
-            "addressCountry": "IT"
-        },
-        "areaServed": {
-            "@type": "Place",
-            "name": "Südtirol, Italien"
-        },
+        "address": {"@type": "PostalAddress", "addressLocality": "Südtirol", "addressRegion": "Trentino-Alto Adige", "addressCountry": "IT"},
+        "areaServed": {"@type": "Place", "name": "Südtirol, Italien"},
         "priceRange": "15% der Fördersumme",
         "openingHours": "Mo-Fr 09:00-18:00",
         "paymentAccepted": "Nach Erfolg der Förderung",
         "currenciesAccepted": "EUR",
-        "founder": {
-            "@type": "Person",
-            "name": "Stefan Mair"
-        },
-        "sameAs": [
-            "https://www.linkedin.com/in/foerderungen-mair"
-        ],
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Förderberatung Leistungen",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "name": "Kostenlose Erstprüfung",
-                    "price": "0"
-                },
-                {
-                    "@type": "Offer",
-                    "name": "Förderanalyse",
-                    "price": "0"
-                },
-                {
-                    "@type": "Offer",
-                    "name": "Antragsstellung",
-                    "price": "15% der Fördersumme"
-                }
-            ]
-        }
+        "founder": {"@type": "Person", "name": "Stefan Mair"},
+        "hasOfferCatalog": {"@type": "OfferCatalog", "name": "Förderberatung Leistungen", "itemListElement": [
+            {"@type": "Offer", "name": "Kostenlose Erstprüfung", "price": "0"},
+            {"@type": "Offer", "name": "Förderanalyse", "price": "0"},
+            {"@type": "Offer", "name": "Antragsstellung", "price": "15% der Fördersumme"}
+        ]}
     }
     </script>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": [{
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Startseite",
-            "item": "https://stefan5687.github.io/foerderungen-mair/"
-        }]
+        "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://stefan5687.github.io/foerderungen-mair/"}]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": "Wie hoch sind die Kosten?", "acceptedAnswer": {"@type": "Answer", "text": "Die Erstprüfung ist kostenlos. Unser Honorar beträgt 15% der genehmigten Fördersumme – erst wenn Sie die Förderung erhalten."}},
+            {"@type": "Question", "name": "Wie lange dauert ein Antrag?", "acceptedAnswer": {"@type": "Answer", "text": "Je nach Förderprogramm 2-6 Monate. Wir begleiten Sie durch den gesamten Prozess."}},
+            {"@type": "Question", "name": "Welche Unternehmen sind förderfähig?", "acceptedAnswer": {"@type": "Answer", "text": "Fast alle KMU in Südtirol – von der Gründung bis zur Expansion."}},
+            {"@type": "Question", "name": "Können mehrere Förderungen kombiniert werden?", "acceptedAnswer": {"@type": "Answer", "text": "Ja! Oft können EU-, Landes- und Italia-Förderungen kombiniert werden."}}
+        ]
     }
     </script>
     <style>
-        /* Reset & Base */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        :root {
-            --primary: #1e3a5f;
-            --primary-dark: #152b47;
-            --secondary: #2d5a87;
-            --accent: #ffd700;
-            --accent-hover: #ffe033;
-            --success: #28a745;
-            --text: #333;
-            --text-light: #666;
-            --bg-light: #f8f9fa;
-            --bg-white: #ffffff;
-            --shadow: 0 5px 20px rgba(0,0,0,0.08);
-            --shadow-hover: 0 15px 40px rgba(0,0,0,0.12);
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            background: var(--bg-white);
-            overflow-x: hidden;
-        }
-        
-        /* Typography */
-        h1, h2, h3, h4, h5, h6 {
-            color: var(--primary);
-            font-weight: 700;
-            line-height: 1.3;
-        }
-        a {
-            color: var(--primary);
-            text-decoration: none;
-            transition: var(--transition);
-        }
-        a:hover {
-            color: var(--secondary);
-        }
-        
-        /* Animations */
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(40px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-40px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes slideInLeft {
-            from { opacity: 0; transform: translateX(-60px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-        @keyframes slideInRight {
-            from { opacity: 0; transform: translateX(60px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        @keyframes shimmer {
-            0% { background-position: -200% 0; }
-            100% { background-position: 200% 0; }
-        }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-15px); }
-            60% { transform: translateY(-7px); }
-        }
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .animate-on-scroll.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .animate-bounce {
-            animation: bounce 2s infinite;
-        }
-        .animate-float {
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, #4a90c2 100%);
-            color: white;
-            padding: 120px 20px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            opacity: 0.5;
-        }
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100px;
-            background: linear-gradient(to top, var(--bg-white), transparent);
-        }
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .hero h1 {
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            margin-bottom: 25px;
-            font-weight: 800;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-            animation: fadeInDown 1s ease-out;
-        }
-        .hero p {
-            font-size: clamp(1rem, 2.5vw, 1.4rem);
-            opacity: 0.95;
-            max-width: 700px;
-            margin: 0 auto 35px;
-            animation: fadeInUp 1s ease-out 0.2s both;
-        }
-        .hero .highlight {
-            color: var(--accent);
-            font-weight: 700;
-            display: inline-block;
-            padding: 8px 25px;
-            background: rgba(255, 215, 0, 0.15);
-            border-radius: 50px;
-            margin-bottom: 25px;
-            animation: fadeInUp 1s ease-out 0.4s both, pulse 2s ease-in-out infinite;
-            border: 1px solid rgba(255, 215, 0, 0.3);
-        }
-        .cta {
-            background: var(--accent);
-            color: var(--primary);
-            padding: 20px 55px;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.15rem;
-            font-weight: 700;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            transition: var(--transition);
-            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
-            animation: fadeInUp 1s ease-out 0.6s both;
-        }
-        .cta:hover {
-            transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5);
-            background: var(--accent-hover);
-            color: var(--primary-dark);
-        }
-        
-        /* Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 100px 25px;
-        }
-        
-        /* Section Titles */
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        .section-title h2 {
-            font-size: clamp(1.75rem, 4vw, 2.5rem);
-            margin-bottom: 18px;
-            position: relative;
-            display: inline-block;
-        }
-        .section-title h2::after {
-            content: '';
-            position: absolute;
-            bottom: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: var(--accent);
-            border-radius: 2px;
-        }
-        .section-title p {
-            color: var(--text-light);
-            font-size: 1.15rem;
-            max-width: 650px;
-            margin: 20px auto 0;
-        }
-        
-        /* Features Grid */
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-bottom: 80px;
-        }
-        .feature {
-            background: var(--bg-light);
-            padding: 40px 35px;
-            border-radius: 20px;
-            text-align: center;
-            transition: var(--transition);
-            border: 1px solid transparent;
-            position: relative;
-            overflow: hidden;
-        }
-        .feature::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, var(--primary), var(--accent));
-            transform: scaleX(0);
-            transition: var(--transition);
-        }
-        .feature:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-hover);
-            border-color: rgba(30, 58, 95, 0.1);
-        }
-        .feature:hover::before {
-            transform: scaleX(1);
-        }
-        .feature-icon {
-            font-size: 2.8rem;
-            margin-bottom: 22px;
-            display: block;
-            transition: var(--transition);
-        }
-        .feature:hover .feature-icon {
-            transform: scale(1.15);
-            color: var(--accent);
-        }
-        .feature h3 {
-            color: var(--primary);
-            margin-bottom: 15px;
-            font-size: 1.35rem;
-        }
-        .feature p {
-            color: var(--text-light);
-            font-size: 1rem;
-            line-height: 1.7;
-        }
-        
-        /* Stats Section */
-        .numbers {
-            background: linear-gradient(135deg, var(--bg-light) 0%, #e9ecef 100%);
-            padding: 100px 25px;
-            text-align: center;
-        }
-        .numbers h2 {
-            color: var(--primary);
-            margin-bottom: 60px;
-            font-size: clamp(1.75rem, 4vw, 2.25rem);
-        }
-        .number-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-        .number-item {
-            text-align: center;
-            padding: 25px;
-        }
-        .number {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 800;
-            color: var(--accent);
-            display: block;
-            margin-bottom: 12px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-            transition: var(--transition);
-        }
-        .number-item:hover .number {
-            transform: scale(1.1);
-            color: var(--primary);
-        }
-        .number-label {
-            font-size: 1.1rem;
-            color: var(--text);
-            font-weight: 600;
-        }
-        
-        /* Programs Grid */
-        .programs-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 28px;
-            margin-bottom: 60px;
-        }
-        .program-card {
-            background: var(--bg-white);
-            padding: 35px;
-            border-radius: 20px;
-            border-left: 5px solid var(--accent);
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            position: relative;
-        }
-        .program-card::after {
-            content: '';
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), transparent);
-            border-radius: 50%;
-        }
-        .program-card:hover {
-            transform: translateX(8px) translateY(-5px);
-            box-shadow: var(--shadow-hover);
-        }
-        .program-card h3 {
-            color: var(--primary);
-            margin-bottom: 15px;
-            font-size: 1.35rem;
-        }
-        .program-card .percent {
-            font-size: 2.4rem;
-            font-weight: 800;
-            color: var(--success);
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .program-card .percent::before {
-            content: '↗';
-            font-size: 1.5rem;
-        }
-        .program-card p {
-            color: var(--text-light);
-            font-size: 1rem;
-        }
-        
-        /* FAQ Section */
-        .faq {
-            background: var(--bg-light);
-            padding: 100px 25px;
-        }
-        .faq-list {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .faq-item {
-            background: var(--bg-white);
-            padding: 30px 35px;
-            border-radius: 16px;
-            margin-bottom: 20px;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            border: 1px solid transparent;
-        }
-        .faq-item:hover {
-            border-color: var(--accent);
-            transform: translateY(-3px);
-        }
-        .faq-item h3 {
-            color: var(--primary);
-            margin-bottom: 14px;
-            font-size: 1.15rem;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        .faq-item h3::before {
-            content: 'Q';
-            background: var(--accent);
-            color: var(--primary);
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.9rem;
-            font-weight: 700;
-            flex-shrink: 0;
-        }
-        .faq-item p {
-            color: var(--text-light);
-            font-size: 1rem;
-            padding-left: 44px;
-        }
-        
-        /* Trust Signals */
-        .trust-signals {
-            display: flex;
-            justify-content: center;
-            gap: 35px;
-            flex-wrap: wrap;
-            margin-top: 50px;
-            padding-top: 45px;
-            border-top: 1px solid #e0e0e0;
-        }
-        .trust-item {
-            text-align: center;
-            color: var(--text-light);
-            font-size: 0.95rem;
-            transition: var(--transition);
-        }
-        .trust-item:hover {
-            transform: translateY(-5px);
-            color: var(--primary);
-        }
-        .trust-item span {
-            display: block;
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-        
-        /* How It Works */
-        .how-it-works {
-            padding: 100px 25px;
-        }
-        .how-it-works-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-        .step {
-            text-align: center;
-            padding: 40px 30px;
-            position: relative;
-        }
-        .step-number {
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, var(--accent), #ffec5c);
-            color: var(--primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            font-weight: 800;
-            margin: 0 auto 25px;
-            box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
-            transition: var(--transition);
-            position: relative;
-            z-index: 1;
-        }
-        .step::after {
-            content: '→';
-            position: absolute;
-            top: 55px;
-            right: -20px;
-            font-size: 2rem;
-            color: var(--accent);
-            display: none;
-        }
-        .step:last-child::after {
-            display: none;
-        }
-        @media (min-width: 1000px) {
-            .step:not(:last-child)::after {
-                display: block;
-            }
-        }
-        .step:hover .step-number {
-            transform: scale(1.1) rotate(5deg);
-            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.4);
-        }
-        .step h3 {
-            color: var(--primary);
-            margin-bottom: 14px;
-            font-size: 1.25rem;
-        }
-        .step p {
-            color: var(--text-light);
-            font-size: 1rem;
-        }
-        
-        /* Testimonials */
-        .testimonials {
-            background: linear-gradient(135deg, var(--bg-light) 0%, #e9ecef 100%);
-            padding: 100px 25px;
-        }
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-        .testimonial-card {
-            background: var(--bg-white);
-            padding: 40px 35px;
-            border-radius: 20px;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            position: relative;
-        }
-        .testimonial-card::before {
-            content: '"';
-            position: absolute;
-            top: 25px;
-            left: 30px;
-            font-size: 5rem;
-            color: var(--accent);
-            opacity: 0.3;
-            font-family: Georgia, serif;
-            line-height: 1;
-        }
-        .testimonial-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-hover);
-        }
-        .testimonial-text {
-            font-style: italic;
-            color: var(--text);
-            margin-bottom: 25px;
-            line-height: 1.8;
-            position: relative;
-            z-index: 1;
-        }
-        .testimonial-author {
-            font-weight: 700;
-            color: var(--primary);
-            font-size: 1.1rem;
-        }
-        .testimonial-company {
-            font-size: 0.95rem;
-            color: var(--text-light);
-            margin-top: 5px;
-        }
-        .stars {
-            color: var(--accent);
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-            letter-spacing: 2px;
-        }
-        
-        /* Contact Section */
-        .contact {
-            text-align: center;
-            padding: 100px 25px;
-            background: var(--bg-white);
-        }
-        .contact h2 {
-            color: var(--primary);
-            margin-bottom: 25px;
-            font-size: clamp(1.75rem, 4vw, 2.5rem);
-        }
-        .contact-info {
-            font-size: 1.15rem;
-            color: var(--text-light);
-            max-width: 500px;
-            margin: 0 auto 40px;
-        }
-        .contact-info p {
-            margin-bottom: 14px;
-        }
-        .contact-info a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 600;
-        }
-        .contact-info a:hover {
-            color: var(--accent);
-        }
-        .contact-actions {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin-bottom: 50px;
-        }
-        .contact-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 15px 30px;
-            background: var(--primary);
-            color: white;
-            border-radius: 50px;
-            font-weight: 600;
-            transition: var(--transition);
-        }
-        .contact-btn:hover {
-            background: var(--primary-dark);
-            transform: translateY(-3px);
-            color: white;
-        }
-        .contact-btn.secondary {
-            background: transparent;
-            border: 2px solid var(--primary);
-            color: var(--primary);
-        }
-        .contact-btn.secondary:hover {
-            background: var(--primary);
-            color: white;
-        }
-        
-        /* Contact Form */
-        .contact-form {
-            max-width: 550px;
-            margin: 40px auto 0;
-            text-align: left;
-            background: var(--bg-light);
-            padding: 45px;
-            border-radius: 24px;
-        }
-        .form-group {
-            margin-bottom: 24px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: 600;
-            color: var(--primary);
-            font-size: 0.95rem;
-        }
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 16px 20px;
-            border: 2px solid #e0e0e0;
-            border-radius: 12px;
-            font-size: 1rem;
-            font-family: inherit;
-            transition: var(--transition);
-            background: var(--bg-white);
-        }
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: var(--accent);
-            box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.15);
-        }
-        .form-group textarea {
-            min-height: 140px;
-            resize: vertical;
-        }
-        .form-submit {
-            width: 100%;
-            padding: 18px;
-            background: linear-gradient(135deg, var(--accent), #ffec5c);
-            color: var(--primary);
-            border: none;
-            border-radius: 12px;
-            font-size: 1.1rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-        .form-submit:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
-        }
-        .form-success {
-            display: none;
-            background: linear-gradient(135deg, #d4edda, #c3e6cb);
-            color: #155724;
-            padding: 25px;
-            border-radius: 12px;
-            text-align: center;
-            margin-top: 25px;
-            font-weight: 600;
-        }
-        
-        /* Footer */
-        footer {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            color: white;
-            text-align: center;
-            padding: 50px 25px;
-        }
-        footer p {
-            opacity: 0.95;
-            font-size: 1rem;
-        }
-        footer p + p {
-            margin-top: 12px;
-            opacity: 0.75;
-            font-size: 0.9rem;
-        }
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            margin-bottom: 25px;
-            flex-wrap: wrap;
-        }
-        .footer-links a {
-            color: white;
-            opacity: 0.8;
-            font-size: 0.9rem;
-        }
-        .footer-links a:hover {
-            opacity: 1;
-            color: var(--accent);
-        }
-        
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero { padding: 80px 20px; }
-            .container { padding: 60px 20px; }
-            .number { font-size: 2.5rem; }
-            .testimonials-grid { grid-template-columns: 1fr; }
-            .how-it-works-steps { grid-template-columns: 1fr; }
-            .contact-form { padding: 30px 25px; }
-            .trust-signals { gap: 25px; }
-        }
-        
-        /* Loading Animation */
-        .loader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--bg-white);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 9999;
-            transition: opacity 0.5s ease, visibility 0.5s ease;
-        }
-        .loader.hidden {
-            opacity: 0;
-            visibility: hidden;
-        }
-        .loader-content {
-            text-align: center;
-        }
-        .loader-spinner {
-            width: 50px;
-            height: 50px;
-            border: 4px solid var(--bg-light);
-            border-top: 4px solid var(--accent);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 20px;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        .loader-text {
-            color: var(--primary);
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-        
-        /* Scroll Progress Bar */
-        .scroll-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 3px;
-            background: var(--accent);
-            z-index: 1000;
-            width: 0%;
-            transition: width 0.1s ease;
-        }
-        
-        /* Back to Top Button */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            background: var(--primary);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: var(--transition);
-            z-index: 999;
-            box-shadow: var(--shadow);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-        }
-        .back-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-        .back-to-top:hover {
-            background: var(--accent);
-            color: var(--primary);
-            transform: translateY(-5px);
-        }
-        
-        /* Animated Counter */
-        .counter {
-            display: inline-block;
-        }
-        
-        /* Trust Badges */
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            margin: 30px 0;
-        }
-        .trust-badge {
-            background: var(--bg-light);
-            padding: 12px 24px;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--primary);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: var(--transition);
-        }
-        .trust-badge:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow);
-            background: var(--accent);
-        }
-        .trust-badge i {
-            color: var(--success);
-        }
-        }
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 14px 18px;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            font-size: 1rem;
-            font-family: inherit;
-            transition: all 0.3s ease;
-        }
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: #ffd700;
-            box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.1);
-        }
-        .form-group textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
-        .form-submit {
-            width: 100%;
-            padding: 16px;
-            background: #ffd700;
-            color: #1e3a5f;
-            border: none;
-            border-radius: 10px;
-            font-size: 1.1rem;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        .form-submit:hover {
-            background: #ffe033;
-            transform: translateY(-2px);
-        }
-        .form-success {
-            display: none;
-            background: #d4edda;
-            color: #155724;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 20px;
-        }
-        
-        /* Testimonials */
-        .testimonials {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            padding: 80px 25px;
-        }
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-        .testimonial-card {
-            background: white;
-            padding: 35px;
-            border-radius: 16px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-        }
-        .testimonial-text {
-            font-style: italic;
-            color: #555;
-            margin-bottom: 20px;
-            line-height: 1.7;
-        }
-        .testimonial-author {
-            font-weight: 700;
-            color: #1e3a5f;
-        }
-        .testimonial-company {
-            font-size: 0.9rem;
-            color: #888;
-        }
-        
-        /* How it Works */
-        .how-it-works {
-            padding: 80px 25px;
-        }
-        .how-it-works-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-        .step {
-            text-align: center;
-            padding: 30px;
-        }
-        .step-number {
-            width: 60px;
-            height: 60px;
-            background: #ffd700;
-            color: #1e3a5f;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin: 0 auto 20px;
-        }
-        .step h3 {
-            color: #1e3a5f;
-            margin-bottom: 12px;
-        }
-        .step p {
-            color: #666;
-            font-size: 0.95rem;
-        }
+        .cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: linear-gradient(135deg, #1e3a5f 0%, #152b47 100%); color: white; padding: 20px 25px; z-index: 9998; display: none; box-shadow: 0 -5px 20px rgba(0,0,0,0.1); }
+        .cookie-banner.visible { display: flex; justify-content: center; align-items: center; gap: 15px; animation: slideInUp 0.5s ease-out; }
+        @keyframes slideInUp { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+        .cookie-banner p { margin: 0; font-size: 0.95rem; }
+        .cookie-banner a { color: #ffd700; text-decoration: underline; }
+        .cookie-btn { background: #ffd700; color: #1e3a5f; border: none; padding: 12px 28px; border-radius: 50px; font-weight: 700; cursor: pointer; transition: all 0.3s ease; }
+        .cookie-btn:hover { background: #ffe033; transform: scale(1.05); }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --primary: #1e3a5f; --primary-dark: #152b47; --secondary: #2d5a87; --accent: #ffd700; --success: #28a745; --text: #333; --text-light: #666; --bg-light: #f8f9fa; --bg-white: #ffffff; --shadow: 0 5px 20px rgba(0,0,0,0.08); --shadow-hover: 0 15px 40px rgba(0,0,0,0.12); --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg-white); overflow-x: hidden; }
+        h1, h2, h3 { color: var(--primary); font-weight: 700; }
+        a { color: var(--primary); text-decoration: none; transition: var(--transition); }
+        a:hover { color: var(--secondary); }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-40px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .hero { background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, #4a90c2 100%); color: white; padding: 120px 20px; text-align: center; position: relative; overflow: hidden; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); opacity: 0.5; }
+        .hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 100px; background: linear-gradient(to top, var(--bg-white), transparent); }
+        .hero-content { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; }
+        .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 25px; font-weight: 800; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); animation: fadeInDown 1s ease-out; }
+        .hero p { font-size: clamp(1rem, 2.5vw, 1.4rem); opacity: 0.95; max-width: 700px; margin: 0 auto 35px; animation: fadeInUp 1s ease-out 0.2s both; }
+        .hero .highlight { color: var(--accent); font-weight: 700; display: inline-block; padding: 8px 25px; background: rgba(255, 215, 0, 0.15); border-radius: 50px; margin-bottom: 25px; animation: fadeInUp 1s ease-out 0.4s both, pulse 2s ease-in-out infinite; border: 1px solid rgba(255, 215, 0, 0.3); }
+        .cta { background: var(--accent); color: var(--primary); padding: 20px 55px; border: none; border-radius: 50px; font-size: 1.15rem; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-block; transition: var(--transition); box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4); animation: fadeInUp 1s ease-out 0.6s both; }
+        .cta:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5); background: #ffe033; color: var(--primary-dark); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 100px 25px; }
+        .section-title { text-align: center; margin-bottom: 60px; }
+        .section-title h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); margin-bottom: 18px; position: relative; display: inline-block; }
+        .section-title h2::after { content: ''; position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background: var(--accent); border-radius: 2px; }
+        .section-title p { color: var(--text-light); font-size: 1.15rem; max-width: 650px; margin: 20px auto 0; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 80px; }
+        .feature { background: var(--bg-light); padding: 40px 35px; border-radius: 20px; text-align: center; transition: var(--transition); border: 1px solid transparent; position: relative; overflow: hidden; }
+        .feature::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: linear-gradient(90deg, var(--primary), var(--accent)); transform: scaleX(0); transition: var(--transition); }
+        .feature:hover { transform: translateY(-10px); box-shadow: var(--shadow-hover); }
+        .feature:hover::before { transform: scaleX(1); }
+        .feature-icon { font-size: 2.8rem; margin-bottom: 22px; display: block; }
+        .feature:hover .feature-icon { transform: scale(1.15); color: var(--accent); }
+        .feature h3 { color: var(--primary); margin-bottom: 15px; font-size: 1.35rem; }
+        .feature p { color: var(--text-light); font-size: 1rem; line-height: 1.7; }
+        .numbers { background: linear-gradient(135deg, var(--bg-light) 0%, #e9ecef 100%); padding: 100px 25px; text-align: center; }
+        .numbers h2 { color: var(--primary); margin-bottom: 60px; font-size: clamp(1.75rem, 4vw, 2.25rem); }
+        .number-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; max-width: 1000px; margin: 0 auto; }
+        .number-item { text-align: center; padding: 25px; }
+        .number { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 800; color: var(--accent); display: block; margin-bottom: 12px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1); transition: var(--transition); }
+        .number-item:hover .number { transform: scale(1.1); color: var(--primary); }
+        .number-label { font-size: 1.1rem; color: var(--text); font-weight: 600; }
+        .programs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px; margin-bottom: 60px; }
+        .program-card { background: var(--bg-white); padding: 35px; border-radius: 20px; border-left: 5px solid var(--accent); box-shadow: var(--shadow); transition: var(--transition); position: relative; }
+        .program-card::after { content: ''; position: absolute; top: 20px; right: 20px; width: 40px; height: 40px; background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), transparent); border-radius: 50%; }
+        .program-card:hover { transform: translateX(8px) translateY(-5px); box-shadow: var(--shadow-hover); }
+        .program-card h3 { color: var(--primary); margin-bottom: 15px; font-size: 1.35rem; }
+        .program-card .percent { font-size: 2.4rem; font-weight: 800; color: var(--success); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+        .program-card .percent::before { content: '↗'; font-size: 1.5rem; }
+        .program-card p { color: var(--text-light); font-size: 1rem; }
+        .faq { background: var(--bg-light); padding: 100px 25px; }
+        .faq-list { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: var(--bg-white); padding: 30px 35px; border-radius: 16px; margin-bottom: 20px; box-shadow: var(--shadow); transition: var(--transition); border: 1px solid transparent; }
+        .faq-item:hover { border-color: var(--accent); transform: translateY(-3px); }
+        .faq-item h3 { color: var(--primary); margin-bottom: 14px; font-size: 1.15rem; display: flex; align-items: center; gap: 12px; }
+        .faq-item h3::before { content: 'Q'; background: var(--accent); color: var(--primary); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; font-weight: 700; flex-shrink: 0; }
+        .faq-item p { color: var(--text-light); font-size: 1rem; padding-left: 44px; }
+        .trust-signals { display: flex; justify-content: center; gap: 35px; flex-wrap: wrap; margin-top: 50px; padding-top: 45px; border-top: 1px solid #e0e0e0; }
+        .trust-item { text-align: center; color: var(--text-light); font-size: 0.95rem; transition: var(--transition); }
+        .trust-item:hover { transform: translateY(-5px); color: var(--primary); }
+        .trust-item span { display: block; font-size: 2rem; margin-bottom: 10px; }
+        .how-it-works { padding: 100px 25px; }
+        .how-it-works-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 1100px; margin: 0 auto; }
+        .step { text-align: center; padding: 40px 30px; position: relative; }
+        .step-number { width: 70px; height: 70px; background: linear-gradient(135deg, var(--accent), #ffec5c); color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; font-weight: 800; margin: 0 auto 25px; box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3); transition: var(--transition); position: relative; z-index: 1; }
+        .step:hover .step-number { transform: scale(1.1) rotate(5deg); box-shadow: 0 15px 40px rgba(255, 215, 0, 0.4); }
+        .step h3 { color: var(--primary); margin-bottom: 14px; font-size: 1.25rem; }
+        .step p { color: var(--text-light); font-size: 1rem; }
+        .testimonials { background: linear-gradient(135deg, var(--bg-light) 0%, #e9ecef 100%); padding: 100px 25px; }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; max-width: 1100px; margin: 0 auto; }
+        .testimonial-card { background: var(--bg-white); padding: 40px 35px; border-radius: 20px; box-shadow: var(--shadow); transition: var(--transition); position: relative; }
+        .testimonial-card::before { content: '"'; position: absolute; top: 25px; left: 30px; font-size: 5rem; color: var(--accent); opacity: 0.3; font-family: Georgia, serif; line-height: 1; }
+        .testimonial-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-hover); }
+        .testimonial-text { font-style: italic; color: var(--text); margin-bottom: 25px; line-height: 1.8; position: relative; z-index: 1; }
+        .testimonial-author { font-weight: 700; color: var(--primary); font-size: 1.1rem; }
+        .testimonial-company { font-size: 0.95rem; color: var(--text-light); margin-top: 5px; }
+        .contact { text-align: center; padding: 100px 25px; background: var(--bg-white); }
+        .contact h2 { color: var(--primary); margin-bottom: 25px; font-size: clamp(1.75rem, 4vw, 2.5rem); }
+        .contact-info { font-size: 1.15rem; color: var(--text-light); max-width: 500px; margin: 0 auto 40px; }
+        .contact-info p { margin-bottom: 14px; }
+        .contact-info a { color: var(--primary); text-decoration: none; font-weight: 600; }
+        .contact-info a:hover { color: var(--accent); }
+        .contact-form { max-width: 550px; margin: 40px auto 0; text-align: left; background: var(--bg-light); padding: 45px; border-radius: 24px; }
+        .form-group { margin-bottom: 24px; }
+        .form-group label { display: block; margin-bottom: 10px; font-weight: 600; color: var(--primary); font-size: 0.95rem; }
+        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 16px 20px; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 1rem; font-family: inherit; transition: var(--transition); background: var(--bg-white); }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px rgba(255, 215, 0, 0.15); }
+        .form-group textarea { min-height: 140px; resize: vertical; }
+        .form-submit { width: 100%; padding: 18px; background: linear-gradient(135deg, var(--accent), #ffec5c); color: var(--primary); border: none; border-radius: 12px; font-size: 1.1rem; font-weight: 700; cursor: pointer; transition: var(--transition); }
+        .form-submit:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4); }
+        .form-success { display: none; background: linear-gradient(135deg, #d4edda, #c3e6cb); color: #155724; padding: 25px; border-radius: 12px; text-align: center; margin-top: 25px; font-weight: 600; }
+        footer { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; text-align: center; padding: 50px 25px; }
+        footer p { opacity: 0.95; font-size: 1rem; }
+        footer p + p { margin-top: 12px; opacity: 0.75; font-size: 0.9rem; }
+        .footer-links { display: flex; justify-content: center; gap: 25px; margin-bottom: 25px; flex-wrap: wrap; }
+        .footer-links a { color: white; opacity: 0.8; font-size: 0.9rem; }
+        .footer-links a:hover { opacity: 1; color: var(--accent); }
+        @media (max-width: 768px) { .hero { padding: 80px 20px; } .container { padding: 60px 20px; } .number { font-size: 2.5rem; } .testimonials-grid { grid-template-columns: 1fr; } .how-it-works-steps { grid-template-columns: 1fr; } .contact-form { padding: 30px 25px; } .trust-signals { gap: 25px; } .cookie-banner { flex-direction: column; text-align: center; } }
+        .loader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--bg-white); display: flex; align-items: center; justify-content: center; z-index: 9999; transition: opacity 0.5s ease; }
+        .loader.hidden { opacity: 0; visibility: hidden; }
+        .loader-content { text-align: center; }
+        .loader-spinner { width: 50px; height: 50px; border: 4px solid var(--bg-light); border-top: 4px solid var(--accent); border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 20px; }
+        .loader-text { color: var(--primary); font-weight: 600; font-size: 1.1rem; }
+        .scroll-progress { position: fixed; top: 0; left: 0; height: 3px; background: var(--accent); z-index: 1000; width: 0%; transition: width 0.1s ease; }
+        .back-to-top { position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; background: var(--primary); color: white; border: none; border-radius: 50%; cursor: pointer; opacity: 0; visibility: hidden; transition: var(--transition); z-index: 999; box-shadow: var(--shadow); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; }
+        .back-to-top.visible { opacity: 1; visibility: visible; }
+        .back-to-top:hover { background: var(--accent); color: var(--primary); transform: translateY(-5px); }
     </style>
 </head>
 <body>
-    <section class="hero">
+    <div class="loader" id="loader"><div class="loader-content"><div class="loader-spinner"></div><p class="loader-text">Laden...</p></div></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <button class="back-to-top" id="backToTop" aria-label="Zurück nach oben">↑</button>
+    <div class="cookie-banner" id="cookieBanner"><p>Wir verwenden Cookies. <a href="/docs/legal/DATENSCHUTZ.html">Datenschutz</a></p><button class="cookie-btn" id="cookieAccept">Akzeptieren</button></div>
+    <section class="hero" role="banner">
         <div class="hero-content">
             <h1>Förderungen Mair</h1>
             <p>Staatliche Förderungen für KMU in Südtirol</p>
             <p class="highlight">Bis zu 3,5 Mio.€ pro Jahr – erfolgsbasiert</p>
-            <a href="mailto:info@foerderungen-mair.it" class="cta">Kostenlos anfragen</a>
+            <a href="mailto:info@foerderungen-mair.it" class="cta" aria-label="Kostenlose Anfrage senden">Kostenlos anfragen</a>
         </div>
     </section>
-
-    <section class="container">
-        <div class="section-title">
-            <h2>Warum Förderungen nutzen?</h2>
-            <p>9 von 10 Unternehmen in Südtirol lassen Potenzial ungenutzt. Wir ändern das.</p>
-        </div>
+    <section class="container" aria-labelledby="why-title">
+        <div class="section-title"><h2 id="why-title">Warum Förderungen nutzen?</h2><p>9 von 10 Unternehmen in Südtirol lassen Potenzial ungenutzt. Wir ändern das.</p></div>
         <div class="features">
-            <div class="feature">
-                <span class="feature-icon">✓</span>
-                <h3>Kostenlose Erstprüfung</h3>
-                <p>Wir analysieren Ihr Förderpotenzial ohne Verpflichtung. Innerhalb von 48 Stunden wissen Sie, welche Förderungen für Sie möglich sind.</p>
-            </div>
-            <div class="feature">
-                <span class="feature-icon">✓</span>
-                <h3>Alle Förderprogramme</h3>
-                <p>EU, national und regional – wir kennen alle Optionen und finden das beste Paket für Ihr Unternehmen.</p>
-            </div>
-            <div class="feature">
-                <span class="feature-icon">✓</span>
-                <h3>Komplette Antragsstellung</h3>
-                <p>Wir machen alles von A bis Z: Recherche, Antrag, Kommunikation mit Behörden – Sie sparen Zeit.</p>
-            </div>
-            <div class="feature">
-                <span class="feature-icon">✓</span>
-                <h3>15% Erfolgshonorar</h3>
-                <p>Sie zahlen nur, wenn Sie die Förderung erhalten. Fair, transparent, erfolgsorientiert.</p>
-            </div>
+            <div class="feature"><span class="feature-icon">✓</span><h3>Kostenlose Erstprüfung</h3><p>Wir analysieren Ihr Förderpotenzial ohne Verpflichtung. Innerhalb von 48 Stunden wissen Sie, welche Förderungen möglich sind.</p></div>
+            <div class="feature"><span class="feature-icon">✓</span><h3>Alle Förderprogramme</h3><p>EU, national und regional – wir kennen alle Optionen und finden das beste Paket.</p></div>
+            <div class="feature"><span class="feature-icon">✓</span><h3>Komplette Antragsstellung</h3><p>Wir machen alles von A bis Z: Recherche, Antrag, Kommunikation mit Behörden.</p></div>
+            <div class="feature"><span class="feature-icon">✓</span><h3>15% Erfolgshonorar</h3><p>Sie zahlen nur, wenn Sie die Förderung erhalten. Fair, transparent, erfolgsorientiert.</p></div>
         </div>
     </section>
-
-    <section class="numbers">
-        <h2>Aktuelle Förderprogramme 2026</h2>
+    <section class="numbers" aria-labelledby="programs-title"><h2 id="programs-title">Aktuelle Förderprogramme 2026</h2>
         <div class="number-grid">
-            <div class="number-item">
-                <span class="number">35%</span>
-                <span class="number-label">Credito d'Imposta R&S</span>
-            </div>
-            <div class="number-item">
-                <span class="number">50%</span>
-                <span class="number-label">Transizione 4.0</span>
-            </div>
-            <div class="number-item">
-                <span class="number">50%</span>
-                <span class="number-label">EFRE (EU)</span>
-            </div>
-            <div class="number-item">
-                <span class="number">70%</span>
-                <span class="number-label">Horizon Europe</span>
-            </div>
+            <div class="number-item"><span class="number">35%</span><span class="number-label">Credito d'Imposta R&S</span></div>
+            <div class="number-item"><span class="number">50%</span><span class="number-label">Transizione 4.0</span></div>
+            <div class="number-item"><span class="number">50%</span><span class="number-label">EFRE (EU)</span></div>
+            <div class="number-item"><span class="number">70%</span><span class="number-label</span></div">Horizon Europe>
         </div>
     </section>
-
-    <section class="container">
-        <div class="section-title">
-            <h2>Für wen wir arbeiten</h2>
-            <p>Spezialisiert auf Südtiroler KMU aller Branchen</p>
-        </div>
+    <section class="container" aria-labelledby="branches-title">
+        <div class="section-title"><h2 id="branches-title">Für wen wir arbeiten</h2><p>Spezialisiert auf Südtiroler KMU aller Branchen</p></div>
         <div class="programs-grid">
-            <div class="program-card">
-                <h3>Tourismus</h3>
-                <div class="percent">bis 50%</div>
-                <p>Hotels, Gastronomie, touristische Betriebe – Renovierung, Digitalisierung, Energieeffizienz</p>
-            </div>
-            <div class="program-card">
-                <h3>Handwerk</h3>
-                <div class="percent">bis 50%</div>
-                <p>Maschinen, Werkzeuge, Betriebserweiterung – Modernisierung und Wachstum</p>
-            </div>
-            <div class="program-card">
-                <h3>Produktion</h3>
-                <div class="percent">bis 35%</div>
-                <p>F&E, Innovation, Digitalisierung – Transizione 4.0 und mehr</p>
-            </div>
-            <div class="program-card">
-                <h3>Landwirtschaft</h3>
-                <div class="percent">bis 70%</div>
-                <p>Maschinen, Gebäude, Umstellung – starke Förderung in Südtirol</p>
-            </div>
-            <div class="program-card">
-                <h3>IT & Digital</h3>
-                <div class="percent">bis 50%</div>
-                <p>Software, Hardware, Schulungen – Transizione 4.0 für Digitalisierung</p>
-            </div>
-            <div class="program-card">
-                <h3>Handel</h3>
-                <div class="percent">bis 30%</div>
-                <p>Filialen, Modernisierung, Online-Shop – Unterstützung für den Einzelhandel</p>
-            </div>
+            <div class="program-card"><h3>Tourismus</h3><div class="percent">bis 50%</div><p>Hotels, Gastronomie, touristische Betriebe – Renovierung, Digitalisierung, Energieeffizienz</p></div>
+            <div class="program-card"><h3>Handwerk</h3><div class="percent">bis 50%</div><p>Maschinen, Werkzeuge, Betriebserweiterung – Modernisierung und Wachstum</p></div>
+            <div class="program-card"><h3>Produktion</h3><div class="percent">bis 35%</div><p>F&E, Innovation, Digitalisierung – Transizione 4.0 und mehr</p></div>
+            <div class="program-card"><h3>Landwirtschaft</h3><div class="percent">bis 70%</div><p>Maschinen, Gebäude, Umstellung – starke Förderung in Südtirol</p></div>
+            <div class="program-card"><h3>IT & Digital</h3><div class="percent">bis 50%</div><p>Software, Hardware, Schulungen – Transizione 4.0 für Digitalisierung</p></div>
+            <div class="program-card"><h3>Handel</h3><div class="percent">bis 30%</div><p>Filialen, Modernisierung, Online-Shop – Unterstützung für den Einzelhandel</p></div>
         </div>
     </section>
-
-    <section class="how-it-works">
-        <div class="container">
-            <div class="section-title">
-                <h2>So funktioniert's</h2>
-                <p>In 4 einfachen Schritten zu Ihrer Förderung</p>
-            </div>
+    <section class="how-it-works" aria-labelledby="how-title">
+        <div class="container"><div class="section-title"><h2 id="how-title">So funktioniert's</h2><p>In 4 einfachen Schritten zu Ihrer Förderung</p></div>
             <div class="how-it-works-steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Kostenlose Analyse</h3>
-                    <p>Wir prüfen Ihr Unternehmen und identifizieren passende Förderprogramme.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Strategie entwickeln</h3>
-                    <p>Gemeinsam definieren wir die beste Förderstrategie für Ihre Ziele.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Antrag stellen</h3>
-                    <p>Wir kümmern uns um alles – von der Dokumentation bis zur Einreichung.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Förderung erhalten</h3>
-                    <p>Bei Erfolg zahlen Sie nur 15% – erst dann sind wir zufrieden.</p>
-                </div>
+                <div class="step"><div class="step-number">1</div><h3>Kostenlose Analyse</h3><p>Wir prüfen Ihr Unternehmen und identifizieren passende Förderprogramme.</p></div>
+                <div class="step"><div class="step-number">2</div><h3>Strategie entwickeln</h3><p>Gemeinsam definieren wir die beste Förderstrategie für Ihre Ziele.</p></div>
+                <div class="step"><div class="step-number">3</div><h3>Antrag stellen</h3><p>Wir kümmern uns um alles – von der Dokumentation bis zur Einreichung.</p></div>
+                <div class="step"><div class="step-number">4</div><h3>Förderung erhalten</h3><p>Bei Erfolg zahlen Sie nur 15% – erst dann sind wir zufrieden.</p></div>
             </div>
         </div>
     </section>
-
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-title">
-                <h2>Das sagen unsere Kunden</h2>
-                <p>Erfolgsgeschichten aus Südtirol</p>
-            </div>
+    <section class="testimonials" aria-labelledby="testimonials-title">
+        <div class="container"><div class="section-title"><h2 id="testimonials-title">Das sagen unsere Kunden</h2><p>Erfolgsgeschichten aus Südtirol</p></div>
             <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Durch Förderungen Mair haben wir 120.000€ für unsere Hotel-Renovierung erhalten. Der Service war professionell und unkompliziert."</p>
-                    <p class="testimonial-author">Maria K.</p>
-                    <p class="testimonial-company">Hotel Garni, Meran</p>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Wir konnten unsere neue Produktionsanlage zu 45% fördern lassen. Klare Empfehlung für alle Südtiroler Unternehmen!"</p>
-                    <p class="testimonial-author">Thomas B.</p>
-                    <p class="testimonial-company">Metallbau Brunner, Bozen</p>
-                </div>
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Die Beratung war ausgezeichnet. Wir haben mehrere Förderungen kombiniert und über 200.000€ erhalten."</p>
-                    <p class="testimonial-author">Anna L.</p>
-                    <p class="testimonial-company">Bio-Bauernhof, Vinschgau</p>
-                </div>
-            </div>
-        </div>
-    </section>
-        <div class="container">
-            <div class="section-title">
-                <h2>Häufige Fragen</h2>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <h3>Wie hoch sind die Kosten?</h3>
-                    <p>Die Erstprüfung ist kostenlos. Unser Honorar beträgt 15% der genehmigten Fördersumme – erst wenn Sie die Förderung erhalten.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Wie lange dauert ein Antrag?</h3>
-                    <p>Je nach Förderprogramm 2-6 Monate. Wir begleiten Sie durch den gesamten Prozess und halten Sie auf dem Laufenden.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Welche Unternehmen sind förderfähig?</h3>
-                    <p>Fast alle KMU in Südtirol – von der Gründung bis zur Expansion. Wir prüfen Ihre individuelle Situation kostenlos.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Können mehrere Förderungen kombiniert werden?</h3>
-                    <p>Ja! Oft können EU-, Landes- und Italia-Förderungen kombiniert werden. Wir finden das optimale Paket für Sie.</p>
-                </div>
-            </div>
-            <div class="trust-signals">
-                <div class="trust-item">
-                    <span>🔒</span>
-                    Kostenlose Erstprüfung
-                </div>
-                <div class="trust-item">
-                    <span>💰</span>
-                    Erst bei Erfolg zahlen
-                </div>
-                <div class="trust-item">
-                    <span>⚡</span>
-                    Schnelle Bearbeitung
-                </div>
-                <div class="trust-item">
-                    <span>📋</span>
-                    Komplettservice
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact">
-        <h2>Kontaktieren Sie uns</h2>
-        <div class="contact-info">
-            <p>✉️ <a href="mailto:info@foerderungen-mair.it">info@foerderungen-mair.it</a></p>
-            <p>📞 <a href="tel:+393451234567">+39 345 123 45 67</a></p>
-            <p>📍 Südtirol, Italien</p>
-        </div>
-        <form class="contact-form" id="contactForm">
-            <div class="form-group">
-                <label for="name">Name *</label>
-                <input type="text" id="name" name="name" required placeholder="Ihr vollständiger Name">
-            </div>
-            <div class="form-group">
-                <label for="company">Unternehmen *</label>
-                <input type="text" id="company" name="company" required placeholder="Firmenname">
-            </div>
-            <div class="form-group">
-                <label for="email">E-Mail *</label>
-                <input type="email" id="email" name="email" required placeholder="ihre@email.it">
-            </div>
-            <div class="form-group">
-                <label for="phone">Telefon</label>
-                <input type="tel" id="phone" name="phone" placeholder="+39 XXX XXX XXXX">
-            </div>
-            <div class="form-group">
-                <label for="branch">Branche</label>
-                <select id="branch" name="branch">
-                    <option value="">Bitte wählen</option>
-                    <option value="tourismus">Tourismus</option>
-                    <option value="handwerk">Handwerk</option>
-                    <option value="produktion">Produktion</option>
-                    <option value="landwirtschaft">Landwirtschaft</option>
-                    <option value="it">IT & Digital</option>
-                    <option value="handel">Handel</option>
-                    <option value="sonstiges">Sonstiges</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="message">Nachricht *</label>
-                <textarea id="message" name="message" required placeholder="Erzählen Sie uns kurz über Ihr Projekt..."></textarea>
-            </div>
-            <button type="submit" class="form-submit">Kostenlose Erstprüfung anfragen</button>
-            <div class="form-success" id="formSuccess">
-                ✓ Vielen Dank! Wir melden uns innerhalb von 48 Stunden bei Ihnen.
-            </div>
-        </form>
-    </section>
-
-    <footer>
-        <p>© 2026 Förderungen Mair – Ihr Partner für staatliche Förderungen in Südtirol</p>
-        <p style="margin-top: 10px; opacity: 0.7;">EU-Förderungen | Italia-Förderungen | Landesförderungen</p>
-    </footer>
-
-    <script>
-        // Kontaktformular Handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            var formData = new FormData(this);
-            var data = {};
-            formData.forEach(function(value, key) {
-                data[key] = value;
-            });
-            
-            // E-Mail generieren
-            var emailBody = 'Neue Anfrage von der Website:%0D%0A%0D%0A' +
-                'Name: ' + data.name + '%0D%0A' +
-                'Unternehmen: ' + data.company + '%0D%0A' +
-                'E-Mail: ' + data.email + '%0D%0A' +
-                'Telefon: ' + (data.phone || 'Nicht angegeben') + '%0D%0A' +
-                'Branche: ' + (data.branch || 'Nicht angegeben') + '%0D%0A%0D%0A' +
-                'Nachricht:%0D%0A' + data.message;
-            
-            // Mailto-Link öffnen
-            window.location.href = 'mailto:info@foerderungen-mair.it?subject=Neue Anfrage von ' + data.company + '&body=' + emailBody;
-            
-            // Erfolgsmeldung anzeigen
-            document.getElementById('formSuccess').style.display = 'block';
-            this.reset();
-        });
-        
-        // Smooth Scroll für alle Links
-        document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                var target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-        
-        // Lazy Loading für Bilder (wenn vorhanden)
-        if ('IntersectionObserver' in window) {
-            var lazyImages = document.querySelectorAll('img[data-src]');
-            var imageObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) {
-                        entry.target.src = entry.target.dataset.src;
-                        entry.target.removeAttribute('data-src');
-                        imageObserver.unobserve(entry.target);
-                    }
-                });
-            });
-            lazyImages.forEach(function(img) {
-                imageObserver.observe(img);
-            });
-        }
-    </script>
-</body>
-</html>
+                <div class="testimonial-card"><p class="testimonial-text">"Durch Förderungen Mair haben wir 120.000€ für unsere Hotel-Renovierung erhalten. Der Service war professionell und unkompliziert."</p><p class="testimonial-author">Maria K.</p><p class="testimonial-company">Hotel Garni, Meran</p></div>
+                <div class="testimonial-card"><p class="testimonial
