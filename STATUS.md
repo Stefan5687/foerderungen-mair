@@ -1,6 +1,6 @@
 # STATUS – Förderungen Mair
 
-**Letzte Aktualisierung:** 2026-02-13 09:30
+**Letzte Aktualisierung:** 2026-02-13 10:35
 **Review:** Projekt-Review 2026-02-13 (15-Minuten-Check)
 
 ---
@@ -184,6 +184,22 @@
 - **Domain:** foerderungen-mair.it oder .com
 - **Launch:** In ca. 30 Tagen
 - **Nächster Review:** 2026-02-20
+
+---
+
+## 🔄 Review 2026-02-13 – 2. RUNDE (Neue Verbesserungen)
+
+| Datum | Aufgabe | Status |
+|---|---|---|
+| **2026-02-13** | **Website: Meta Keywords erweitert (Brixen, Bruneck)** | ✅ ERLEDIGT |
+| **2026-02-13** | **Website: Canonical Tag hinzugefügt** | ✅ ERLEDIGT |
+| **2026-02-13** | **Website: Loading Animation** | ✅ ERLEDIGT |
+| **2026-02-13** | **Website: Scroll Progress Bar** | ✅ ERLEDIGT |
+| **2026-02-13** | **Website: Back to Top Button** | ✅ ERLEDIGT |
+| **2026-02-13** | **Website: Trust Badges Sektion** | ✅ ERLEDIGT |
+| **2026-02-13** | **Businessplan: Ziel-KPI aktualisiert** | ✅ ERLEDIGT |
+| **2026-02-13** | **Förderungen: Neue PNRR Details 2026** | ✅ ERLEDIGT |
+| **2026-02-13** | **Kosten: Liquiditätsplanung erweitert** | ✅ ERLEDIGT |
 
 ---
 
