@@ -3,3 +3,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://stefan5687.github.io/foerderungen-mair/sitemap.xml
+Sitemap: https://stefan5687.github.io/foerderungen-mair/feed.xml

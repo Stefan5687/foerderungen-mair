@@ -1,17 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>Förderungen Mair</title>
-    <description>Staatliche Förderungen für KMU in Südtirol</description>
+    <title>Förderungen Mair Blog</title>
     <link>https://stefan5687.github.io/foerderungen-mair/</link>
+    <description>Neuigkeiten zu staatlichen Förderungen für KMU in Südtirol</description>
+    <language>de-de</language>
+    <lastBuildDate>Sat, 14 Feb 2026 12:42:00 +0000</lastBuildDate>
     <atom:link href="https://stefan5687.github.io/foerderungen-mair/feed.xml" rel="self" type="application/rss+xml"/>
-    <language>de</language>
-    <lastBuildDate>Fri, 13 Feb 2026 13:00:00 +0000</lastBuildDate>
+    
     <item>
-      <title>Neue Förderprogramme 2026 verfügbar</title>
-      <description>Entdecken Sie die neuen Fördermöglichkeiten für Südtiroler Unternehmen im Jahr 2026.</description>
-      <link>https://stefan5687.github.io/foerderungen-mair/</link>
-      <pubDate>Fri, 13 Feb 2026 13:00:00 +0000</pubDate>
+      <title>IPCEI 2026 – Important Projects of Common European Interest</title>
+      <link>https://stefan5687.github.io/foerderungen-mair/docs/blog/ipcei-2026.html</link>
+      <description>Das IPCEI-Programm (Important Projects of Common European Interest) bietet außergewöhnliche Fördermöglichkeiten für innovative Unternehmen. Erfahren Sie, wie auch Ihr Unternehmen profitieren kann.</description>
+      <pubDate>Sat, 14 Feb 2026 12:00:00 +0000</pubDate>
+      <dc:creator>Stefan Mair</dc:creator>
+      <category>Förderung</category>
+      <guid isPermaLink="true">https://stefan5687.github.io/foerderungen-mair/docs/blog/ipcei-2026.html</guid>
+    </item>
+    
+    <item>
+      <title>Innovation Hub Italy 2026</title>
+      <link>https://stefan5687.github.io/foerderungen-mair/docs/blog/innovation-hub-italy-2026.html</link>
+      <description>Innovation Hub Italy bietet Unterstützung für Unternehmen, die in Forschung und Entwicklung investieren möchten. Alle Details zu den Förderbedingungen 2026.</description>
+      <pubDate>Fri, 13 Feb 2026 12:00:00 +0000</pubDate>
+      <dc:creator>Stefan Mair</dc:creator>
+      <category>Forschung & Entwicklung</category>
+      <guid isPermaLink="true">https://stefan5687.github.io/foerderungen-mair/docs/blog/innovation-hub-italy-2026.html</guid>
+    </item>
+    
+    <item>
+      <title>Credito d'Imposta R&S 2026</title>
+      <link>https://stefan5687.github.io/foerderungen-mair/docs/blog/credito-imposta-rs-2026.html</link>
+      <description>Der Credito d'Imposta für Forschung und Entwicklung bietet bis zu 35% Steuergutschrift auf F&E-Ausgaben. Alle Informationen für Südtiroler Unternehmen.</description>
+      <pubDate>Thu, 12 Feb 2026 12:00:00 +0000</pubDate>
+      <dc:creator>Stefan Mair</dc:creator>
+      <category>F&E</category>
+      <guid isPermaLink="true">https://stefan5687.github.io/foerderungen-mair/docs/blog/credito-imposta-rs-2026.html</guid>
+    </item>
+    
+    <item>
+      <title>Transizione 4.0 – Förderungen für die digitale Transformation</title>
+      <link>https://stefan5687.github.io/foerderungen-mair/docs/blog/transizione-4-0-2026.html</link>
+      <description>Transizione 4.0 ist das italienische Förderprogramm für Digitalisierung und technologische Innovation. Bis zu 50% der Investitionskosten werden gefördert.</description>
+      <pubDate>Wed, 11 Feb 2026 12:00:00 +0000</pubDate>
+      <dc:creator>Stefan Mair</dc:creator>
+      <category>Digitalisierung</category>
+      <guid isPermaLink="true">https://stefan5687.github.io/foerderungen-mair/docs/blog/transizione-4-0-2026.html</guid>
+    </item>
+    
+    <item>
+      <title>Förderungen für den Tourismus in Südtirol 2026</title>
+      <link>https://stefan5687.github.io/foerderungen-mair/blog/foerderungen-tourismus-suedtirol-2026.html</link>
+      <description>Der Tourismus in Südtirol profitiert von zahlreichen Landes- und EU-Förderprogrammen. Erfahren Sie, welche Möglichkeiten für Ihr Hotel oder Ihren Gastronomiebetrieb bestehen.</description>
+      <pubDate>Tue, 10 Feb 2026 12:00:00 +0000</pubDate>
+      <dc:creator>Stefan Mair</dc:creator>
+      <category>Tourismus</category>
+      <guid isPermaLink="true">https://stefan5687.github.io/foerderungen-mair/blog/foerderungen-tourismus-suedtirol-2026.html</guid>
     </item>
   </channel>
 </rss>

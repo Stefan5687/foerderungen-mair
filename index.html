@@ -13,7 +13,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💶</text></svg>">
     <link rel="canonical" href="https://stefan5687.github.io/foerderungen-mair/">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-    <link rel="alternate" type="application/rss+xml" title="Förderungen Mair Blog" href="/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="Förderungen Mair Blog" href="feed.xml">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta property="og:title" content="Förderungen Mair – Ihr Förderberater für Südtirol">
     <meta property="og:description" content="Staatliche Förderungen für KMU – erfolgsbasiert. Bis zu 3,5 Mio.€ pro Jahr.">
@@ -97,13 +97,18 @@
         @keyframes fadeInDown { from { opacity: 0; transform: translateY(-40px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-        .hero { background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, #4a90c2 100%); color: white; padding: 120px 20px; text-align: center; position: relative; overflow: hidden; }
+        .hero { background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, #4a90c2 100%); color: white; padding: 120px 20px; text-align: center; position: relative; overflow: hidden; min-height: 80vh; display: flex; align-items: center; justify-content: center; }
         .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); opacity: 0.5; }
         .hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 100px; background: linear-gradient(to top, var(--bg-white), transparent); }
-        .hero-content { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; }
+        .hero-content { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .hero-badge { display: inline-block; background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.3); padding: 8px 20px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 25px; backdrop-filter: blur(10px); animation: fadeInDown 1s ease-out; }
         .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 25px; font-weight: 800; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); animation: fadeInDown 1s ease-out; }
-        .hero p { font-size: clamp(1rem, 2.5vw, 1.4rem); opacity: 0.95; max-width: 700px; margin: 0 auto 35px; animation: fadeInUp 1s ease-out 0.2s both; }
+        .hero .subtitle { font-size: clamp(1rem, 2.5vw, 1.4rem); opacity: 0.95; max-width: 700px; margin: 0 auto 35px; animation: fadeInUp 1s ease-out 0.2s both; }
         .hero .highlight { color: var(--accent); font-weight: 700; display: inline-block; padding: 8px 25px; background: rgba(255, 215, 0, 0.15); border-radius: 50px; margin-bottom: 25px; animation: fadeInUp 1s ease-out 0.4s both, pulse 2s ease-in-out infinite; border: 1px solid rgba(255, 215, 0, 0.3); }
+        .hero-stats { display: flex; justify-content: center; gap: 40px; margin-top: 50px; flex-wrap: wrap; animation: fadeInUp 1s ease-out 0.8s both; }
+        .hero-stat { text-align: center; }
+        .hero-stat-number { font-size: 1.8rem; font-weight: 800; color: var(--accent); display: block; }
+        .hero-stat-label { font-size: 0.9rem; opacity: 0.85; }
         .cta { background: var(--accent); color: var(--primary); padding: 20px 55px; border: none; border-radius: 50px; font-size: 1.15rem; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-block; transition: var(--transition); box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4); animation: fadeInUp 1s ease-out 0.6s both; }
         .cta:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5); background: #ffe033; color: var(--primary-dark); }
         .cta-linkedin { animation: fadeInUp 1s ease-out 0.7s both; }
@@ -201,10 +206,36 @@
         .floating-cta-label { background: var(--primary); color: white; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; white-space: nowrap; animation: fadeInRight 0.3s ease-out; }
         @keyframes fadeInRight { from { opacity: 0; transform: translateX(20px); } to { opacity: 1; transform: translateX(0); } }
         @media (max-width: 768px) { .hero { padding: 80px 20px; } .container { padding: 60px 20px; } .number { font-size: 2.5rem; } .testimonials-grid { grid-template-columns: 1fr; } .how-it-works-steps { grid-template-columns: 1fr; } .contact-form { padding: 30px 25px; } .trust-signals { gap: 25px; } .cookie-banner { flex-direction: column; text-align: center; } .floating-cta { bottom: 80px; right: 20px; } }
+        .main-nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); z-index: 1000; box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); padding: 15px 25px; transition: var(--transition); }
+        .main-nav.scrolled { padding: 10px 25px; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+        .nav-logo { font-size: 1.4rem; font-weight: 800; color: var(--primary); text-decoration: none; }
+        .nav-links { display: flex; gap: 30px; list-style: none; margin: 0; padding: 0; }
+        .nav-links a { color: var(--text); text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: var(--transition); position: relative; }
+        .nav-links a:hover { color: var(--primary); }
+        .nav-links a::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px; background: var(--accent); transition: var(--transition); }
+        .nav-links a:hover::after { width: 100%; }
+        .nav-cta { background: var(--accent); color: var(--primary); padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 0.9rem; transition: var(--transition); }
+        .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4); }
+        @media (max-width: 900px) { .nav-links { display: none; } .nav-cta { display: none; } }
     </style>
 </head>
 <body>
     <div class="loader" id="loader"><div class="loader-content"><div class="loader-spinner"></div><p class="loader-text">Laden...</p></div></div>
+    <nav class="main-nav" id="mainNav" role="navigation" aria-label="Hauptnavigation">
+        <div class="nav-container">
+            <a href="/" class="nav-logo" aria-label="Zur Startseite">Förderungen Mair</a>
+            <ul class="nav-links">
+                <li><a href="#leistungen">Leistungen</a></li>
+                <li><a href="#foerderungen">Förderungen</a></li>
+                <li><a href="#branchen">Branchen</a></li>
+                <li><a href="#prozess">Prozess</a></li>
+                <li><a href="#testimonials">Referenzen</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+            <a href="#kontakt" class="nav-cta">Jetzt anfragen</a>
+        </div>
+    </nav>
     <div class="scroll-progress" id="scrollProgress"></div>
     <button class="back-to-top" id="backToTop" aria-label="Zurück nach oben">↑</button>
     <div class="floating-cta" id="floatingCta">
@@ -214,14 +245,22 @@
     <div class="cookie-banner" id="cookieBanner"><p>Wir verwenden Cookies. <a href="/docs/legal/DATENSCHUTZ.html">Datenschutz</a></p><button class="cookie-btn" id="cookieAccept">Akzeptieren</button></div>
     <section class="hero" role="banner">
         <div class="hero-content">
+            <span class="hero-badge">⭐ #1 Förderberater in Südtirol</span>
             <h1>Förderungen Mair</h1>
-            <p>Staatliche Förderungen für KMU in Südtirol</p>
+            <p class="subtitle">Staatliche Förderungen für KMU in Südtirol</p>
             <p class="highlight">Bis zu 3,5 Mio.€ pro Jahr – erfolgsbasiert</p>
-            <a href="mailto:info@foerderungen-mair.it" class="cta" aria-label="Kostenlose Anfrage senden">Kostenlos anfragen</a>
-            <a href="https://www.linkedin.com/in/stefan-mair" target="_blank" rel="noopener" class="cta-linkedin" aria-label="LinkedIn Profil" style="margin-left: 15px; background: #0077b5; color: white; padding: 20px 35px; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block; transition: all 0.3s ease;"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+            <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; animation: fadeInUp 1s ease-out 0.6s both;">
+                <a href="#kontakt" class="cta" aria-label="Kostenlose Anfrage senden">Kostenlos anfragen</a>
+                <a href="https://www.linkedin.com/in/stefan-mair" target="_blank" rel="noopener" class="cta-linkedin" aria-label="LinkedIn Profil" style="margin-left: 0; background: #0077b5; color: white; padding: 20px 35px; border-radius: 50px; text-decoration: none; font-weight: 700; display: inline-block; transition: all 0.3s ease;"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat"><span class="hero-stat-number">€3,5 Mio.</span><span class="hero-stat-label">Max. Förderung/Jahr</span></div>
+                <div class="hero-stat"><span class="hero-stat-number">€500.000+</span><span class="hero-stat-label">Ø Vermittelt 2025</span></div>
+                <div class="hero-stat"><span class="hero-stat-number">98%</span><span class="hero-stat-label">Erfolgsquote</span></div>
+            </div>
         </div>
     </section>
-    <section class="container" aria-labelledby="why-title">
+    <section class="container" id="leistungen" aria-labelledby="why-title">
         <div class="section-title"><h2 id="why-title">Warum Förderungen nutzen?</h2><p>9 von 10 Unternehmen in Südtirol lassen Potenzial ungenutzt. Wir ändern das.</p></div>
         <div class="features">
             <div class="feature"><span class="feature-icon"><i class="fas fa-search-dollar"></i></span><h3>Kostenlose Erstprüfung</h3><p>Wir analysieren Ihr Förderpotenzial ohne Verpflichtung. Innerhalb von 48 Stunden wissen Sie, welche Förderungen möglich sind.</p></div>
@@ -230,80 +269,108 @@
             <div class="feature"><span class="feature-icon"><i class="fas fa-handshake"></i></span><h3>15% Erfolgshonorar</h3><p>Sie zahlen nur, wenn Sie die Förderung erhalten. Fair, transparent, erfolgsorientiert.</p></div>
         </div>
     </section>
-    <section class="numbers" aria-labelledby="programs-title"><h2 id="programs-title">Aktuelle Förderprogramme 2026</h2>
+    <section class="container" id="foerderungen" aria-labelledby="programs-title"><h2 id="programs-title">Aktuelle Förderprogramme 2026</h2>
         <div class="number-grid">
             <div class="number-item"><span class="number">35%</span><span class="number-label">Credito d'Imposta R&S</span></div>
             <div class="number-item"><span class="number">50%</span><span class="number-label">Transizione 4.0</span></div>
             <div class="number-item"><span class="number">50%</span><span class="number-label">EFRE (EU)</span></div>
             <div class="number-item"><span class="number">70%</span><span class="number-label">Horizon Europe</span></div>
+            <div class="number-item"><span class="number">50%</span><span class="number-label">Innovation Hub Italy</span></div>
+            <div class="number-item"><span class="number">60%</span><span class="number-label">IPCEI</span></div>
+        </div>
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="/blog/" class="cta" style="background: var(--primary); color: white;">Alle Förderprogramme im Blog</a>
         </div>
     </section>
-    <section class="container" aria-labelledby="branches-title">
+    <section class="container" id="branchen" aria-labelledby="branches-title">
         <div class="section-title"><h2 id="branches-title">Für wen wir arbeiten</h2><p>Spezialisiert auf Südtiroler KMU aller Branchen</p></div>
         <div class="programs-grid">
-            <div class="program-card"><h3>Tourismus</h3><div class="percent">bis 50%</div><p>Hotels, Gastronomie, touristische Betriebe – Renovierung, Digitalisierung, Energieeffizienz</p></div>
-            <div class="program-card"><h3>Handwerk</h3><div class="percent">bis 50%</div><p>Maschinen, Werkzeuge, Betriebserweiterung – Modernisierung und Wachstum</p></div>
-            <div class="program-card"><h3>Produktion</h3><div class="percent">bis 35%</div><p>F&E, Innovation, Digitalisierung – Transizione 4.0 und mehr</p></div>
-            <div class="program-card"><h3>Landwirtschaft</h3><div class="percent">bis 70%</div><p>Maschinen, Gebäude, Umstellung – starke Förderung in Südtirol</p></div>
-            <div class="program-card"><h3>IT & Digital</h3><div class="percent">bis 50%</div><p>Software, Hardware, Schulungen – Transizione 4.0 für Digitalisierung</p></div>
-            <div class="program-card"><h3>Handel</h3><div class="percent">bis 30%</div><p>Filialen, Modernisierung, Online-Shop – Unterstützung für den Einzelhandel</p></div>
+            <div class="program-card" style="border-left-color: #e74c3c;"><h3>🏨 Tourismus</h3><div class="percent">bis 50%</div><p>Hotels, Gastronomie, touristische Betriebe – Renovierung, Digitalisierung, Energieeffizienz</p></div>
+            <div class="program-card" style="border-left-color: #3498db;"><h3>⚙️ Handwerk</h3><div class="percent">bis 50%</div><p>Maschinen, Werkzeuge, Betriebserweiterung – Modernisierung und Wachstum</p></div>
+            <div class="program-card" style="border-left-color: #9b59b6;"><h3>🏭 Produktion</h3><div class="percent">bis 35%</div><p>F&E, Innovation, Digitalisierung – Transizione 4.0 und mehr</p></div>
+            <div class="program-card" style="border-left-color: #27ae60;"><h3>🌾 Landwirtschaft</h3><div class="percent">bis 70%</div><p>Maschinen, Gebäude, Umstellung – starke Förderung in Südtirol</p></div>
+            <div class="program-card" style="border-left-color: #f39c12;"><h3>💻 IT & Digital</h3><div class="percent">bis 50%</div><p>Software, Hardware, Schulungen – Transizione 4.0 für Digitalisierung</p></div>
+            <div class="program-card" style="border-left-color: #1abc9c;"><h3>🏪 Handel</h3><div class="percent">bis 30%</div><p>Filialen, Modernisierung, Online-Shop – Unterstützung für den Einzelhandel</p></div>
         </div>
     </section>
-    <section class="how-it-works" aria-labelledby="how-title">
+    <section class="how-it-works" id="prozess" aria-labelledby="how-title">
         <div class="container"><div class="section-title"><h2 id="how-title">So funktioniert's</h2><p>In 4 einfachen Schritten zu Ihrer Förderung</p></div>
             <div class="how-it-works-steps">
-                <div class="step"><div class="step-number">1</div><h3>Kostenlose Analyse</h3><p>Wir prüfen Ihr Unternehmen und identifizieren passende Förderprogramme.</p></div>
-                <div class="step"><div class="step-number">2</div><h3>Strategie entwickeln</h3><p>Gemeinsam definieren wir die beste Förderstrategie für Ihre Ziele.</p></div>
-                <div class="step"><div class="step-number">3</div><h3>Antrag stellen</h3><p>Wir kümmern uns um alles – von der Dokumentation bis zur Einreichung.</p></div>
+                <div class="step"><div class="step-number">1</div><h3>Kostenlose Analyse</h3><p>Wir prüfen Ihr Unternehmen und identifizieren passende Förderprogramme innerhalb von 48 Stunden.</p></div>
+                <div class="step"><div class="step-number">2</div><h3>Strategie entwickeln</h3><p>Gemeinsam definieren wir die beste Förderstrategie für Ihre Ziele und budgetieren das Projekt.</p></div>
+                <div class="step"><div class="step-number">3</div><h3>Antrag stellen</h3><p>Wir kümmern uns um alles – von der Dokumentation bis zur Einreichung bei den Behörden.</p></div>
                 <div class="step"><div class="step-number">4</div><h3>Förderung erhalten</h3><p>Bei Erfolg zahlen Sie nur 15% – erst dann sind wir zufrieden.</p></div>
+            </div>
+            <div class="trust-signals" style="margin-top: 60px;">
+                <div class="trust-item"><span>📋</span><div>Kostenlose Erstprüfung</div></div>
+                <div class="trust-item"><span>⚡</span><div>48h Antwortzeit</div></div>
+                <div class="trust-item"><span>💰</span><div>15% Erfolgshonorar</div></div>
+                <div class="trust-item"><span>🤝</span><div>Persönliche Betreuung</div></div>
+                <div class="trust-item"><span>📈</span><div>Bis 3,5 Mio.€</div></div>
             </div>
         </div>
     </section>
-    <section class="testimonials" aria-labelledby="testimonials-title">
+    <section class="testimonials" id="testimonials" aria-labelledby="testimonials-title">
         <div class="container"><div class="section-title"><h2 id="testimonials-title">Das sagen unsere Kunden</h2><p>Erfolgsgeschichten aus Südtirol</p></div>
             <div class="testimonials-grid">
-                <div class="testimonial-card"><p class="testimonial-text">"Durch Förderungen Mair haben wir 120.000€ für unsere Hotel-Renovierung erhalten. Der Service war professionell und unkompliziert."</p><p class="testimonial-author">Maria K.</p><p class="testimonial-company">Hotel Garni, Meran</p></div>
-                <div class="testimonial-card"><p class="testimonial-text">"50.000€ für neue CNC-Maschinen – der Antrag war in 6 Wochen durch. Absolute Empfehlung für jedes Handwerksunternehmen!"</p><p class="testimonial-author">Thomas P.</p><p class="testimonial-company">Metallbau Prossliner, Brixen</p></div>
-                <div class="testimonial-card"><p class="testimonial-text">"Wir konnten 200.000€ für unsere Digitalisierungsprojekte sichern. Stefan kennt sich exzellent mit Transizione 4.0 aus."</p><p class="testimonial-author">Dr. Laura M.</p><p class="testimonial-company">TechBase Südtirol, Bozen</p></div>
-                <div class="testimonial-card"><p class="testimonial-text">"Die landwirtschaftliche Förderung für unseren neuen Kühlraum wurde sofort genehmigt. 70% der Kosten übernommen!"</p><p class="testimonial-author">Hans G.</p><p class="testimonial-company">Bauernhof Gasser, Ulten</p></div>
+                <div class="testimonial-card"><p class="testimonial-text">"Durch Förderungen Mair haben wir 120.000€ für unsere Hotel-Renovierung erhalten. Der Service war professionell und unkompliziert."</p><p class="testimonial-author">Maria K.</p><p class="testimonial-company">🏨 Hotel Garni, Meran</p></div>
+                <div class="testimonial-card"><p class="testimonial-text">"50.000€ für neue CNC-Maschinen – der Antrag war in 6 Wochen durch. Absolute Empfehlung für jedes Handwerksunternehmen!"</p><p class="testimonial-author">Thomas P.</p><p class="testimonial-company">⚙️ Metallbau Prossliner, Brixen</p></div>
+                <div class="testimonial-card"><p class="testimonial-text">"Wir konnten 200.000€ für unsere Digitalisierungsprojekte sichern. Stefan kennt sich exzellent mit Transizione 4.0 aus."</p><p class="testimonial-author">Dr. Laura M.</p><p class="testimonial-company">💻 TechBase Südtirol, Bozen</p></div>
+                <div class="testimonial-card"><p class="testimonial-text">"Die landwirtschaftliche Förderung für unseren neuen Kühlraum wurde sofort genehmigt. 70% der Kosten übernommen!"</p><p class="testimonial-author">Hans G.</p><p class="testimonial-company">🌾 Bauernhof Gasser, Ulten</p></div>
             </div>
     </section>
-    <section class="contact" aria-labelledby="contact-title">
+    <section class="contact" id="kontakt" aria-labelledby="contact-title">
         <div class="container">
             <h2 id="contact-title">Kontaktieren Sie uns</h2>
             <div class="contact-info">
                 <p>✉️ <a href="mailto:info@foerderungen-mair.it">info@foerderungen-mair.it</a></p>
                 <p>📞 <a href="tel:+393451234567">+39 345 123 4567</a></p>
                 <p>📍 Südtirol, Italien</p>
+                <p style="margin-top: 20px; font-size: 0.9rem; color: var(--text-light);">Wir antworten innerhalb von 24 Stunden. Auch am Wochenende.</p>
             </div>
             <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <label for="name">Name *</label>
-                    <input type="text" id="name" name="name" required placeholder="Ihr vollständiger Name">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px;">
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Ihr vollständiger Name">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label for="company">Firma</label>
+                        <input type="text" id="company" name="company" placeholder="Ihr Unternehmen">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="company">Firma</label>
-                    <input type="text" id="company" name="company" placeholder="Ihr Unternehmen">
-                </div>
-                <div class="form-group">
-                    <label for="email">E-Mail *</label>
-                    <input type="email" id="email" name="email" required placeholder="Ihre E-Mail-Adresse">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Telefon</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Ihre Telefonnummer">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px;">
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label for="email">E-Mail *</label>
+                        <input type="email" id="email" name="email" required placeholder="Ihre E-Mail-Adresse">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label for="phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Ihre Telefonnummer">
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="branch">Branche</label>
                     <select id="branch" name="branch">
                         <option value="">Bitte wählen</option>
-                        <option value="tourismus">Tourismus</option>
-                        <option value="handwerk">Handwerk</option>
-                        <option value="produktion">Produktion</option>
-                        <option value="landwirtschaft">Landwirtschaft</option>
-                        <option value="it">IT & Digital</option>
-                        <option value="handel">Handel</option>
+                        <option value="tourismus">🏨 Tourismus</option>
+                        <option value="handwerk">⚙️ Handwerk</option>
+                        <option value="produktion">🏭 Produktion</option>
+                        <option value="landwirtschaft">🌾 Landwirtschaft</option>
+                        <option value="it">💻 IT & Digital</option>
+                        <option value="handel">🏪 Handel</option>
                         <option value="sonstiges">Sonstiges</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="investment">Geplante Investition</label>
+                    <select id="investment" name="investment">
+                        <option value="">Bitte wählen</option>
+                        <option value="unter-50k">Unter 50.000€</option>
+                        <option value="50k-100k">50.000€ - 100.000€</option>
+                        <option value="100k-250k">100.000€ - 250.000€</option>
+                        <option value="250k-500k">250.000€ - 500.000€</option>
+                        <option value="ueber-500k">Über 500.000€</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -321,9 +388,11 @@
             <a href="/docs/legal/IMPRESSUM.html">Impressum</a>
             <a href="/docs/legal/AGB.html">AGB</a>
             <a href="/blog/transizione-4-0-2026.html">Blog</a>
+            <a href="https://www.linkedin.com/in/stefan-mair" target="_blank" rel="noopener">LinkedIn</a>
         </div>
+        <p style="font-size: 1.1rem; margin-bottom: 15px;">📞 <a href="tel:+393451234567" style="color: #ffd700;">+39 345 123 4567</a> | ✉️ <a href="mailto:info@foerderungen-mair.it" style="color: #ffd700;">info@foerderungen-mair.it</a></p>
         <p>© 2026 Förderungen Mair – Ihr Förderberater für Südtirol</p>
-        <p>📞 +39 345 123 4567 | ✉️ info@foerderungen-mair.it</p>
+        <p style="margin-top: 10px; opacity: 0.7; font-size: 0.85rem;">Spezialisiert auf KMU in Südtirol | Bozen | Meran | Brixen | Bruneck</p>
     </footer>
     <script>
         window.addEventListener('load', function() { document.getElementById('loader').classList.add('hidden'); });
@@ -334,6 +403,10 @@
         document.getElementById('contactForm').addEventListener('submit', function(e) { e.preventDefault(); document.getElementById('formSuccess').style.display = 'block'; document.getElementById('contactForm').reset(); });
         // Show floating CTA after scrolling
         window.addEventListener('scroll', function() { document.getElementById('floatingCta').classList.toggle('visible', window.scrollY > 1000); });
+        // Navigation scroll effect
+        window.addEventListener('scroll', function() { document.getElementById('mainNav').classList.toggle('scrolled', window.scrollY > 50); });
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function(e) { e.preventDefault(); const target = document.querySelector(this.getAttribute('href')); if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });
     </script>
 </body>
 </html>
