@@ -1,0 +1,5 @@
+# Robots.txt für Förderungen Mair
+User-agent: *
+Allow: /
+
+Sitemap: https://stefan5687.github.io/foerderungen-mair/sitemap.xml
