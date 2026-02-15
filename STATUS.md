@@ -1,7 +1,7 @@
 # STATUS – Förderungen Mair
 
-**Letzte Aktualisierung:** 2026-02-14 12:42
-**Review:** Projekt-Review 2026-02-14 (Website, Businessplan, Strategie)
+**Letzte Aktualisierung:** 2026-02-15 02:07
+**Review:** Projekt-Review 2026-02-15 (15-Minuten-Check)
 
 ---
 
@@ -13,7 +13,23 @@
 
 ---
 
-## ✅ Erledigte Aufgaben (Review 2026-02-14)
+## ✅ Erledigte Aufgaben (Review 2026-02-15)
+
+### 🌐 Website-Verbesserungen
+
+| Datum | Aufgabe | Status |
+|---|---|---|
+| 2026-02-15 | **Meta-Tags optimiert** | ✅ ERLEDIGT |
+| 2026-02-15 | **Mobile CSS verbessert** | ✅ ERLEDIGT |
+| 2026-02-15 | **SEO-Improvements hinzugefügt** | ✅ ERLEDIGT |
+| 2026-02-14 | **OG-Image SVG erstellt** | ✅ ERLEDIGT |
+| 2026-02-14 | **RSS-Feed (feed.xml) erstellt** | ✅ ERLEDIGT |
+| 2026-02-14 | **Feed-URL in Website korrigiert** | ✅ ERLEDIGT |
+| 2026-02-14 | **robots.txt mit RSS-Feed erweitert** | ✅ ERLEDIGT |
+
+---
+
+## 🎯 Aktuelle Phase
 
 ### 🌐 Website-Verbesserungen
 
