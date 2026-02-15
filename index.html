@@ -140,7 +140,8 @@
         .programs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px; margin-bottom: 60px; }
         .program-card { background: var(--bg-white); padding: 35px; border-radius: 20px; border-left: 5px solid var(--accent); box-shadow: var(--shadow); transition: var(--transition); position: relative; }
         .program-card::after { content: ''; position: absolute; top: 20px; right: 20px; width: 40px; height: 40px; background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), transparent); border-radius: 50%; }
-        .program-card:hover { transform: translateX(8px) translateY(-5px); box-shadow: var(--shadow-hover); }
+        .program-card:hover { transform: translateX(8px) translateY(-8px) scale(1.02); box-shadow: var(--shadow-hover); }
+        .program-card:hover h3 { color: var(--accent); }
         .program-card h3 { color: var(--primary); margin-bottom: 15px; font-size: 1.35rem; }
         .program-card .percent { font-size: 2.4rem; font-weight: 800; color: var(--success); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
         .program-card .percent::before { content: '↗'; font-size: 1.5rem; }
@@ -155,6 +156,8 @@
         .trust-signals { display: flex; justify-content: center; gap: 35px; flex-wrap: wrap; margin-top: 50px; padding-top: 45px; border-top: 1px solid #e0e0e0; }
         .trust-item { text-align: center; color: var(--text-light); font-size: 0.95rem; transition: var(--transition); }
         .trust-item:hover { transform: translateY(-5px); color: var(--primary); }
+        .trust-item span { display: block; font-size: 2rem; margin-bottom: 10px; transition: var(--transition); }
+        .trust-item:hover span { transform: scale(1.2); }
         .trust-item span { display: block; font-size: 2rem; margin-bottom: 10px; }
         .how-it-works { padding: 100px 25px; }
         .how-it-works-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 1100px; margin: 0 auto; }
@@ -310,6 +313,17 @@
                 <div class="trust-item"><span>💰</span><div>15% Erfolgshonorar</div></div>
                 <div class="trust-item"><span>🤝</span><div>Persönliche Betreuung</div></div>
                 <div class="trust-item"><span>📈</span><div>Bis 3,5 Mio.€</div></div>
+            </div>
+            
+            <!-- Newsletter Section -->
+            <div style="background: var(--bg-white); padding: 50px 40px; border-radius: 20px; margin-top: 60px; box-shadow: var(--shadow);">
+                <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.5rem;">📧 Newsletter abonnieren</h3>
+                <p style="color: var(--text-light); margin-bottom: 25px;">Erhalten Sie aktuelle Fördertipps und Deadlines direkt per E-Mail.</p>
+                <form style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; max-width: 500px; margin: 0 auto;">
+                    <input type="email" placeholder="Ihre E-Mail-Adresse" style="flex: 1; min-width: 250px; padding: 15px 20px; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 1rem;">
+                    <button type="submit" style="background: var(--accent); color: var(--primary); padding: 15px 30px; border: none; border-radius: 12px; font-weight: 700; cursor: pointer; transition: var(--transition);">Abonnieren</button>
+                </form>
+                <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 15px;">Wir geben Ihre E-Mail nicht weiter. Jederzeit abmelden.</p>
             </div>
         </div>
     </section>
