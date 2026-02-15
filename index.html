@@ -116,8 +116,35 @@
         .cookie-btn { background: #ffd700; color: #1e3a5f; border: none; padding: 12px 28px; border-radius: 50px; font-weight: 700; cursor: pointer; transition: all 0.3s ease; }
         .cookie-btn:hover { background: #ffe033; transform: scale(1.05); }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root { --primary: #1e3a5f; --primary-dark: #152b47; --secondary: #2d5a87; --accent: #ffd700; --success: #28a745; --text: #333; --text-light: #666; --bg-light: #f8f9fa; --bg-white: #ffffff; --shadow: 0 5px 20px rgba(0,0,0,0.08); --shadow-hover: 0 15px 40px rgba(0,0,0,0.12); --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg-white); overflow-x: hidden; }
+        /* Enhanced Color Palette - Better Contrast for Accessibility */
+        :root { 
+            --primary: #1e3a5f; 
+            --primary-dark: #0f2240;
+            --secondary: #2d5a87; 
+            --accent: #d4a017; /* Better contrast than #ffd700 */
+            --accent-light: #f0c850;
+            --success: #2e7d32; /* Better contrast than #28a745 */
+            --text: #1a1a1a; /* Darker for better readability */
+            --text-light: #4a4a4a; /* Better contrast than #666 */
+            --bg-light: #f5f7fa;
+            --bg-white: #ffffff; 
+            --shadow: 0 5px 20px rgba(0,0,0,0.08); 
+            --shadow-hover: 0 15px 40px rgba(0,0,0,0.12); 
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+        
+        /* Enhanced Typography - Better Readability */
+        body { 
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Arial, sans-serif; 
+            line-height: 1.7; 
+            color: var(--text); 
+            background: var(--bg-white); 
+            overflow-x: hidden; 
+            font-size: 16px; 
+            -webkit-font-smoothing: antialiased; 
+            -moz-osx-font-smoothing: grayscale; 
+            letter-spacing: 0.01em; 
+        }
         h1, h2, h3 { color: var(--primary); font-weight: 700; }
         a { color: var(--primary); text-decoration: none; transition: var(--transition); }
         a:hover { color: var(--secondary); }
@@ -159,10 +186,36 @@
         .hero-stat { text-align: center; }
         .hero-stat-number { font-size: 1.8rem; font-weight: 800; color: var(--accent); display: block; }
         .hero-stat-label { font-size: 0.9rem; opacity: 0.85; }
-        .cta { background: var(--accent); color: var(--primary); padding: 20px 55px; border: none; border-radius: 50px; font-size: 1.15rem; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-block; transition: var(--transition); box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4); animation: fadeInUp 1s ease-out 0.6s both; }
-        .cta:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 15px 40px rgba(255, 215, 0, 0.5); background: #ffe033; color: var(--primary-dark); }
-        .cta-linkedin { animation: fadeInUp 1s ease-out 0.7s both; }
-        .cta-linkedin:hover { background: #005885; transform: translateY(-5px) scale(1.02); }
+        /* Enhanced CTA Buttons - Better Visibility & Touch Targets */
+        .cta { 
+            background: var(--accent); 
+            color: var(--primary-dark); 
+            padding: 18px 50px; 
+            border: none; 
+            border-radius: 50px; 
+            font-size: 1.1rem; 
+            font-weight: 700; 
+            cursor: pointer; 
+            text-decoration: none; 
+            display: inline-block; 
+            transition: var(--transition); 
+            box-shadow: 0 8px 25px rgba(212, 160, 23, 0.4); 
+            animation: fadeInUp 1s ease-out 0.6s both; 
+            min-height: 54px; /* Better touch target */
+        }
+        .cta:hover { 
+            transform: translateY(-5px) scale(1.02); 
+            box-shadow: 0 15px 40px rgba(212, 160, 23, 0.5); 
+            background: var(--accent-light); 
+        }
+        .cta-linkedin { 
+            animation: fadeInUp 1s ease-out 0.7s both; 
+            background: #0a66c2; /* LinkedIn brand color - better contrast */
+        }
+        .cta-linkedin:hover { 
+            background: #004182; 
+            transform: translateY(-5px) scale(1.02); 
+        }
         .container { max-width: 1200px; margin: 0 auto; padding: 100px 25px; }
         .section-title { text-align: center; margin-bottom: 60px; }
         .section-title h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); margin-bottom: 18px; position: relative; display: inline-block; }
@@ -242,7 +295,30 @@
         .footer-links { display: flex; justify-content: center; gap: 25px; margin-bottom: 25px; flex-wrap: wrap; }
         .footer-links a { color: white; opacity: 0.8; font-size: 0.9rem; }
         .footer-links a:hover { opacity: 1; color: var(--accent); }
-        @media (max-width: 768px) { .hero { padding: 80px 20px; } .container { padding: 60px 20px; } .number { font-size: 2.5rem; } .testimonials-grid { grid-template-columns: 1fr; } .how-it-works-steps { grid-template-columns: 1fr; } .contact-form { padding: 30px 20px; } .trust-signals { gap: 25px; } .cookie-banner { flex-direction: column; text-align: center; padding: 15px; } .form-group input, .form-group textarea, .form-group select { font-size: 16px; padding: 14px 16px; } .cta { padding: 14px 28px; font-size: 1rem; } .hero h1 { font-size: 2rem; } .hero p { font-size: 1.1rem; } }
+        /* Enhanced Mobile Responsiveness - Better Touch Targets */
+        @media (max-width: 768px) { 
+            .hero { padding: 80px 20px; } 
+            .container { padding: 60px 20px; } 
+            .number { font-size: 2.5rem; } 
+            .testimonials-grid { grid-template-columns: 1fr; } 
+            .how-it-works-steps { grid-template-columns: 1fr; } 
+            .contact-form { padding: 30px 20px; } 
+            .trust-signals { gap: 25px; } 
+            .cookie-banner { flex-direction: column; text-align: center; padding: 15px; } 
+            .form-group input, .form-group textarea, .form-group select { font-size: 16px; padding: 14px 16px; } 
+            .cta { padding: 16px 32px; font-size: 1rem; min-height: 52px; } 
+            .hero h1 { font-size: 2rem; } 
+            .hero p { font-size: 1.1rem; }
+            
+            /* Better touch targets for mobile */
+            .feature { padding: 30px 25px; }
+            .step { padding: 30px 20px; }
+            .testimonial-card { padding: 30px 25px; }
+            .program-card { padding: 30px 25px; }
+            
+            /* Navigation improvements */
+            .nav-links a { padding: 10px 0; min-height: 44px; display: block; }
+        }
         .loader { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--bg-white); display: flex; align-items: center; justify-content: center; z-index: 9999; transition: opacity 0.5s ease; }
         .loader.hidden { opacity: 0; visibility: hidden; }
         .loader-content { text-align: center; }
@@ -385,15 +461,19 @@
                 </div>
             </div>
             
-            <!-- Newsletter Section -->
+            <!-- Newsletter Section - Enhanced with Privacy -->
             <div style="background: var(--bg-white); padding: 50px 40px; border-radius: 20px; margin-top: 60px; box-shadow: var(--shadow);">
                 <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.5rem;">📧 Newsletter abonnieren</h3>
                 <p style="color: var(--text-light); margin-bottom: 25px;">Erhalten Sie aktuelle Fördertipps und Deadlines direkt per E-Mail.</p>
-                <form style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; max-width: 500px; margin: 0 auto;">
-                    <input type="email" placeholder="Ihre E-Mail-Adresse" style="flex: 1; min-width: 250px; padding: 15px 20px; border: 2px solid #e0e0e0; border-radius: 12px; font-size: 1rem;">
-                    <button type="submit" style="background: var(--accent); color: var(--primary); padding: 15px 30px; border: none; border-radius: 12px; font-weight: 700; cursor: pointer; transition: var(--transition);">Abonnieren</button>
+                <form style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; max-width: 500px; margin: 0 auto;" onsubmit="event.preventDefault(); alert('Vielen Dank für Ihr Interesse! Der Newsletter ist bald verfügbar.');">
+                    <input type="email" placeholder="Ihre E-Mail-Adresse" required style="flex: 1; min-width: 250px; padding: 15px 20px; border: 2px solid #d0d0d0; border-radius: 12px; font-size: 1rem; transition: var(--transition);" aria-label="E-Mail-Adresse">
+                    <button type="submit" style="background: var(--accent); color: var(--primary-dark); padding: 15px 30px; border: none; border-radius: 12px; font-weight: 700; cursor: pointer; transition: var(--transition); min-height: 54px;">Abonnieren</button>
                 </form>
-                <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 15px;">Wir geben Ihre E-Mail nicht weiter. Jederzeit abmelden.</p>
+                <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 15px;">
+                    <i class="fas fa-lock" style="color: var(--success);"></i> 
+                    Wir geben Ihre E-Mail nicht weiter. Kein Spam. Jederzeit abmelden. 
+                    <a href="/docs/legal/DATENSCHUTZ.html" style="color: var(--primary); text-decoration: underline;">Datenschutz</a>
+                </p>
             </div>
         </div>
     </section>
