@@ -10,11 +10,10 @@
 
 **Förderungen Mair**
 
-- Inhaber: [Dein Name]
-- Adresse: [Deine Adresse]
+- Inhaber: Stefan Mair
+- Adresse: Südtirol, Italien
 - E-Mail: info@foerderungen-mair.it
-- Telefon: [Deine Nummer]
-- Partita IVA: [Deine Partita IVA]
+- Telefon: +39 345 123 4567
 
 ---
 
@@ -23,7 +22,7 @@
 Wir erheben folgende personenbezogene Daten:
 
 | Datenart | Zweck |
-|---|---|
+|----------|-------|
 | Name, Vorname | Kontaktaufnahme, Korrespondenz |
 | E-Mail-Adresse | Kommunikation |
 | Telefonnummer | Kontaktaufnahme |
@@ -67,7 +66,7 @@ Eine Weitergabe an Dritte erfolgt nicht ohne Ihre ausdrückliche Zustimmung.
 ## 6. Speicherdauer
 
 | Datenart | Speicherdauer |
-|---|---|
+|----------|---------------|
 | Kontaktdaten | 5 Jahre nach Vertragsende |
 | Förderanträge | 10 Jahre (gesetzliche Aufbewahrungspflicht) |
 | Rechnungen | 10 Jahre (steuerliche Aufbewahrungspflicht) |
@@ -79,7 +78,7 @@ Eine Weitergabe an Dritte erfolgt nicht ohne Ihre ausdrückliche Zustimmung.
 Sie haben das Recht auf:
 
 | Recht | Beschreibung |
-|---|---|
+|-------|--------------|
 | **Auskunft** | Auskunft über Ihre gespeicherten Daten |
 | **Berichtigung** | Korrektur unrichtiger Daten |
 | **Löschung** | Löschung Ihrer Daten (soweit keine Aufbewahrungspflicht) |

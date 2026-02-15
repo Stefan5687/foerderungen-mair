@@ -7,30 +7,21 @@
 ### Angaben gemäß § 5 TMG / italiano
 
 **Inhaber:**
-[Dein Name]
+Stefan Mair
 
 **Adresse:**
-[Deine Straße und Hausnummer]
-[PLZ Ort] Südtirol
+Südtirol
 Italien
 
 **Kontakt:**
 - E-Mail: info@foerderungen-mair.it
-- Telefon: [Deine Nummer]
-
-**Partita IVA (Steuernummer):**
-[Deine Partita IVA]
-
-**Steuernummer (Codice Fiscale):**
-[Deine Steuernummer]
+- Telefon: +39 345 123 4567
 
 ---
 
 ### Berufsbezeichnung und Zulassung
 
 Berufsbezeichnung: Unternehmensberater (Förderberatung)
-
-Zulassung: [Angabe zur Zulassung, falls erforderlich]
 
 ---
 
