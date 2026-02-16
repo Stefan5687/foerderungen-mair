@@ -863,6 +863,41 @@ img {
 }
 
 /* ===================================
+   ZUSÄTZLICHE ANIMATIONEN
+   =================================== */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-20px); }
+    60% { transform: translateY(-10px); }
+}
+@keyframes scaleIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+@keyframes rotateIn {
+    from { transform: rotate(-10deg) scale(0.9); opacity: 0; }
+    to { transform: rotate(0) scale(1); opacity: 1; }
+}
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+@keyframes zoomIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+.animate-bounce { animation: bounce 2s ease infinite; }
+.animate-scale { animation: scaleIn 0.5s ease forwards; }
+.animate-rotate { animation: rotateIn 0.6s ease forwards; }
+.animate-shake { animation: shake 0.5s ease; }
+.animate-blink { animation: blink 1.5s ease infinite; }
+.animate-zoom { animation: zoomIn 0.5s ease forwards; }
+/* ===================================
    ZUSÄTLICHE VISUELLE VERBESSERUNGEN
    =================================== */
 
