@@ -288,9 +288,36 @@
 
 ---
 
-### 🎯 Gesamtfortschritt: 50% (10/18 Iterationen)
+### 🔄 Iteration 11 (16:30 - 16:40)
+**Datum:** 16.02.2026  
+**Zeitrahmen:** Minute 110-120
 
-### Nächste Schritte (Iteration 11):
+#### Durchgeführte Änderungen:
+
+1. **🎨 Erweiterte Utility Classes**
+   - Spacing (Margin, Padding)
+   - Text Alignment & Colors
+   - Flexbox Classes
+   - Display Classes
+   - Positioning (relative, absolute, fixed, sticky)
+   - Visibility & Opacity
+   - Cursor & Pointer Events
+   - User Select & Whitespace
+   - Borders & Object Fit ✓
+
+#### Git Commit:
+```
+🎨 Erweiterte Utility Classes: Spacing, Text, Flexbox, Display, Positioning, Visibility
+```
+
+#### Dateien geändert:
+- css/website-improvements.css (Utility Classes hinzugefügt)
+
+---
+
+### 🎯 Gesamtfortschritt: 55% (11/18 Iterationen)
+
+### Nächste Schritte (Iteration 12):
 - [ ] Weitere Inhaltsverbesserungen
 - [ ] Performance-Feinabstimmung
 - [ ] Eventuell zusätzliche Features
