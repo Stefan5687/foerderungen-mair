@@ -350,3 +350,112 @@ function throttle(func, limit) {
         }
     };
 }
+
+/**
+ * Initialize all features
+ */
+function initAll() {
+    initNavigation();
+    initScrollAnimations();
+    initScrollProgress();
+    initScrollToTop();
+    initMobileMenu();
+    initCookieBanner();
+    initFormHandling();
+    initSmoothScroll();
+    initCounterAnimations();
+    initAnchorScroll();
+    initParallax();
+    initTiltEffect();
+}
+
+/**
+ * Anchor scroll with offset
+ */
+function initAnchorScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                e.preventDefault();
+                const headerOffset = 80;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}
+
+/**
+ * Parallax effect for hero section
+ */
+function initParallax() {
+    const hero = document.querySelector('.hero');
+    if (!hero) return;
+    
+    window.addEventListener('scroll', throttle(function() {
+        const scrolled = window.pageYOffset;
+        if (hero) {
+            hero.style.backgroundPositionY = scrolled * 0.5 + 'px';
+        }
+    }, 10));
+}
+
+/**
+ * Tilt effect for cards
+ */
+function initTiltEffect() {
+    const cards = document.querySelectorAll('.card, .branchen-card, .program-card');
+    
+    cards.forEach(card => {
+        card.addEventListener('mousemove', function(e) {
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 20;
+            const rotateY = (centerX - x) / 20;
+            
+            this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+        });
+    });
+}
+
+/**
+ * Preload critical resources
+ */
+function preloadResources() {
+    const criticalFonts = [
+        'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap'
+    ];
+    
+    criticalFonts.forEach(href => {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'style';
+        link.href = href;
+        document.head.appendChild(link);
+    });
+}
+
+// Initialize on DOM ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAll);
+} else {
+    initAll();
+}
