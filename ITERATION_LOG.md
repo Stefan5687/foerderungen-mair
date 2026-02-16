@@ -418,9 +418,31 @@
 
 ---
 
-### 🎯 Gesamtfortschritt: 75% (15/18 Iterationen)
+### 🔄 Iteration 16 (17:20 - 17:30)
+**Datum:** 16.02.2026  
+**Zeitrahmen:** Minute 160-170
 
-### Nächste Schritte (Iteration 16):
+#### Durchgeführte Änderungen:
+
+1. **✨ CSS Table**
+   - Responsive Table Component
+   - Verschiedene Größen (sm, default, lg)
+   - Hover States
+   - Header Styling ✓
+
+#### Git Commit:
+```
+✨ CSS Table: Responsive Table Component with Different Sizes
+```
+
+#### Dateien geändert:
+- css/website-improvements.css (Table-Komponenten hinzugefügt)
+
+---
+
+### 🎯 Gesamtfortschritt: 80% (16/18 Iterationen)
+
+### Nächste Schritte (Iteration 17):
 - [ ] Weitere Inhaltsverbesserungen
 - [ ] Performance-Feinabstimmung
 - [ ] Eventuell zusätzliche Features
