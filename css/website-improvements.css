@@ -554,6 +554,36 @@ img {
 }
 
 /* ===================================
+   FAQ SECTION
+   =================================== */
+.faq-item {
+    background: white;
+    border-radius: var(--radius);
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border-left: 4px solid var(--secondary);
+}
+
+.faq-item:hover {
+    transform: translateX(8px);
+    border-left-color: var(--accent);
+}
+
+.faq-item h3 {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.faq-item p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* ===================================
    TESTIMONIALS
    =================================== */
 .testimonials-grid {

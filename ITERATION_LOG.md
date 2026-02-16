@@ -52,13 +52,37 @@
 
 ---
 
-### Nächste Schritte (Iteration 2):
-- [ ] Weitere Verbesserungen basierend auf Website-Analyse
-- [ ] Bilder optimieren/ersetzen
-- [ ] Performance-Optimierungen
-- [ ] SEO-Verbesserungen prüfen
-- [ ] Mobile Experience feinabstimmen
+### 🔄 Iteration 2 (15:00 - 15:10)
+**Datum:** 16.02.2026  
+**Zeitrahmen:** Minute 10-20
+
+#### Durchgeführte Änderungen:
+
+1. **🖼️ OG-Bild aktualisiert**
+   - Neues Türkis/Smaragdgrün Farbschema
+   - Moderneres, professionelleres Aussehen
+   - Passt zum neuen Website-Design ✓
+
+2. **🎯 Font Awesome Icons hinzugefügt**
+   - Alle Icons werden jetzt korrekt angezeigt
+   - Bessere visuelle Kommunikation ✓
+
+#### Git Commit:
+```
+🎨 OG-Bild aktualisiert (neues Türkis-Farbschema), Font Awesome Icons hinzugefügt
+```
+
+#### Dateien geändert:
+- og-image.svg (komplett neu gestaltet)
+- index.html (Font Awesome Link hinzugefügt)
+- ITERATION_LOG.md (neue Iteration dokumentiert)
 
 ---
 
-### 🎯 Gesamtfortschritt: 5% (1/18 Iterationen)
+### 🎯 Gesamtfortschritt: 10% (2/18 Iterationen)
+
+### Nächste Schritte (Iteration 3):
+- [ ] Weitere visuelle Verbesserungen
+- [ ] Performance-Optimierungen prüfen
+- [ ] Weitere UI-Feinabstimmungen
+- [ ] Bilder optimieren
