@@ -393,9 +393,34 @@
 
 ---
 
-### 🎯 Gesamtfortschritt: 70% (14/18 Iterationen)
+### 🔄 Iteration 15 (17:10 - 17:20)
+**Datum:** 16.02.2026  
+**Zeitrahmen:** Minute 150-160
 
-### Nächste Schritte (Iteration 15):
+#### Durchgeführte Änderungen:
+
+1. **✨ CSS Formulare**
+   - Form Inputs (verschiedene Größen)
+   - Form Select
+   - Form Textarea
+   - Form Checkbox & Radio
+   - Form Labels & Help Text
+   - Form Error States
+   - Button Groups ✓
+
+#### Git Commit:
+```
+✨ CSS Formulare: Form Inputs, Select, Textarea, Checkbox, Radio, Button Groups
+```
+
+#### Dateien geändert:
+- css/website-improvements.css (Formular-Komponenten hinzugefügt)
+
+---
+
+### 🎯 Gesamtfortschritt: 75% (15/18 Iterationen)
+
+### Nächste Schritte (Iteration 16):
 - [ ] Weitere Inhaltsverbesserungen
 - [ ] Performance-Feinabstimmung
 - [ ] Eventuell zusätzliche Features

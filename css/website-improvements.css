@@ -2495,3 +2495,58 @@ img {
 /* ===================================
    END OF ADDITIONAL STYLES
    =================================== */
+
+/* ===================================
+   TABLE COMPONENT
+   =================================== */
+.table-container {
+    overflow-x: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.table th,
+.table td {
+    padding: 0.875rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--bg-tertiary);
+}
+
+.table th {
+    background: var(--bg-secondary);
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.table tbody tr:hover {
+    background: var(--bg-secondary);
+}
+
+.table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table-sm th,
+.table-sm td {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.875rem;
+}
+
+.table-lg th,
+.table-lg td {
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+}
+
+/* ===================================
+   END OF FINAL STYLES
+   =================================== */
