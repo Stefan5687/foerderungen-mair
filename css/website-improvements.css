@@ -862,6 +862,120 @@ img {
     }
 }
 
+/* ===================================
+   PERFORMANCE OPTIMIERUNGEN
+   =================================== */
+
+/* GPU Acceleration für Animationen */
+.hero,
+.card,
+.branchen-card,
+.program-card {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+/* Content Visibility für längere Seiten */
+@media (min-width: 1024px) {
+    section {
+        content-visibility: auto;
+        contain: content;
+    }
+}
+
+/* Reduzierte Bewegung für Barrierefreiheit */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* ===================================
+   PRINT STYLES
+   =================================== */
+@media print {
+    .navbar,
+    .cookie-banner,
+    .scroll-top,
+    .footer {
+        display: none !important;
+    }
+
+    .hero {
+        padding: 2rem;
+        min-height: auto;
+    }
+
+    .card,
+    .branchen-card,
+    .program-card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}
+
+/* ===================================
+   HIGH CONTRAST MODE
+   =================================== */
+@media (prefers-contrast: high) {
+    :root {
+        --primary: #000000;
+        --text-primary: #000000;
+        --text-secondary: #333333;
+        --shadow: 0 0 0 2px #000;
+    }
+
+    .card,
+    .branchen-card,
+    .program-card {
+        border: 2px solid #000;
+    }
+
+    .btn {
+        border: 2px solid currentColor;
+    }
+}
+
+/* ===================================
+   DARK MODE SUPPORT
+   =================================== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-primary: #0f172a;
+        --bg-secondary: #1e293b;
+        --bg-tertiary: #334155;
+        --text-primary: #f1f5f9;
+        --text-secondary: #cbd5e1;
+        --text-muted: #94a3b8;
+    }
+
+    body {
+        background: var(--bg-primary);
+        color: var(--text-primary);
+    }
+
+    .card,
+    .branchen-card,
+    .program-card {
+        background: var(--bg-secondary);
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .hero {
+        background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    }
+
+    .footer {
+        background: #020617;
+    }
+}
+
 .animate-on-scroll {
     opacity: 0;
     transform: translateY(30px);
