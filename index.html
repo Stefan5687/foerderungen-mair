@@ -11,13 +11,16 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="dns-prefetch" href="//fonts.googleapis.com">
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-    <meta name="theme-color" content="#1e3a5f">
+    <meta name="theme-color" content="#0d4f3d">
     <meta name="generator" content="OpenClaw">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💶</text></svg>">
     <link rel="canonical" href="https://stefan5687.github.io/foerderungen-mair/">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     <link rel="alternate" type="application/rss+xml" title="Förderungen Mair Blog" href="feed.xml">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/website-improvements.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <meta property="og:title" content="Förderungen Mair – Ihr Förderberater für Südtirol">
     <meta property="og:description" content="Staatliche Förderungen für KMU – erfolgsbasiert. Bis zu 3,5 Mio.€ pro Jahr.">
     <meta property="og:type" content="website">
@@ -107,78 +110,488 @@
         }
     }
     </script>
-    <style>
-        .cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: linear-gradient(135deg, #1e3a5f 0%, #152b47 100%); color: white; padding: 20px 25px; z-index: 9998; display: none; box-shadow: 0 -5px 20px rgba(0,0,0,0.1); }
-        .cookie-banner.visible { display: flex; justify-content: center; align-items: center; gap: 15px; animation: slideInUp 0.5s ease-out; }
-        @keyframes slideInUp { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-        .cookie-banner p { margin: 0; font-size: 0.95rem; }
-        .cookie-banner a { color: #ffd700; text-decoration: underline; }
-        .cookie-btn { background: #ffd700; color: #1e3a5f; border: none; padding: 12px 28px; border-radius: 50px; font-weight: 700; cursor: pointer; transition: all 0.3s ease; }
-        .cookie-btn:hover { background: #ffe033; transform: scale(1.05); }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        /* Enhanced Color Palette - Better Contrast for Accessibility */
-        :root { 
-            --primary: #1e3a5f; 
-            --primary-dark: #0f2240;
-            --secondary: #2d5a87; 
-            --accent: #d4a017; /* Better contrast than #ffd700 */
-            --accent-light: #f0c850;
-            --success: #2e7d32; /* Better contrast than #28a745 */
-            --text: #1a1a1a; /* Darker for better readability */
-            --text-light: #4a4a4a; /* Better contrast than #666 */
-            --bg-light: #f5f7fa;
-            --bg-white: #ffffff; 
-            --shadow: 0 5px 20px rgba(0,0,0,0.08); 
-            --shadow-hover: 0 15px 40px rgba(0,0,0,0.12); 
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo"><i class="fas fa-euro-sign"></i> Förderungen <span>Mair</span></a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menü öffnen">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#leistungen">Leistungen</a></li>
+                <li><a href="#foerderungen">Förderungen</a></li>
+                <li><a href="#branchen">Branchen</a></li>
+                <li><a href="#prozess">Prozess</a></li>
+                <li><a href="#testimonials">Referenzen</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#kontakt" class="nav-cta">Kostenlose Erstprüfung</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-certificate"></i> Zertifizierter Förderberater
+            </div>
+            <h1>Staatliche Förderungen für <span class="highlight">Ihr KMU</span></h1>
+            <p class="subtitle">Wir maximieren Ihr Förderpotenzial mit Expertise und Erfolgsgarantie. Bis zu 3,5 Mio.€ pro Jahr möglich.</p>
+            <div class="hero-buttons">
+                <a href="#kontakt" class="btn btn-accent btn-lg">
+                    <i class="fas fa-rocket"></i> Kostenlose Erstprüfung
+                </a>
+                <a href="#foerderungen" class="btn btn-secondary btn-lg">
+                    <i class="fas fa-search"></i> Förderungen entdecken
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="hero-stat-number">€3,5 Mio.</span>
+                    <span class="hero-stat-label">Max. Förderung/Jahr</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">€500.000+</span>
+                    <span class="hero-stat-label">Ø Vermittelt 2025</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">98%</span>
+                    <span class="hero-stat-label">Erfolgsquote</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leistungen Section -->
+    <section class="section" id="leistungen">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Unsere Leistungen</span>
+                <h2 class="section-title">Wie wir Sie unterstützen</h2>
+                <p class="section-subtitle">Von der kostenlosen Analyse bis zur erfolgreichen Antragstellung – wir begleiten Sie durch den gesamten Prozess.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card animate-on-scroll">
+                    <div class="card-icon" style="background: rgba(20, 184, 166, 0.1); color: #14b8a6;">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3 class="card-title">Kostenlose Erstprüfung</h3>
+                    <p class="card-text">Wir analysieren Ihr Förderpotenzial ohne Verpflichtung. Innerhalb von 48 Stunden wissen Sie, welche Förderungen möglich sind.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon" style="background: rgba(249, 115, 22, 0.1); color: #f97316;">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 class="card-title">Alle Förderprogramme</h3>
+                    <p class="card-text">EU, national und regional – wir kennen alle Optionen und finden das beste Paket für Ihr Unternehmen.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon" style="background: rgba(139, 92, 246, 0.1); color: #8b5cf6;">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <h3 class="card-title">Komplette Antragsstellung</h3>
+                    <p class="card-text">Wir machen alles von A bis Z: Recherche, Antrag, Kommunikation mit Behörden – Sie haben einen Ansprechpartner.</p>
+                </div>
+                <div class="card animate-on-scroll">
+                    <div class="card-icon" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3 class="card-title">15% Erfolgshonorar</h3>
+                    <p class="card-text">Sie zahlen nur, wenn Sie die Förderung erhalten. Fair, transparent, erfolgsorientiert.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" id="stats">
+        <div class="stats-grid">
+            <div class="stat-card animate-on-scroll">
+                <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                <div class="stat-number">150+</div>
+                <div class="stat-label">Erfolgreiche Anträge</div>
+            </div>
+            <div class="stat-card animate-on-scroll">
+                <div class="stat-icon"><i class="fas fa-euro-sign"></i></div>
+                <div class="stat-number">€5Mio+</div>
+                <div class="stat-label">Vermittelte Förderungen</div>
+            </div>
+            <div class="stat-card animate-on-scroll">
+                <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Erfolgsquote</div>
+            </div>
+            <div class="stat-card animate-on-scroll">
+                <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                <div class="stat-number">48h</div>
+                <div class="stat-label">Antwortzeit</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Förderungen Section -->
+    <section class="section" id="foerderungen">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Aktuelle Förderprogramme</span>
+                <h2 class="section-title">Förderungen 2026</h2>
+                <p class="section-subtitle">Entdecken Sie die besten Fördermöglichkeiten für Ihr Unternehmen.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="program-card animate-on-scroll">
+                    <span class="program-badge">35%</span>
+                    <h3 class="program-title">Credito d'Imposta R&S</h3>
+                    <p class="program-text">Forschungszulage für F&E-Aktivitäten in Italien.</p>
+                </div>
+                <div class="program-card animate-on-scroll">
+                    <span class="program-badge" style="background: #14b8a6;">50%</span>
+                    <h3 class="program-title">Transizione 4.0</h3>
+                    <p class="program-text">Investitionsanreize für Digitalisierung und Innovation.</p>
+                </div>
+                <div class="program-card animate-on-scroll">
+                    <span class="program-badge" style="background: #8b5cf6;">50%</span>
+                    <h3 class="program-title">EFRE (EU)</h3>
+                    <p class="program-text">Europäische Fonds für regionale Entwicklung.</p>
+                </div>
+                <div class="program-card animate-on-scroll">
+                    <span class="program-badge" style="background: #f97316;">70%</span>
+                    <h3 class="program-title">Horizon Europe</h3>
+                    <p class="program-text">EU-Forschungs- und Innovationsprogramm.</p>
+                </div>
+                <div class="program-card animate-on-scroll">
+                    <span class="program-badge" style="background: #10b981;">50%</span>
+                    <h3 class="program-title">Innovation Hub Italy</h3>
+                    <p class="program-text">Förderung für innovative KMU in Italien.</p>
+                </div>
+                <div class="program-card animate-on-scroll">
+                    <span class="program-badge" style="background: #ec4899;">60%</span>
+                    <h3 class="program-title">IPCEI</h3>
+                    <p class="program-text">Wichtige Projekte von gemeinsamem europäischem Interesse.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branchen Section -->
+    <section class="section" id="branchen" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Für alle Branchen</span>
+                <h2 class="section-title">Spezialisiert auf Südtiroler KMU</h2>
+                <p class="section-subtitle">Wir kennen die spezifischen Förderprogramme für Ihre Branche.</p>
+            </div>
+            <div class="branchen-grid">
+                <a href="#kontakt" class="branchen-card animate-on-scroll">
+                    <div class="branchen-icon">🏨</div>
+                    <h3 class="branchen-title">Tourismus</h3>
+                    <span class="branchen-badge">bis 50%</span>
+                    <p style="margin-top: 1rem; color: var(--text-muted);">Hotels, Gastronomie, touristische Betriebe – Renovierung, Digitalisierung, Energieeffizienz</p>
+                </a>
+                <a href="#kontakt" class="branchen-card animate-on-scroll">
+                    <div class="branchen-icon">🔧</div>
+                    <h3 class="branchen-title">Handwerk</h3>
+                    <span class="branchen-badge">bis 50%</span>
+                    <p style="margin-top: 1rem; color: var(--text-muted);">Maschinen, Werkzeuge, Betriebserweiterung – Modernisierung und Wachstum</p>
+                </a>
+                <a href="#kontakt" class="branchen-card animate-on-scroll">
+                    <div class="branchen-icon">🏭</div>
+                    <h3 class="branchen-title">Produktion</h3>
+                    <span class="branchen-badge">bis 35%</span>
+                    <p style="margin-top: 1rem; color: var(--text-muted);">F&E, Innovation, Digitalisierung – Transizione 4.0 und mehr</p>
+                </a>
+                <a href="#kontakt" class="branchen-card animate-on-scroll">
+                    <div class="branchen-icon">🌾</div>
+                    <h3 class="branchen-title">Landwirtschaft</h3>
+                    <span class="branchen-badge">bis 70%</span>
+                    <p style="margin-top: 1rem; color: var(--text-muted);">Maschinen, Gebäude, Umstellung – starke Förderung in Südtirol</p>
+                </a>
+                <a href="#kontakt" class="branchen-card animate-on-scroll">
+                    <div class="branchen-icon">💻</div>
+                    <h3 class="branchen-title">IT & Digital</h3>
+                    <span class="branchen-badge">bis 50%</span>
+                    <p style="margin-top: 1rem; color: var(--text-muted);">Software, Hardware, Schulungen – Transizione 4.0 für Digitalisierung</p>
+                </a>
+                <a href="#kontakt" class="branchen-card animate-on-scroll">
+                    <div class="branchen-icon">🏪</div>
+                    <h3 class="branchen-title">Handel</h3>
+                    <span class="branchen-badge">bis 30%</span>
+                    <p style="margin-top: 1rem; color: var(--text-muted);">Filialen, Modernisierung, Online-Shop – Unterstützung für den Einzelhandel</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prozess Section -->
+    <section class="section" id="prozess">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">So funktioniert's</span>
+                <h2 class="section-title">In 4 Schritten zur Förderung</h2>
+                <p class="section-subtitle">Einfach, transparent, erfolgsorientiert.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step animate-on-scroll">
+                    <div class="process-number">1</div>
+                    <h3 class="process-title">Kostenlose Analyse</h3>
+                    <p class="process-text">Wir prüfen Ihr Unternehmen und identifizieren passende Förderprogramme innerhalb von 48 Stunden.</p>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="process-number">2</div>
+                    <h3 class="process-title">Strategie entwickeln</h3>
+                    <p class="process-text">Gemeinsam definieren wir die beste Förderstrategie für Ihre Ziele und budgetieren das Projekt.</p>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="process-number">3</div>
+                    <h3 class="process-title">Antrag stellen</h3>
+                    <p class="process-text">Wir kümmern uns um alles – von der Dokumentation bis zur Einreichung bei den Behörden.</p>
+                </div>
+                <div class="process-step animate-on-scroll">
+                    <div class="process-number">4</div>
+                    <h3 class="process-title">Förderung erhalten</h3>
+                    <p class="process-text">Bei Erfolg zahlen Sie nur 15% – erst dann sind wir zufrieden.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section" id="testimonials" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Das sagen unsere Kunden</span>
+                <h2 class="section-title">Erfolgsgeschichten aus Südtirol</h2>
+                <p class="section-subtitle">Über 150 erfolgreiche Anträge und zufriedene Kunden.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card animate-on-scroll">
+                    <p class="testimonial-text">"Durch Förderungen Mair haben wir 120.000€ für unsere Hotel-Renovierung erhalten. Der Service war professionell und unkompliziert."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MK</div>
+                        <div>
+                            <div class="testimonial-name">Maria K.</div>
+                            <div class="testimonial-company">Hotel Garni, Meran</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <p class="testimonial-text">"50.000€ für neue CNC-Maschinen – der Antrag war in 6 Wochen durch. Absolute Empfehlung für jedes Handwerksunternehmen!"</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background: #14b8a6;">TP</div>
+                        <div>
+                            <div class="testimonial-name">Thomas P.</div>
+                            <div class="testimonial-company">Metallbau Prossliner, Brixen</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card animate-on-scroll">
+                    <p class="testimonial-text">"Wir konnten 200.000€ für unsere Digitalisierungsprojekte sichern. Stefan kennt sich exzellent mit Transizione 4.0 aus."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar" style="background: #f97316;">LM</div>
+                        <div>
+                            <div class="testimonial-name">Dr. Laura M.</div>
+                            <div class="testimonial-company">TechBase Südtirol, Bozen</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section class="section" id="kontakt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Kontaktieren Sie uns</span>
+                <h2 class="section-title">Starten Sie jetzt</h2>
+                <p class="section-subtitle">Erhalten Sie Ihre kostenlose Erstprüfung innerhalb von 48 Stunden.</p>
+            </div>
+            
+            <div class="cards-grid" style="max-width: 800px; margin: 0 auto;">
+                <div class="card animate-on-scroll" style="text-align: center;">
+                    <div class="card-icon" style="background: rgba(20, 184, 166, 0.1); color: #14b8a6; margin: 0 auto 1rem;">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="card-title">Telefon</h3>
+                    <p class="card-text">+39 345 123 4567</p>
+                    <p class="card-text" style="font-size: 0.875rem;">Mo-Fr 09:00-18:00</p>
+                </div>
+                <div class="card animate-on-scroll" style="text-align: center;">
+                    <div class="card-icon" style="background: rgba(249, 115, 22, 0.1); color: #f97316; margin: 0 auto 1rem;">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="card-title">E-Mail</h3>
+                    <p class="card-text">info@foerderungen-mair.it</p>
+                    <p class="card-text" style="font-size: 0.875rem;">Antwort innerhalb 24h</p>
+                </div>
+                <div class="card animate-on-scroll" style="text-align: center;">
+                    <div class="card-icon" style="background: rgba(139, 92, 246, 0.1); color: #8b5cf6; margin: 0 auto 1rem;">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="card-title">Standort</h3>
+                    <p class="card-text">Südtirol, Italien</p>
+                    <p class="card-text" style="font-size: 0.875rem;">Ganz Südtirol betreut</p>
+                </div>
+            </div>
+
+            <div style="max-width: 600px; margin: 3rem auto 0; background: var(--bg-secondary); padding: 2rem; border-radius: var(--radius-lg);">
+                <h3 style="text-align: center; margin-bottom: 1.5rem;">Schreiben Sie uns</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Ihr Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-Mail *</label>
+                        <input type="email" id="email" name="email" required placeholder="Ihre E-Mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Unternehmen</label>
+                        <input type="text" id="company" name="company" placeholder="Ihr Unternehmen">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Nachricht *</label>
+                        <textarea id="message" name="message" required placeholder="Wie können wir helfen?" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-accent" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> Nachricht senden
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Über uns</h4>
+                <p>Als zertifizierter Fördermittelberater unterstütze ich Südtiroler KMU seit 2020 dabei, staatliche Förderungen optimal zu nutzen.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Schnelllinks</h4>
+                <ul class="footer-links">
+                    <li><a href="#leistungen">Leistungen</a></li>
+                    <li><a href="#foerderungen">Förderungen</a></li>
+                    <li><a href="#branchen">Branchen</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Rechtliches</h4>
+                <ul class="footer-links">
+                    <li><a href="/docs/legal/DATENSCHUTZ.html">Datenschutz</a></li>
+                    <li><a href="#">Impressum</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kontakt</h4>
+                <p><i class="fas fa-envelope"></i> info@foerderungen-mair.it</p>
+                <p><i class="fas fa-phone"></i> +39 345 123 4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Förderungen Mair. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <p>Wir verwenden Cookies für ein besseres Nutzererlebnis. <a href="/docs/legal/DATENSCHUTZ.html">Mehr erfahren</a></p>
+        <button class="btn btn-accent btn-sm" id="cookieAccept">Akzeptieren</button>
+    </div>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop" aria-label="Nach oben">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('navLinks').classList.remove('active');
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Scroll progress
+            const scrollProgress = document.getElementById('scrollProgress');
+            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercentage = (window.scrollY / scrollHeight) * 100;
+            scrollProgress.style.width = scrollPercentage + '%';
+
+            // Scroll to top button
+            const scrollTop = document.getElementById('scrollTop');
+            if (window.scrollY > 500) {
+                scrollTop.classList.add('visible');
+            } else {
+                scrollTop.classList.remove('visible');
+            }
+        });
+
+        // Scroll to top
+        document.getElementById('scrollTop').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Mobile menu toggle
+        document.getElementById('mobileMenuBtn').addEventListener('click', () => {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+
+        // Cookie banner
+        if (!localStorage.getItem('cookiesAccepted')) {
+            document.getElementById('cookieBanner').classList.add('visible');
         }
-        
-        /* Enhanced Typography - Better Readability */
-        body { 
-            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Arial, sans-serif; 
-            line-height: 1.7; 
-            color: var(--text); 
-            background: var(--bg-white); 
-            overflow-x: hidden; 
-            font-size: 16px; 
-            -webkit-font-smoothing: antialiased; 
-            -moz-osx-font-smoothing: grayscale; 
-            letter-spacing: 0.01em; 
-        }
-        h1, h2, h3 { color: var(--primary); font-weight: 700; }
-        a { color: var(--primary); text-decoration: none; transition: var(--transition); }
-        a:hover { color: var(--secondary); }
-        @keyframes fadeInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
-        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-40px); } to { opacity: 1; transform: translateY(0); } }
-        @keyframes fadeInLeft { from { opacity: 0; transform: translateX(-40px); } to { opacity: 1; transform: translateX(0); } }
-        @keyframes fadeInRight { from { opacity: 0; transform: translateX(40px); } to { opacity: 1; transform: translateX(0); } }
-        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-        @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-20px); } 60% { transform: translateY(-10px); } }
-        @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
-        @keyframes gradientShift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
-        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
-        @keyframes glow { 0%, 100% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.5); } 50% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 30px rgba(255, 215, 0, 0.4); } }
-        @keyframes typewriter { from { width: 0; } to { width: 100%; } }
-        @keyframes blink { 50% { border-color: transparent; } }
-        @keyframes slideInUp { from { transform: translateY(100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-        @keyframes scaleIn { from { transform: scale(0.8); opacity: 0; } to { transform: scale(1); opacity: 1; } }
-        @keyframes rotateIn { from { transform: rotate(-10deg); opacity: 0; } to { transform: rotate(0); opacity: 1; } }
-        
-        /* Enhanced Typography */
-        body { font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Arial, sans-serif; line-height: 1.7; color: var(--text); background: var(--bg-white); overflow-x: hidden; font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; letter-spacing: 0.01em; }
-        h1, h2, h3 { color: var(--primary); font-weight: 700; line-height: 1.3; letter-spacing: -0.02em; }
-        h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
-        h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
-        h3 { font-size: clamp(1.2rem, 3vw, 1.5rem); }
-        p { margin-bottom: 1em; }
-        
-        /* Enhanced Animations */
-        .hero { animation: gradientShift 15s ease infinite; background-size: 200% 200%; }
-        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); opacity: 0.5; }
-        .hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 100px; background: linear-gradient(to top, var(--bg-white), transparent); }
-        .hero-content { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-        .hero-badge { display: inline-block; background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.3); padding: 8px 20px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 25px; backdrop-filter: blur(10px); animation: fadeInDown 1s ease-out; }
+        document.getElementById('cookieAccept').addEventListener('click', () => {
+            localStorage.setItem('cookiesAccepted', 'true');
+            document.getElementById('cookieBanner').classList.remove('visible');
+        });
+    </script>
+</body>
+</html>.3); padding: 8px 20px; border-radius: 50px; font-size: 0.9rem; margin-bottom: 25px; backdrop-filter: blur(10px); animation: fadeInDown 1s ease-out; }
         .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 25px; font-weight: 800; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); animation: fadeInDown 1s ease-out; }
         .hero .subtitle { font-size: clamp(1rem, 2.5vw, 1.4rem); opacity: 0.95; max-width: 700px; margin: 0 auto 35px; animation: fadeInUp 1s ease-out 0.2s both; }
         .hero .highlight { color: var(--accent); font-weight: 700; display: inline-block; padding: 8px 25px; background: rgba(255, 215, 0, 0.15); border-radius: 50px; margin-bottom: 25px; animation: fadeInUp 1s ease-out 0.4s both, pulse 2s ease-in-out infinite; border: 1px solid rgba(255, 215, 0, 0.3); }
