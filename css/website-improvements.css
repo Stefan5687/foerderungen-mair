@@ -1095,29 +1095,133 @@ img {
    =================================== */
 @media (max-width: 768px) {
     .section {
-        padding: 3rem 1.5rem;
+        padding: 3rem 1rem;
     }
     
     .hero {
-        padding: 6rem 1.5rem 3rem;
+        padding: 5rem 1rem 2.5rem;
+        min-height: auto;
     }
     
     .hero-stats {
-        gap: 1.5rem;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    
+    .hero-stat-number {
+        font-size: 2rem;
     }
     
     .hero-buttons {
         flex-direction: column;
+        gap: 0.75rem;
     }
     
     .btn {
         width: 100%;
     }
     
+    .btn-lg {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+    
     .cards-grid,
     .testimonials-grid,
     .branchen-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .card,
+    .branchen-card,
+    .program-card {
+        padding: 1.5rem;
+    }
+    
+    .section-header {
+        margin-bottom: 2rem;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    .faq-item {
+        padding: 1.25rem;
+    }
+    
+    .cookie-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cookie-text {
+        min-width: auto;
+    }
+    
+    .cookie-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .hero h1 {
+        font-size: 1.75rem;
+    }
+    
+    .hero .subtitle {
+        font-size: 1rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .card-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.25rem;
+    }
+    
+    .process-number {
+        width: 56px;
+        height: 56px;
+        font-size: 1.25rem;
+    }
+    
+    .footer {
+        padding: 3rem 1rem 1.5rem;
     }
 }
 

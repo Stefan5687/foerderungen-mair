@@ -193,10 +193,34 @@
 
 ---
 
-### 🎯 Gesamtfortschritt: 30% (6/18 Iterationen)
+### 🔄 Iteration 7 (15:50 - 16:00)
+**Datum:** 16.02.2026  
+**Zeitrahmen:** Minute 60-70
 
-### Nächste Schritte (Iteration 7):
+#### Durchgeführte Änderungen:
+
+1. **✨ Zusätzliche visuelle Verbesserungen**
+   - Card Hover Glow Effects
+   - Custom Scrollbar Styling
+   - Section Dividers
+   - Focus States für Barrierefreiheit
+   - Selection Color
+   - Gradient Overlays ✓
+
+#### Git Commit:
+```
+✨ Visuelle Verbesserungen: Card Hover Effects, Scrollbar Styling, Section Dividers, Focus States
+```
+
+#### Dateien geändert:
+- css/website-improvements.css (visuelle Verbesserungen)
+
+---
+
+### 🎯 Gesamtfortschritt: 35% (7/18 Iterationen)
+
+### Nächste Schritte (Iteration 8):
 - [ ] Weitere Inhaltsverbesserungen
-- [ ] Eventuell zusätzliche visuelle Elemente
 - [ ] Performance-Feinabstimmung
 - [ ] Mobile Experience weiter optimieren
+- [ ] Eventuell zusätzliche Features
