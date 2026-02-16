@@ -350,86 +350,6 @@
     </style>
 </head>
 <body>
-    <!-- Innovation Hub Italy Countdown Banner -->
-    <div id="countdown-banner" class="countdown-banner" style="display: none;">
-        <div class="countdown-content">
-            <div class="countdown-icon">🚨</div>
-            <div class="countdown-text">
-                <strong>Innovation Hub Italy Deadline:</strong> <span id="countdown-timer">-- Tage --</span>
-            </div>
-            <div class="countdown-cta">
-                <a href="#contact" class="cta" style="padding: 12px 30px; font-size: 0.95rem;">Jetzt bewerben!</a>
-            </div>
-            <button class="countdown-close" onclick="closeCountdown()">×</button>
-        </div>
-    </div>
-
-    <style>
-    .countdown-banner {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
-        color: white;
-        padding: 15px 25px;
-        z-index: 10000;
-        box-shadow: 0 4px 20px rgba(220, 53, 69, 0.4);
-        animation: slideInDown 0.5s ease-out;
-    }
-    .countdown-content {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-    .countdown-icon { font-size: 1.5rem; }
-    .countdown-text { font-size: 1rem; }
-    .countdown-text strong { color: #ffd700; }
-    .countdown-cta .cta { background: #ffd700; color: #1e3a5f; }
-    .countdown-close {
-        background: none;
-        border: none;
-        color: white;
-        font-size: 1.5rem;
-        cursor: pointer;
-        opacity: 0.8;
-        transition: all 0.3s;
-    }
-    .countdown-close:hover { opacity: 1; transform: scale(1.2); }
-    @keyframes slideInDown { from { transform: translateY(-100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-    </style>
-
-    <script>
-    function updateCountdown() {
-        const deadline = new Date('2026-04-15T23:59:59').getTime();
-        const now = new Date().getTime();
-        const diff = deadline - now;
-        
-        if (diff > 0) {
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            document.getElementById('countdown-timer').textContent = 
-                days + ' Tage, ' + hours + ' Stunden';
-            document.getElementById('countdown-banner').style.display = 'block';
-        }
-    }
-
-    function closeCountdown() {
-        document.getElementById('countdown-banner').style.display = 'none';
-        localStorage.setItem('countdownClosed', 'true');
-    }
-
-    // Show countdown if not closed before
-    document.addEventListener('DOMContentLoaded', function() {
-        if (!localStorage.getItem('countdownClosed')) {
-            setTimeout(updateCountdown, 1000);
-        }
-    });
-    </script>
 
     <div class="loader" id="loader"><div class="loader-content"><div class="loader-spinner"></div><p class="loader-text">Laden...</p></div></div>
     <nav class="main-nav" id="mainNav" role="navigation" aria-label="Hauptnavigation">
@@ -455,16 +375,10 @@
     </div>
     <div class="cookie-banner" id="cookieBanner"><p>Wir verwenden Cookies. <a href="/docs/legal/DATENSCHUTZ.html">Datenschutz</a></p><button class="cookie-btn" id="cookieAccept">Akzeptieren</button></div>
 
-    <!-- Innovation Hub Italy Deadline Banner -->
-    <div id="deadlineBanner" style="background: linear-gradient(135deg, #dc3545 0%, #c82333 100%); color: white; padding: 12px 20px; text-align: center; position: relative; z-index: 1001; display: none;">
-        <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
-            <span style="font-weight: 700; font-size: 1rem;">🚨 <strong>Innovation Hub Italy Deadline:</strong> <span id="countdown">58 Tage</span> remaining!</span>
-            <a href="#kontakt" style="background: white; color: #dc3545; padding: 8px 20px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 0.9rem; transition: all 0.3s;">Jetzt bewerben →</a>
-        </div>
     </div>
     <section class="hero" role="banner">
         <div class="hero-content">
-            <span class="hero-badge">⭐ #1 Förderberater in Südtirol</span>
+            <span class="hero-badge"><i class="fas fa-star"></i> #1 Förderberater in Südtirol</span>
             <h1>Förderungen Mair</h1>
             <p class="subtitle">Staatliche Förderungen für KMU in Südtirol</p>
             <p class="highlight">Bis zu 3,5 Mio.€ pro Jahr – erfolgsbasiert</p>
@@ -505,16 +419,13 @@
     <section class="container" id="branchen" aria-labelledby="branches-title">
         <div class="section-title"><h2 id="branches-title">Für wen wir arbeiten</h2><p>Spezialisiert auf Südtiroler KMU aller Branchen</p></div>
         <div class="programs-grid">
-            <div class="program-card" style="border-left-color: #e74c3c;"><img src="images/industry-tourism.svg" alt="Tourismus Förderungen" style="width: 80px; height: auto; margin-bottom: 15px;" loading="lazy"><h3>🏨 Tourismus</h3><div class="percent">bis 50%</div><p>Hotels, Gastronomie, touristische Betriebe – Renovierung, Digitalisierung, Energieeffizienz</p></div>
-            <div class="program-card" style="border-left-color: #3498db;"><img src="images/industry-crafts.svg" alt="Handwerk Förderungen" style="width: 80px; height: auto; margin-bottom: 15px;" loading="lazy"><h3>⚙️ Handwerk</h3><div class="percent">bis 50%</div><p>Maschinen, Werkzeuge, Betriebserweiterung – Modernisierung und Wachstum</p></div>
-            <div class="program-card" style="border-left-color: #9b59b6;"><img src="images/industry-manufacturing.svg" alt="Produktion Förderungen" style="width: 80px; height: auto; margin-bottom: 15px;" loading="lazy"><h3>🏭 Produktion</h3><div class="percent">bis 35%</div><p>F&E, Innovation, Digitalisierung – Transizione 4.0 und mehr</p></div>
-            <div class="program-card" style="border-left-color: #27ae60;"><img src="images/industry-agriculture.svg" alt="Landwirtschaft Förderungen" style="width: 80px; height: auto; margin-bottom: 15px;" loading="lazy"><h3>🌾 Landwirtschaft</h3><div class="percent">bis 70%</div><p>Maschinen, Gebäude, Umstellung – starke Förderung in Südtirol</p></div>
-            <div class="program-card" style="border-left-color: #f39c12;"><img src="images/industry-it.svg" alt="IT & Digital Förderungen" style="width: 80px; height: auto; margin-bottom: 15px;" loading="lazy"><h3>💻 IT & Digital</h3><div class="percent">bis 50%</div><p>Software, Hardware, Schulungen – Transizione 4.0 für Digitalisierung</p></div>
-            <div class="program-card" style="border-left-color: #1abc9c;"><img src="images/industry-commerce.svg" alt="Handel Förderungen" style="width: 80px; height: auto; margin-bottom: 15px;" loading="lazy"><h3>🏪 Handel</h3><div class="percent">bis 30%</div><p>Filialen, Modernisierung, Online-Shop – Unterstützung für den Einzelhandel</p></div>
+            <div class="program-card" style="border-left-color: #e74c3c;"><img src="images/industry-tourism.svg" alt="Tourismus Förderungen" style="width: 80px; height: auto; margin-bottom: 15px;" loading="lazy"><h3><i class="fas fa-hotel"></i> Tourismus</h3><div class="percent">bis 50%</div><p>Hotels, Gastronomie, touristische Betriebe – Renovierung, Digitalisierung, Energieeffizienz</p></div>
+            <div class="program-card" style="border-left-color: #3498db;"><img src="images/industry-crafts.svg" alt="Handwerk Förderungen" style="width: 80px; height: auto; margin-bottom: 15px;" loading="lazy"><h3><i class="fas fa-cogs"></i> Handwerk</h3><div class="percent">bis 50%</div><p>Maschinen, Werkzeuge, Betriebserweiterung – Modernisierung und Wachstum</p></div>
+            <div class="program-card" style="border-left-color: #9b59b6;"><img src="images/industry-manufacturing.svg" alt="Produktion Förderungen" style="width: 80px; height: auto; margin-bottom: 15px;" loading="lazy"><h3><i class="fas fa-industry"></i> Produktion</h3><div class="percent">bis 35%</div><p>F&E, Innovation, Digitalisierung – Transizione 4.0 und mehr</p></div>
+            <div class="program-card" style="border-left-color: #27ae60;"><img src="images/industry-agriculture.svg" alt="Landwirtschaft Förderungen" style="width: 80px; height: auto; margin-bottom: 15px;" loading="lazy"><h3><i class="fas fa-seedling"></i> Landwirtschaft</h3><div class="percent">bis 70%</div><p>Maschinen, Gebäude, Umstellung – starke Förderung in Südtirol</p></div>
+            <div class="program-card" style="border-left-color: #f39c12;"><img src="images/industry-it.svg" alt="IT & Digital Förderungen" style="width: 80px; height: auto; margin-bottom: 15px;" loading="lazy"><h3><i class="fas fa-laptop"></i> IT & Digital</h3><div class="percent">bis 50%</div><p>Software, Hardware, Schulungen – Transizione 4.0 für Digitalisierung</p></div>
+            <div class="program-card" style="border-left-color: #1abc9c;"><img src="images/industry-commerce.svg" alt="Handel Förderungen" style="width: 80px; height: auto; margin-bottom: 15px;" loading="lazy"><h3><i class="fas fa-store"></i> Handel</h3><div class="percent">bis 30%</div><p>Filialen, Modernisierung, Online-Shop – Unterstützung für den Einzelhandel</p></div>
         </div>
-            <div class="program-card" style="border-left-color: #27ae60;"><h3>🌾 Landwirtschaft</h3><div class="percent">bis 70%</div><p>Maschinen, Gebäude, Umstellung – starke Förderung in Südtirol</p></div>
-            <div class="program-card" style="border-left-color: #f39c12;"><h3>💻 IT & Digital</h3><div class="percent">bis 50%</div><p>Software, Hardware, Schulungen – Transizione 4.0 für Digitalisierung</p></div>
-            <div class="program-card" style="border-left-color: #1abc9c;"><h3>🏪 Handel</h3><div class="percent">bis 30%</div><p>Filialen, Modernisierung, Online-Shop – Unterstützung für den Einzelhandel</p></div>
         </div>
     </section>
     <section class="how-it-works" id="prozess" aria-labelledby="how-title">
@@ -526,11 +437,11 @@
                 <div class="step"><div class="step-number">4</div><h3>Förderung erhalten</h3><p>Bei Erfolg zahlen Sie nur 15% – erst dann sind wir zufrieden.</p></div>
             </div>
             <div class="trust-signals" style="margin-top: 60px;">
-                <div class="trust-item"><span>📋</span><div>Kostenlose Erstprüfung</div></div>
-                <div class="trust-item"><span>⚡</span><div>48h Antwortzeit</div></div>
-                <div class="trust-item"><span>💰</span><div>15% Erfolgshonorar</div></div>
-                <div class="trust-item"><span>🤝</span><div>Persönliche Betreuung</div></div>
-                <div class="trust-item"><span>📈</span><div>Bis 3,5 Mio.€</div></div>
+                <div class="trust-item"><span><i class="fas fa-clipboard-list"></i></span><div>Kostenlose Erstprüfung</div></div>
+                <div class="trust-item"><span><i class="fas fa-bolt"></i></span><div>48h Antwortzeit</div></div>
+                <div class="trust-item"><span><i class="fas fa-euro-sign"></i></span><div>15% Erfolgshonorar</div></div>
+                <div class="trust-item"><span><i class="fas fa-handshake"></i></span><div>Persönliche Betreuung</div></div>
+                <div class="trust-item"><span><i class="fas fa-chart-line"></i></span><div>Bis 3,5 Mio.€</div></div>
             </div>
             
             <!-- Partner Logos Section -->
@@ -558,7 +469,7 @@
             
             <!-- Newsletter Section - Enhanced with Privacy -->
             <div style="background: var(--bg-white); padding: 50px 40px; border-radius: 20px; margin-top: 60px; box-shadow: var(--shadow);">
-                <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.5rem;">📧 Newsletter abonnieren</h3>
+                <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.5rem;"><i class="fas fa-envelope"></i> Newsletter abonnieren</h3>
                 <p style="color: var(--text-light); margin-bottom: 25px;">Erhalten Sie aktuelle Fördertipps und Deadlines direkt per E-Mail.</p>
                 <form style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; max-width: 500px; margin: 0 auto;" onsubmit="event.preventDefault(); alert('Vielen Dank für Ihr Interesse! Der Newsletter ist bald verfügbar.');">
                     <input type="email" placeholder="Ihre E-Mail-Adresse" required style="flex: 1; min-width: 250px; padding: 15px 20px; border: 2px solid #d0d0d0; border-radius: 12px; font-size: 1rem; transition: var(--transition);" aria-label="E-Mail-Adresse">
@@ -591,37 +502,37 @@
                     <img src="images/avatar-maria.svg" alt="Maria K." style="width: 60px; height: 60px; border-radius: 50%; margin-bottom: 15px;" loading="lazy">
                     <p class="testimonial-text">"Durch Förderungen Mair haben wir 120.000€ für unsere Hotel-Renovierung erhalten. Der Service war professionell und unkompliziert."</p>
                     <p class="testimonial-author">Maria K.</p>
-                    <p class="testimonial-company">🏨 Hotel Garni, Meran</p>
+                    <p class="testimonial-company"><i class="fas fa-hotel"></i> Hotel Garni, Meran</p>
                 </div>
                 <div class="testimonial-card">
                     <img src="images/avatar-thomas.svg" alt="Thomas P." style="width: 60px; height: 60px; border-radius: 50%; margin-bottom: 15px;" loading="lazy">
                     <p class="testimonial-text">"50.000€ für neue CNC-Maschinen – der Antrag war in 6 Wochen durch. Absolute Empfehlung für jedes Handwerksunternehmen!"</p>
                     <p class="testimonial-author">Thomas P.</p>
-                    <p class="testimonial-company">⚙️ Metallbau Prossliner, Brixen</p>
+                    <p class="testimonial-company"><i class="fas fa-cogs"></i> Metallbau Prossliner, Brixen</p>
                 </div>
                 <div class="testimonial-card">
                     <img src="images/avatar-laura.svg" alt="Dr. Laura M." style="width: 60px; height: 60px; border-radius: 50%; margin-bottom: 15px;" loading="lazy">
                     <p class="testimonial-text">"Wir konnten 200.000€ für unsere Digitalisierungsprojekte sichern. Stefan kennt sich exzellent mit Transizione 4.0 aus."</p>
                     <p class="testimonial-author">Dr. Laura M.</p>
-                    <p class="testimonial-company">💻 TechBase Südtirol, Bozen</p>
+                    <p class="testimonial-company"><i class="fas fa-laptop"></i> TechBase Südtirol, Bozen</p>
                 </div>
                 <div class="testimonial-card">
                     <img src="images/avatar-hans.svg" alt="Hans G." style="width: 60px; height: 60px; border-radius: 50%; margin-bottom: 15px;" loading="lazy">
                     <p class="testimonial-text">"Die landwirtschaftliche Förderung für unseren neuen Kühlraum wurde sofort genehmigt. 70% der Kosten übernommen!"</p>
                     <p class="testimonial-author">Hans G.</p>
-                    <p class="testimonial-company">🌾 Bauernhof Gasser, Ulten</p>
+                    <p class="testimonial-company"><i class="fas fa-seedling"></i> Bauernhof Gasser, Ulten</p>
                 </div>
                 <div class="testimonial-card">
                     <img src="images/avatar-andrea.svg" alt="Andrea R." style="width: 60px; height: 60px; border-radius: 50%; margin-bottom: 15px;" loading="lazy">
                     <p class="testimonial-text">"Wir haben 85.000€ für unseren Restaurant-Umbau erhalten. Stefan hat den gesamten Antragsprozess übernommen – super Service!"</p>
                     <p class="testimonial-author">Andrea R.</p>
-                    <p class="testimonial-company">🍽️ Restaurant Pizzeria Da Paolo, Kaltern</p>
+                    <p class="testimonial-company"><i class="fas fa-utensils"></i> Restaurant Pizzeria Da Paolo, Kaltern</p>
                 </div>
             </div>
             
             <!-- Video Section -->
             <div style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); padding: 50px 40px; border-radius: 20px; margin-top: 60px; text-align: center; color: white;">
-                <h3 style="color: white; margin-bottom: 15px; font-size: 1.5rem;">🎥 Erfahren Sie mehr über Förderungen</h3>
+                <h3 style="color: white; margin-bottom: 15px; font-size: 1.5rem;"><i class="fas fa-video"></i> Erfahren Sie mehr über Förderungen</h3>
                 <p style="color: rgba(255,255,255,0.85); margin-bottom: 25px; max-width: 600px; margin-left: auto; margin-right: auto;">In unserem Video erklären wir, wie einfach der Förderprozess sein kann.</p>
                 <div style="background: rgba(255,255,255,0.1); padding: 80px 40px; border-radius: 16px; border: 2px dashed rgba(255,255,255,0.3);">
                     <i class="fas fa-play-circle" style="font-size: 4rem; color: var(--accent); margin-bottom: 20px; cursor: pointer; transition: var(--transition);"></i>
@@ -663,12 +574,12 @@
                     <label for="branch">Branche</label>
                     <select id="branch" name="branch">
                         <option value="">Bitte wählen</option>
-                        <option value="tourismus">🏨 Tourismus</option>
-                        <option value="handwerk">⚙️ Handwerk</option>
-                        <option value="produktion">🏭 Produktion</option>
-                        <option value="landwirtschaft">🌾 Landwirtschaft</option>
-                        <option value="it">💻 IT & Digital</option>
-                        <option value="handel">🏪 Handel</option>
+                        <option value="tourismus"><i class="fas fa-hotel"></i> Tourismus</option>
+                        <option value="handwerk"><i class="fas fa-cogs"></i> Handwerk</option>
+                        <option value="produktion"><i class="fas fa-industry"></i> Produktion</option>
+                        <option value="landwirtschaft"><i class="fas fa-seedling"></i> Landwirtschaft</option>
+                        <option value="it"><i class="fas fa-laptop"></i> IT & Digital</option>
+                        <option value="handel"><i class="fas fa-store"></i> Handel</option>
                         <option value="sonstiges">Sonstiges</option>
                     </select>
                 </div>
