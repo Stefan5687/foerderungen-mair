@@ -350,6 +350,87 @@
     </style>
 </head>
 <body>
+    <!-- Innovation Hub Italy Countdown Banner -->
+    <div id="countdown-banner" class="countdown-banner" style="display: none;">
+        <div class="countdown-content">
+            <div class="countdown-icon">🚨</div>
+            <div class="countdown-text">
+                <strong>Innovation Hub Italy Deadline:</strong> <span id="countdown-timer">-- Tage --</span>
+            </div>
+            <div class="countdown-cta">
+                <a href="#contact" class="cta" style="padding: 12px 30px; font-size: 0.95rem;">Jetzt bewerben!</a>
+            </div>
+            <button class="countdown-close" onclick="closeCountdown()">×</button>
+        </div>
+    </div>
+
+    <style>
+    .countdown-banner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+        color: white;
+        padding: 15px 25px;
+        z-index: 10000;
+        box-shadow: 0 4px 20px rgba(220, 53, 69, 0.4);
+        animation: slideInDown 0.5s ease-out;
+    }
+    .countdown-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .countdown-icon { font-size: 1.5rem; }
+    .countdown-text { font-size: 1rem; }
+    .countdown-text strong { color: #ffd700; }
+    .countdown-cta .cta { background: #ffd700; color: #1e3a5f; }
+    .countdown-close {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        opacity: 0.8;
+        transition: all 0.3s;
+    }
+    .countdown-close:hover { opacity: 1; transform: scale(1.2); }
+    @keyframes slideInDown { from { transform: translateY(-100%); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    </style>
+
+    <script>
+    function updateCountdown() {
+        const deadline = new Date('2026-04-15T23:59:59').getTime();
+        const now = new Date().getTime();
+        const diff = deadline - now;
+        
+        if (diff > 0) {
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            document.getElementById('countdown-timer').textContent = 
+                days + ' Tage, ' + hours + ' Stunden';
+            document.getElementById('countdown-banner').style.display = 'block';
+        }
+    }
+
+    function closeCountdown() {
+        document.getElementById('countdown-banner').style.display = 'none';
+        localStorage.setItem('countdownClosed', 'true');
+    }
+
+    // Show countdown if not closed before
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!localStorage.getItem('countdownClosed')) {
+            setTimeout(updateCountdown, 1000);
+        }
+    });
+    </script>
+
     <div class="loader" id="loader"><div class="loader-content"><div class="loader-spinner"></div><p class="loader-text">Laden...</p></div></div>
     <nav class="main-nav" id="mainNav" role="navigation" aria-label="Hauptnavigation">
         <div class="nav-container">
