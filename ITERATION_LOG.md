@@ -369,9 +369,33 @@
 
 ---
 
-### 🎯 Gesamtfortschritt: 65% (13/18 Iterationen)
+### 🔄 Iteration 14 (17:00 - 17:10)
+**Datum:** 16.02.2026  
+**Zeitrahmen:** Minute 140-150
 
-### Nächste Schritte (Iteration 14):
+#### Durchgeführte Änderungen:
+
+1. **✨ CSS UI-Komponenten**
+   - Modal System (verschiedene Größen)
+   - Tabs Navigation
+   - Accordion Funktionalität
+   - Tooltip Komponente
+   - Loading Spinner (verschiedene Größen)
+   - Loading Dots Animation ✓
+
+#### Git Commit:
+```
+✨ CSS Komponenten: Modal, Tabs, Accordion, Tooltip, Loading Spinner
+```
+
+#### Dateien geändert:
+- css/website-improvements.css (neue UI-Komponenten hinzugefügt)
+
+---
+
+### 🎯 Gesamtfortschritt: 70% (14/18 Iterationen)
+
+### Nächste Schritte (Iteration 15):
 - [ ] Weitere Inhaltsverbesserungen
 - [ ] Performance-Feinabstimmung
 - [ ] Eventuell zusätzliche Features
