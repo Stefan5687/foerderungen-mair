@@ -863,6 +863,84 @@ img {
 }
 
 /* ===================================
+   ZUSÄTLICHE VISUELLE VERBESSERUNGEN
+   =================================== */
+
+/* Gradient Overlays */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 20%, rgba(20, 184, 166, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+/* Card Hover Glow Effect */
+.card:hover::after,
+.branchen-card:hover::after,
+.program-card:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    box-shadow: 0 0 30px rgba(20, 184, 166, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.card:hover::after,
+.branchen-card:hover::after,
+.program-card:hover::after {
+    opacity: 1;
+}
+
+/* Section Dividers */
+.section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.1), transparent);
+    margin: 0;
+    border: none;
+}
+
+/* Focus States für Barrierefreiheit */
+*:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
+}
+
+/* Selection Color */
+::selection {
+    background: var(--secondary);
+    color: white;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-light);
+}
+
+/* ===================================
    PERFORMANCE OPTIMIERUNGEN
    =================================== */
 
