@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+  <rect width="200" height="150" rx="15" fill="#f0fff4" stroke="#27ae60" stroke-width="2"/>
+  <text x="100" y="50" text-anchor="middle" font-size="48">🌾</text>
+  <text x="100" y="90" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#1e3a5f">Landwirtschaft</text>
+  <text x="100" y="115" text-anchor="middle" font-family="Arial" font-size="14" fill="#27ae60" font-weight="700">bis 70% Förderung</text>
+  <text x="100" y="138" text-anchor="middle" font-family="Arial" font-size="11" fill="#666">Maschinen, Gebäude</text>
+</svg>
