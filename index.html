@@ -369,9 +369,18 @@
     <button class="back-to-top" id="backToTop" aria-label="Zurück nach oben">↑</button>
     <div class="floating-cta" id="floatingCta">
         <div class="floating-cta-label">Kostenlose Erstprüfung?</div>
+        <a href="https://wa.me/393451234567" target="_blank" rel="noopener" class="floating-cta-btn" style="background: #25D366;" aria-label="WhatsApp senden"><i class="fab fa-whatsapp"></i></a>
         <a href="mailto:info@foerderungen-mair.it" class="floating-cta-btn" aria-label="E-Mail senden"><i class="fas fa-envelope"></i></a>
     </div>
     <div class="cookie-banner" id="cookieBanner"><p>Wir verwenden Cookies. <a href="/docs/legal/DATENSCHUTZ.html">Datenschutz</a></p><button class="cookie-btn" id="cookieAccept">Akzeptieren</button></div>
+
+    <!-- Innovation Hub Italy Deadline Banner -->
+    <div id="deadlineBanner" style="background: linear-gradient(135deg, #dc3545 0%, #c82333 100%); color: white; padding: 12px 20px; text-align: center; position: relative; z-index: 1001; display: none;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <span style="font-weight: 700; font-size: 1rem;">🚨 <strong>Innovation Hub Italy Deadline:</strong> <span id="countdown">58 Tage</span> remaining!</span>
+            <a href="#kontakt" style="background: white; color: #dc3545; padding: 8px 20px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 0.9rem; transition: all 0.3s;">Jetzt bewerben →</a>
+        </div>
+    </div>
     <section class="hero" role="banner">
         <div class="hero-content">
             <span class="hero-badge">⭐ #1 Förderberater in Südtirol</span>
@@ -577,6 +586,15 @@
         window.addEventListener('scroll', function() { var scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100; document.getElementById('scrollProgress').style.width = scrollPercent + '%'; document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 500); });
         document.getElementById('backToTop').addEventListener('click', function() { window.scrollTo({top: 0, behavior: 'smooth'}); });
         if (!localStorage.getItem('cookiesAccepted')) { document.getElementById('cookieBanner').classList.add('visible'); }
+
+        // Innovation Hub Italy Countdown
+        const deadline = new Date('2026-04-15').getTime();
+        const now = new Date().getTime();
+        const daysLeft = Math.ceil((deadline - now) / (1000 * 60 * 60 * 24));
+        if (daysLeft > 0 && daysLeft <= 60) {
+            document.getElementById('deadlineBanner').style.display = 'block';
+            document.getElementById('countdown').textContent = daysLeft + ' Tage';
+        }
         document.getElementById('cookieAccept').addEventListener('click', function() { localStorage.setItem('cookiesAccepted', 'true'); document.getElementById('cookieBanner').classList.remove('visible'); });
         document.getElementById('contactForm').addEventListener('submit', function(e) { e.preventDefault(); document.getElementById('formSuccess').style.display = 'block'; document.getElementById('contactForm').reset(); });
         // Show floating CTA after scrolling
