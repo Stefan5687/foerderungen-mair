@@ -211,54 +211,128 @@
             <div class="section-header">
                 <span class="section-label">Kostenlose Erstprüfung</span>
                 <h2 class="section-title">Fordern Sie Ihre Analyse an</h2>
-                <p class="section-subtitle">Teilen Sie uns mit, welche Unterlagen Sie bereitstellen können.</p>
+                <p class="section-subtitle">Teilen Sie uns alle relevanten Details mit, damit wir Ihr Förderpotenzial optimal einschätzen können.</p>
             </div>
             
-            <div style="max-width: 600px; margin: 0 auto; background: var(--bg-secondary); padding: 2rem; border-radius: var(--radius-lg);">
+            <div style="max-width: 750px; margin: 0 auto; background: var(--bg-secondary); padding: 2rem; border-radius: var(--radius-lg);">
                 <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" required placeholder="Ihr Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-Mail *</label>
-                        <input type="email" id="email" name="email" required placeholder="Ihre E-Mail">
-                    </div>
-                    <div class="form-group">
-                        <label for="company">Unternehmen</label>
-                        <input type="text" id="company" name="company" placeholder="Ihr Unternehmen">
-                    </div>
-                    
-                    <!-- Was kann bereitgestellt werden -->
-                    <div class="form-group">
-                        <label>Was können Sie bereitstellen? *</label>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px;">
-                            <label style="font-weight: normal; display: flex; align-items: center; gap: 8px;">
-                                <input type="checkbox" name="documents" value="bilanz"> Bilanz/Jahresabschluss
-                            </label>
-                            <label style="font-weight: normal; display: flex; align-items: center; gap: 8px;">
-                                <input type="checkbox" name="documents" value="umsatz"> Umsatzentwicklung
-                            </label>
-                            <label style="font-weight: normal; display: flex; align-items: center; gap: 8px;">
-                                <input type="checkbox" name="documents" value="investition"> Geplante Investition
-                            </label>
-                            <label style="font-weight: normal; display: flex; align-items: center; gap: 8px;">
-                                <input type="checkbox" name="documents" value="angebote"> Angebote/Lieferantenangebote
-                            </label>
-                            <label style="font-weight: normal; display: flex; align-items: center; gap: 8px;">
-                                <input type="checkbox" name="documents" value="projektbeschreibung"> Projektbeschreibung
-                            </label>
-                            <label style="font-weight: normal; display: flex; align-items: center; gap: 8px;">
-                                <input type="checkbox" name="documents" value="maschinen"> Maschinen/Equipment Liste
-                            </label>
+                    <!-- Persönliche Daten -->
+                    <h4 style="margin-bottom: 15px; color: var(--primary);">Persönliche Daten</h4>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Ihr Name">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="email">E-Mail *</label>
+                            <input type="email" id="email" name="email" required placeholder="Ihre E-Mail">
                         </div>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="message">Nachricht *</label>
-                        <textarea id="message" name="message" required placeholder="Beschreiben Sie kurz Ihr Projekt oder Ihre Frage..." rows="4"></textarea>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="company">Unternehmen *</label>
+                            <input type="text" id="company" name="company" required placeholder="Firmenname">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0;">
+                            <label for="phone">Telefon</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Ihre Telefonnummer">
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-accent" style="width: 100%;">
+                    
+                    <!-- Projekt-Details -->
+                    <h4 style="margin-bottom: 15px; margin-top: 25px; color: var(--primary); border-top: 1px solid #ddd; padding-top: 20px;">Projekt-Details</h4>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+                        <div class="form-group">
+                            <label for="investment">Geplante Investition *</label>
+                            <select id="investment" name="investment" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem;">
+                                <option value="">Bitte wählen</option>
+                                <option value="unter-50k">Unter 50.000€</option>
+                                <option value="50k-100k">50.000€ - 100.000€</option>
+                                <option value="100k-250k">100.000€ - 250.000€</option>
+                                <option value="250k-500k">250.000€ - 500.000€</option>
+                                <option value="500k-1m">500.000€ - 1.000.000€</option>
+                                <option value="ueber-1m">Über 1.000.000€</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="project-type">Art des Projekts *</label>
+                            <select id="project-type" name="project-type" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem;">
+                                <option value="">Bitte wählen</option>
+                                <option value="maschinen">Maschinen/Equipment</option>
+                                <option value="digitalisierung">Digitalisierung/Software</option>
+                                <option value="gebaude">Gebäude/Renovierung</option>
+                                <option value="forschung">Forschung & Entwicklung</option>
+                                <option value="personal">Schulungen/Personal</option>
+                                <option value="energie">Energieeffizienz</option>
+                                <option value="sonstiges">Sonstiges</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+                        <div class="form-group">
+                            <label for="branch">Branche *</label>
+                            <select id="branch" name="branch" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem;">
+                                <option value="">Bitte wählen</option>
+                                <option value="tourismus">Tourismus/Gastgewerbe</option>
+                                <option value="handwerk">Handwerk/Produktion</option>
+                                <option value="landwirtschaft">Landwirtschaft</option>
+                                <option value="handel">Handel</option>
+                                <option value="it">IT/Digital</option>
+                                <option value="dienstleistung">Dienstleistungen</option>
+                                <option value="sonstiges">Sonstiges</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="timeline">Geplanter Start *</label>
+                            <select id="timeline" name="timeline" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem;">
+                                <option value="">Bitte wählen</option>
+                                <option value="sofort">Sofort (innerhalb 1 Monat)</option>
+                                <option value="3monate">In 1-3 Monaten</option>
+                                <option value="6monate">In 3-6 Monaten</option>
+                                <option value="spater">Später als 6 Monate</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Unterlagen -->
+                    <h4 style="margin-bottom: 15px; margin-top: 25px; color: var(--primary); border-top: 1px solid #ddd; padding-top: 20px;">Welche Unterlagen können Sie bereitstellen?</h4>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 25px;">
+                        <label style="font-weight: normal; display: flex; align-items: flex-start; gap: 10px;">
+                            <input type="checkbox" name="documents" value="bilanz" style="margin-top: 4px;"> 
+                            <span>Jahresabschluss/Bilanz (letzte 2 Jahre)</span>
+                        </label>
+                        <label style="font-weight: normal; display: flex; align-items: flex-start; gap: 10px;">
+                            <input type="checkbox" name="documents" value="umsatz" style="margin-top: 4px;"> 
+                            <span>Umsatzentwicklung der letzten Jahre</span>
+                        </label>
+                        <label style="font-weight: normal; display: flex; align-items: flex-start; gap: 10px;">
+                            <input type="checkbox" name="documents" value="investitionsplan" style="margin-top: 4px;"> 
+                            <span>Investitionsplan/Kostenschätzung</span>
+                        </label>
+                        <label style="font-weight: normal; display: flex; align-items: flex-start; gap: 10px;">
+                            <input type="checkbox" name="documents" value="angebote" style="margin-top: 4px;"> 
+                            <span>Angebote von Lieferanten</span>
+                        </label>
+                        <label style="font-weight: normal; display: flex; align-items: flex-start; gap: 10px;">
+                            <input type="checkbox" name="documents" value="projektbeschreibung" style="margin-top: 4px;"> 
+                            <span>Projektbeschreibung (kurz)</span>
+                        </label>
+                        <label style="font-weight: normal; display: flex; align-items: flex-start; gap: 10px;">
+                            <input type="checkbox" name="documents" value="maschinenliste" style="margin-top: 4px;"> 
+                            <span>Maschinen-/Equipment-Liste</span>
+                        </label>
+                    </div>
+                    
+                    <!-- Nachricht -->
+                    <div class="form-group">
+                        <label for="message">Sonstige wichtige Informationen *</label>
+                        <textarea id="message" name="message" required placeholder="Beschreiben Sie Ihr Projekt: Was möchten Sie investieren? Welche Ziele verfolgen? Gibt es bereits eine Förderung im Blick?" rows="5" style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem; font-family: inherit;"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-accent" style="width: 100%; margin-top: 20px; padding: 15px; font-size: 1.1rem;">
                         <i class="fas fa-paper-plane"></i> Kostenlose Erstprüfung anfordern
                     </button>
                 </form>
