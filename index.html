@@ -33,7 +33,6 @@
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#leistungen">Leistungen</a></li>
                 <li><a href="#foerderungen">Förderungen</a></li>
                 <li><a href="#prozess">Prozess</a></li>
                 <li><a href="#kontakt">Kontakt</a></li>
@@ -57,39 +56,6 @@
                 <a href="#kontakt" class="btn btn-accent btn-lg">
                     <i class="fas fa-rocket"></i> Kostenlose Erstprüfung
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Leistungen Section -->
-    <section class="section" id="leistungen">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Unsere Leistungen</span>
-                <h2 class="section-title">Wie wir Sie unterstützen</h2>
-            </div>
-            <div class="cards-grid">
-                <div class="card animate-on-scroll">
-                    <div class="card-icon" style="background: rgba(20, 184, 166, 0.1); color: #14b8a6;">
-                        <i class="fas fa-search-dollar"></i>
-                    </div>
-                    <h3 class="card-title">Kostenlose Erstprüfung</h3>
-                    <p class="card-text">Wir analysieren Ihr Förderpotenzial ohne Verpflichtung. Innerhalb von 48 Stunden wissen Sie, welche Förderungen möglich sind.</p>
-                </div>
-                <div class="card animate-on-scroll">
-                    <div class="card-icon" style="background: rgba(249, 115, 22, 0.1); color: #f97316;">
-                        <i class="fas fa-file-signature"></i>
-                    </div>
-                    <h3 class="card-title">Antragsstellung</h3>
-                    <p class="card-text">Wir kümmern uns um die komplette Abwicklung mit den Behörden.</p>
-                </div>
-                <div class="card animate-on-scroll">
-                    <div class="card-icon" style="background: rgba(16, 185, 129, 0.1); color: #10b981;">
-                        <i class="fas fa-percentage"></i>
-                    </div>
-                    <h3 class="card-title">15% Erfolgshonorar</h3>
-                    <p class="card-text">Sie zahlen nur, wenn Sie die Förderung erhalten.</p>
-                </div>
             </div>
         </div>
     </section>
@@ -127,48 +93,6 @@
                     <h3 class="program-title">IPCEI</h3>
                     <p class="program-text">Wichtige Projekte von europäischem Interesse.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Branchen Section -->
-    <section class="section" id="branchen" style="background: var(--bg-secondary);">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Branchen</span>
-                <h2 class="section-title">Spezialisiert auf Südtiroler KMU</h2>
-            </div>
-            <div class="branchen-grid">
-                <a href="#kontakt" class="branchen-card animate-on-scroll">
-                    <div class="branchen-icon">🏨</div>
-                    <h3 class="branchen-title">Tourismus</h3>
-                    <span class="branchen-badge">bis 50%</span>
-                </a>
-                <a href="#kontakt" class="branchen-card animate-on-scroll">
-                    <div class="branchen-icon">🔧</div>
-                    <h3 class="branchen-title">Handwerk</h3>
-                    <span class="branchen-badge">bis 50%</span>
-                </a>
-                <a href="#kontakt" class="branchen-card animate-on-scroll">
-                    <div class="branchen-icon">🏭</div>
-                    <h3 class="branchen-title">Produktion</h3>
-                    <span class="branchen-badge">bis 35%</span>
-                </a>
-                <a href="#kontakt" class="branchen-card animate-on-scroll">
-                    <div class="branchen-icon">🌾</div>
-                    <h3 class="branchen-title">Landwirtschaft</h3>
-                    <span class="branchen-badge">bis 70%</span>
-                </a>
-                <a href="#kontakt" class="branchen-card animate-on-scroll">
-                    <div class="branchen-icon">💻</div>
-                    <h3 class="branchen-title">IT & Digital</h3>
-                    <span class="branchen-badge">bis 50%</span>
-                </a>
-                <a href="#kontakt" class="branchen-card animate-on-scroll">
-                    <div class="branchen-icon">🏪</div>
-                    <h3 class="branchen-title">Handel</h3>
-                    <span class="branchen-badge">bis 30%</span>
-                </a>
             </div>
         </div>
     </section>
@@ -211,42 +135,111 @@
             <div class="section-header">
                 <span class="section-label">Kostenlose Erstprüfung</span>
                 <h2 class="section-title">Fordern Sie Ihre Analyse an</h2>
-                <p class="section-subtitle">Teilen Sie uns alle relevanten Details mit, damit wir Ihr Förderpotenzial optimal einschätzen können.</p>
+                <p class="section-subtitle">Je mehr Informationen Sie angeben, desto genauer können wir Ihr Förderpotenzial einschätzen.</p>
             </div>
             
-            <div style="max-width: 750px; margin: 0 auto; background: var(--bg-secondary); padding: 2rem; border-radius: var(--radius-lg);">
+            <div style="max-width: 900px; margin: 0 auto; background: var(--bg-secondary); padding: 2rem; border-radius: var(--radius-lg);">
                 <form id="contactForm">
-                    <!-- Persönliche Daten -->
-                    <h4 style="margin-bottom: 15px; color: var(--primary);">Persönliche Daten</h4>
+                    
+                    <!-- Unternehmensdaten -->
+                    <h4 style="margin-bottom: 15px; color: var(--primary); border-bottom: 2px solid #ddd; padding-bottom: 10px;">Unternehmensdaten</h4>
+                    
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
-                        <div class="form-group" style="margin-bottom: 0;">
+                        <div class="form-group">
                             <label for="name">Name *</label>
                             <input type="text" id="name" name="name" required placeholder="Ihr Name">
                         </div>
-                        <div class="form-group" style="margin-bottom: 0;">
+                        <div class="form-group">
                             <label for="email">E-Mail *</label>
                             <input type="email" id="email" name="email" required placeholder="Ihre E-Mail">
                         </div>
                     </div>
                     
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
-                        <div class="form-group" style="margin-bottom: 0;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+                        <div class="form-group">
                             <label for="company">Unternehmen *</label>
                             <input type="text" id="company" name="company" required placeholder="Firmenname">
                         </div>
-                        <div class="form-group" style="margin-bottom: 0;">
+                        <div class="form-group">
                             <label for="phone">Telefon</label>
                             <input type="tel" id="phone" name="phone" placeholder="Ihre Telefonnummer">
                         </div>
+                        <div class="form-group">
+                            <label for="legal-form">Rechtsform *</label>
+                            <select id="legal-form" name="legal-form" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px;">
+                                <option value="">Bitte wählen</option>
+                                <option value="einzelunternehmer">Einzelunternehmer/Inhaber</option>
+                                <option value="og">Offene Gesellschaft (OG)</option>
+                                <option value="kg">Kommanditgesellschaft (KG)</option>
+                                <option value="snc">Società in nome collettivo (SNC)</option>
+                                <option value="srl">S.r.l. / S.r.l.s.</option>
+                                <option value="spa">S.p.A.</option>
+                                <option value="cooperativa">Genossenschaft</option>
+                                <option value="stiftung">Stiftung / Verein</option>
+                                <option value="sonstiges">Sonstiges</option>
+                            </select>
+                        </div>
                     </div>
                     
-                    <!-- Projekt-Details -->
-                    <h4 style="margin-bottom: 15px; margin-top: 25px; color: var(--primary); border-top: 1px solid #ddd; padding-top: 20px;">Projekt-Details</h4>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+                        <div class="form-group">
+                            <label for="foundation-year">Gründungsjahr *</label>
+                            <input type="number" id="foundation-year" name="foundation-year" required placeholder="z.B. 2018" min="1900" max="2026">
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Standort/Gemeinde *</label>
+                            <input type="text" id="location" name="location" required placeholder="z.B. Bozen, Meran">
+                        </div>
+                        <div class="form-group">
+                            <label for="employees">Mitarbeiter *</label>
+                            <select id="employees" name="employees" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px;">
+                                <option value="">Bitte wählen</option>
+                                <option value="1">1</option>
+                                <option value="2-5">2-5</option>
+                                <option value="6-10">6-10</option>
+                                <option value="11-20">11-20</option>
+                                <option value="21-50">21-50</option>
+                                <option value="51-100">51-100</option>
+                                <option value="100+">über 100</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Umsatz -->
+                    <h4 style="margin-bottom: 15px; margin-top: 25px; color: var(--primary); border-bottom: 2px solid #ddd; padding-bottom: 10px;">Wirtschaftliche Daten</h4>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+                        <div class="form-group">
+                            <label for="revenue">Jahresumsatz (letztes Jahr) *</label>
+                            <select id="revenue" name="revenue" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px;">
+                                <option value="">Bitte wählen</option>
+                                <option value="unter-100k">Unter 100.000€</option>
+                                <option value="100k-250k">100.000€ - 250.000€</option>
+                                <option value="250k-500k">250.000€ - 500.000€</option>
+                                <option value="500k-1m">500.000€ - 1.000.000€</option>
+                                <option value="1m-2.5m">1.000.000€ - 2.500.000€</option>
+                                <option value="2.5m-5m">2.500.000€ - 5.000.000€</option>
+                                <option value="5m+">Über 5.000.000€</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="foerderungen-vorher">Bisherige Förderungen?</label>
+                            <select id="foerderungen-vorher" name="foerderungen-vorher" style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px;">
+                                <option value="nein">Nein, noch nie</option>
+                                <option value="ja-land">Ja, landesweite Förderungen</option>
+                                <option value="ja-eu">Ja, EU-Förderungen</option>
+                                <option value="ja-beide">Ja, sowohl Landes- als auch EU-Förderungen</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Projektdaten -->
+                    <h4 style="margin-bottom: 15px; margin-top: 25px; color: var(--primary); border-bottom: 2px solid #ddd; padding-bottom: 10px;">Projekt-Daten</h4>
                     
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;">
                         <div class="form-group">
                             <label for="investment">Geplante Investition *</label>
-                            <select id="investment" name="investment" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem;">
+                            <select id="investment" name="investment" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px;">
                                 <option value="">Bitte wählen</option>
                                 <option value="unter-10k">Unter 10.000€</option>
                                 <option value="10k-25k">10.000€ - 25.000€</option>
@@ -260,7 +253,7 @@
                         </div>
                         <div class="form-group">
                             <label for="project-type">Art des Projekts *</label>
-                            <select id="project-type" name="project-type" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem;" onchange="toggleSonstigesProject()">
+                            <select id="project-type" name="project-type" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px;" onchange="toggleSonstigesProject()">
                                 <option value="">Bitte wählen</option>
                                 <option value="maschinen">Maschinen/Equipment</option>
                                 <option value="digitalisierung">Digitalisierung/Software</option>
@@ -274,10 +267,49 @@
                         </div>
                     </div>
                     
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px; margin-bottom: 20px;">
+                        <div class="form-group">
+                            <label for="project-status">Projektstand *</label>
+                            <select id="project-status" name="project-status" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px;">
+                                <option value="">Bitte wählen</option>
+                                <option value="nicht-gestartet">Noch nicht gestartet</option>
+                                <option value="geplant">Geplant, aber noch keine Kosten</option>
+                                <option value="gestartet-kosten">Gestartet, aber noch keine Rechnungen</option>
+                                <option value="teilweise">Teilweise schon umgesetzt</option>
+                                <option value="komplett">Komplett umgesetzt</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="timeline">Geplanter Start *</label>
+                            <select id="timeline" name="timeline" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px;">
+                                <option value="">Bitte wählen</option>
+                                <option value="sofort">Sofort (innerhalb 1 Monat)</option>
+                                <option value="3monate">In 1-3 Monaten</option>
+                                <option value="6monate">In 3-6 Monaten</option>
+                                <option value="spater">Später als 6 Monate</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="genehmigungen">Genehmigungen nötig?</label>
+                            <select id="genehmigungen" name="genehmigungen" style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px;">
+                                <option value="nein">Nein</option>
+                                <option value="bauamt">Bauamt/bauliche Genehmigung</option>
+                                <option value="umwelt">Umweltgenehmigung</option>
+                                <option value="gewerbe">Gewerbebehörde</option>
+                                <option value="andere">Andere Genehmigungen</option>
+                                <option value="unsicher">Weiß ich nicht</option>
+                            </select>
+                        </div>
+                    </div>
+                    
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
                         <div class="form-group">
+                            <label for="invest-standort">Standort der Investition *</label>
+                            <input type="text" id="invest-standort" name="invest-standort" required placeholder="z.B. Bozen, Vahrn, etc.">
+                        </div>
+                        <div class="form-group">
                             <label for="branch">Branche *</label>
-                            <select id="branch" name="branch" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem;" onchange="toggleSonstigesBranch()">
+                            <select id="branch" name="branch" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px;" onchange="toggleSonstigesBranch()">
                                 <option value="">Bitte wählen</option>
                                 <option value="tourismus">Tourismus/Gastgewerbe</option>
                                 <option value="handwerk">Handwerk/Produktion</option>
@@ -289,45 +321,6 @@
                             </select>
                             <input type="text" id="branch-sonstiges" name="branch-sonstiges" placeholder="Bitte beschreiben..." style="width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 8px; margin-top: 8px; display: none;">
                         </div>
-                        <div class="form-group">
-                            <label for="timeline">Geplanter Start *</label>
-                            <select id="timeline" name="timeline" required style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem;">
-                                <option value="">Bitte wählen</option>
-                                <option value="sofort">Sofort (innerhalb 1 Monat)</option>
-                                <option value="3monate">In 1-3 Monaten</option>
-                                <option value="6monate">In 3-6 Monaten</option>
-                                <option value="spater">Später als 6 Monate</option>
-                            </select>
-                        </div>
-                    </div>
-                    
-                    <!-- Unterlagen -->
-                    <h4 style="margin-bottom: 15px; margin-top: 25px; color: var(--primary); border-top: 1px solid #ddd; padding-top: 20px;">Welche Unterlagen können Sie bereitstellen?</h4>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 25px;">
-                        <label style="font-weight: normal; display: flex; align-items: flex-start; gap: 10px;">
-                            <input type="checkbox" name="documents" value="bilanz" style="margin-top: 4px;"> 
-                            <span>Jahresabschluss/Bilanz (letzte 2 Jahre)</span>
-                        </label>
-                        <label style="font-weight: normal; display: flex; align-items: flex-start; gap: 10px;">
-                            <input type="checkbox" name="documents" value="umsatz" style="margin-top: 4px;"> 
-                            <span>Umsatzentwicklung der letzten Jahre</span>
-                        </label>
-                        <label style="font-weight: normal; display: flex; align-items: flex-start; gap: 10px;">
-                            <input type="checkbox" name="documents" value="investitionsplan" style="margin-top: 4px;"> 
-                            <span>Investitionsplan/Kostenschätzung</span>
-                        </label>
-                        <label style="font-weight: normal; display: flex; align-items: flex-start; gap: 10px;">
-                            <input type="checkbox" name="documents" value="angebote" style="margin-top: 4px;"> 
-                            <span>Angebote von Lieferanten</span>
-                        </label>
-                        <label style="font-weight: normal; display: flex; align-items: flex-start; gap: 10px;">
-                            <input type="checkbox" name="documents" value="projektbeschreibung" style="margin-top: 4px;"> 
-                            <span>Projektbeschreibung (kurz)</span>
-                        </label>
-                        <label style="font-weight: normal; display: flex; align-items: flex-start; gap: 10px;">
-                            <input type="checkbox" name="documents" value="maschinenliste" style="margin-top: 4px;"> 
-                            <span>Maschinen-/Equipment-Liste</span>
-                        </label>
                     </div>
                     
                     <!-- Nachricht -->
@@ -379,8 +372,8 @@
             <div class="footer-col">
                 <h4>Schnelllinks</h4>
                 <ul class="footer-links">
-                    <li><a href="#leistungen">Leistungen</a></li>
                     <li><a href="#foerderungen">Förderungen</a></li>
+                    <li><a href="#prozess">Prozess</a></li>
                     <li><a href="#kontakt">Kontakt</a></li>
                 </ul>
             </div>
