@@ -1,133 +1,501 @@
-# Förderungen in Südtirol: Der komplette Guide
+# FÖRDERUNGEN IN SÜDTIROL: DER KOMPLETTE GUIDE
 
 **Stand:** 26.02.2026
-**Status:** Work in Progress — muss noch verifiziert werden!
+**Wichtig:** Dieses Dokument muss noch mit den Behörden verifiziert werden!
 
 ---
 
-## 📌 Wichtige Anmerkung
+# INHALTSVERZEICHNIS
 
-**Dieses Dokument muss noch mit den richtigen Behörden verifiziert werden!**
-Die Infos kommen aus meiner Recherche, aber 100%ige Richtigkeit muss noch bestätigt werden.
-
----
-
-## 1. Wie funktioniert Förderberatung in Südtirol?
-
-### Die Grundidee
-
-Unternehmen wollen investieren (Maschinen, Digitalisierung, Renovierung, etc.)
-→ Der Staat gibt Zuschüsse dafür
-→ Aber: Die Anträge sind kompliziert
-→ DU hilfst beim Antragsprozess und bekommst dafür Provision (z.B. 15%)
-
-### Ablauf typischerweise
-
-```
-1. Unternehmen hat Investitionsidee
-        ↓
-2. Beratung: Welche Förderungen kommen in Frage?
-        ↓
-3. Prüfen: Ist das Unternehmen förderfähig?
-        ↓
-4. Antrag ausarbeiten (oft 20-50 Seiten)
-        ↓
-5. Einreichen bei zuständiger Behörde
-        ↓
-6. Warten (3-12 Monate)
-        ↓
-7. Zusage oder Absage
-        ↓
-8. Bei Zusage: Auszahlung → Du bekommst deine Provision
-```
+1. [Nationale Förderungen (Italien)](#1-nationale-förderungen-italien)
+2. [Südtirol-Landesförderungen](#2-südtirol-landesförderungen)
+3. [EU-Förderungen](#3-eu-förderungen)
+4. [PNRR (Nationaler Aufbauplan)](#4-pnrr-nationaler-aufbauplan)
+5. [Antragstellung: Schritt für Schritt](#5-antragstellung-schritt-für-schritt)
 
 ---
 
-## 2. Welche Förderungen gibt es in Südtirol?
+# 1. NATIONALE FÖRDERUNGEN (ITALIEN)
 
-### A) EU-Förderungen (für Südtirol)
+## 1.1 TRANSIZIONE 4.0 / 5.0 (Digitalisierung & Innovation)
 
-| Programm | Was | Wer | Wie viel | Typ |
-|----------|-----|-----|----------|-----|
-| **EFRE** | Regionale Investitionen | KMU | bis 50% | Zuschuss |
-| **ESF+** | Weiterbildung | Alle | bis 100% | Zuschuss |
-| **Horizon Europe** | F&E | Unternehmen | bis 70% | Zuschuss |
+### Was es ist
+Das ist das Haupt-Förderprogramm Italiens für Digitalisierung und Innovation. Es gibt Unternehmen einen **Steuerguthaben (Credito d'Imposta)** für Investitionen in:
 
-### B) Nationale Förderungen (Italien) — AUCH für Südtirol!
+- Maschinen und Anlagen (Industrie 4.0)
+- Software und IT
+- Digitalisierung von Prozessen
+- Schulungen
 
-| Programm | Was | Wer | Wie viel | Typ |
-|----------|-----|-----|----------|-----|
-| **Transizione 4.0** | Digitalisierung | Alle | bis 50% | Steuerguthaben |
-| **Credito d'Imposta R&S** | F&E | Unternehmen | bis 35% | Steuerguthaben |
-| **Credito d'Imposta Investimenti** | Investitionen | KMU | bis 40% | Steuerguthaben |
-| **Fondo Innovazione 2026** | Innovation | KMU | 30-50% | Zuschuss |
+### Wichtig 2026: Es gibt jetzt auch TRANSIZIONE 5.0!
 
-**WICHTIG:** Diese gelten auch für Südtirol!
+Das neue Transizione 5.0 umfasst auch:
+- Nachhaltigkeit
+- Energieeffizienz
+- Grüne Technologien
 
-### C) Südtirol-Landesförderungen
+### Fördersätze (Transizione 4.0)
 
-| Programm | Was | Wer | Wie viel |
-|----------|-----|-----|----------|
-| **Wirtschaftsförderung** | Investitionen | KMU | 10-30% |
-| **Tourismus-Förderung** | Hotels, Gastronomie | Tourismus | 20-50% |
-| **Landwirtschafts-Förderung** | Bauern, Agrar | Landwirtschaft | 30-70% |
-| **Umwelt/Energie** | Photovoltaik, Effizienz | Alle | 20-50% |
-| **Digitalisierung** | IT, Software | Alle | 20-50% |
+| Investitionsart | Fördersatz |
+|-----------------|------------|
+| Maschinen/Anlagen 4.0 | **bis 50%** (bis zu 500.000€) |
+| Software/Digitalisierung | **bis 50%** |
+| Nutzungsrechte | bis 20% |
+| Consulting (extern) | bis 50% der Kosten |
 
-### D) PNRR (Nationaler Aufbauplan)
+### Was gefördert wird (genaue Liste)
 
-| Was | Wer | Status |
-|-----|-----|--------|
-| Diverse Förderungen für Digitalisierung, Umwelt, Tourismus | KMU | Laufend bis 2026 |
+**Maschinen und Anlagen:**
+- CNC-Maschinen
+- Roboter
+- 3D-Drucker
+- Automatisierungssysteme
+- Mess- und Prüftechnik
 
----
+**Software:**
+- ERP-Systeme
+- CRM-Systeme
+- MES (Manufacturing Execution Systems)
+- CAD/CAM-Software
+- Cloud-Lösungen
+- Cybersicherheit
 
-## 3. Wer ist zuständig?
+**Schulungen:**
+- Digitalisierungs-Schulungen für Mitarbeiter
+- Industrie 4.0 Weiterbildungen
 
-### Wichtige Behörden & Ansprechpartner
+### Was NICHT gefördert wird
+- Gebrauchte Maschinen
+- Büromöbel
+- PKW / Transportmittel
+- Allgemeine Betriebskosten
 
-| Behörde | Was | Kontakt |
-|---------|-----|---------|
-| **Handelskammer Bozen** | Förderungen, Beratung | handelskammer.bz.it |
-| **Autonome Provinz Bozen** | Landesförderungen | provincia.bz.it |
-| **Agenzia delle Entrate** | Steuerliche Förderungen (Credito d'Imposta) | agenziaentrate.gov.it |
-| **IDM Südtirol** | Innovation, Digitalisierung | idm-suedtirol.com |
-| **NOI Techpark** | F&E, Labore | noi.bz.it |
-| **EDIH DIS-HUB** | Digital Innovation Hub | eurac.edu |
+### Antragstellung
+1. **Kein klassischer Antrag** — das ist ein Steuerguthaben
+2. Du musst die Investition machen
+3. In der Steuererklärung (Modello Unico / 730) geltend machen
+4. **WICHTIG:** Die Maschinen/Software müssen in einer "Lista" sein (zertifizierte Anbieter)
+5. Ein technisches Gutachten (Perizia) ist Pflicht bei großen Investitionen
 
----
+### Deadlines
+- **Rolling** — kein fester Stichtag
+- Aber: Für jedes Jahr gibt es Budgets, die ausgehen können
+- 2026: noch verfügbar, aber 2027 ist unsicher
 
-## 4. Wie reicht man einen Antrag ein?
-
-### Schritt-für-Schritt (am Beispiel Transizione 4.0)
-
-**1. Vorab-Prüfung**
-- Projekt definieren
-- Förderrichtlinien lesen
-- Checken ob förderfähig
-
-**2. Dokumentensammlung**
-- Businessplan
-- Kostenvoranschläge
-- Jahresabschlüsse (letzte 2-3 Jahre)
-- Projektbeschreibung
-- Finanzierungsplan
-
-**3. Antrag online einreichen**
--大部分 Via Portal (z.B. invitalia.it für nationale Programme)
-- Oder Papierform für Landesförderungen
-
-**4. Abwarten**
-- 3-12 Monate Wartezeit normal
-- Manchmal Nachfragen der Behörde
-
-**5. Zusage/Absage**
-- Bei Zusage: Durchführungsnachweis erbringen
-- Auszahlung
+### Quellen
+- https://www.mise.gov.it (Ministerium)
+- https://invitalia.it
+- Transizione 4.0 Guidelines
 
 ---
 
-## 5. Was braucht man für einen Antrag?
+## 1.2 CREDITO D'IMPOSTA RICERCA E SVILUPPO (Forschungszulage)
+
+### Was es ist
+Ein **Steuerguthaben** für Unternehmen, die in Forschung & Entwicklung investieren.
+
+### Fördersatz
+
+| Kostenart | Fördersatz |
+|-----------|------------|
+| Personalkosten (F&E) | **bis 25%** |
+| Forschung an externe Dienstleister | **bis 20%** |
+| Patentkosten | bis 20% |
+| Forschungs-Equipment | bis 20% (aber nur Abschreibung) |
+
+**Maximum:** 20 Millionen € pro Jahr an förderfähigen Kosten
+
+### Was zählt als F&E (Ricerca e Sviluppo)
+- Grundlagenforschung
+- Angewandte Forschung
+- Experimentelle Entwicklung
+- Technische Innovationsprojekte
+- **Aber:** Die Projekte müssen "neu" sein — keine Routine-Arbeiten
+
+### Was NICHT zählt
+- Routine-Entwicklung
+- Marktforschung
+- Allgemeine Verwaltung
+- Qualitätskontrolle
+
+### So funktioniert's
+1. Projekt definieren und dokumentieren
+2. Die Forschungszulage wird über die **Steuererklärung** beantragt
+3. **BSFZ-Bestätigung** (Bundesministerium) ist nötig um nachzuweisen, dass es F&E ist
+4. Dann in der Steuererklärung (Modello UNICO) eintragen
+
+### Unterschied zu Transizione 4.0
+| Aspekt | Transizione 4.0 | Credito d'Imposta R&S |
+|--------|------------------|----------------------|
+| Art | Investitionen | F&E |
+| Nachweis | Maschinenliste | BSFZ-Bestätigung |
+| Zeitpunkt | Bei Investition | Bei Steuererklärung |
+
+### Antrag
+- **Kein Vorab-Antrag** — wird in der Steuererklärung geltend gemacht
+- Aber: BSFZ-Bestätigung vorher nötig
+- Die BSFZ (Beratungsstelle für Forschungszulage) muss das Projekt bestätigen
+
+### Wichtig
+Das ist **rückwirkend** möglich — du kannst F&E-Kosten von 2024 und 2025 noch geltend machen!
+
+---
+
+## 1.3 CREDITO D'IMPOSTA INVESTIMENTI (Investitionszulage)
+
+### Was es ist
+Ein Steuerguthaben für allgemeine Unternehmensinvestitionen.
+
+### Fördersatz
+- **bis 20%** der Investitionskosten
+- **Maximum:** 2 Millionen € pro Jahr
+
+### Was gefördert wird
+- Neue Maschinen
+- Neue Anlagen
+- Erweiterung von Betrieben
+- Umweltschutz-Investitionen
+
+### WICHTIG: Für wen es gilt
+- Nur für Unternehmen in Süditalien? 
+- **Südtirol ist NICHT förderfähig** (für dieses Programm)!
+
+### Antrag
+- Wird über die Steuererklärung geltend gemacht
+- Kein separater Antrag nötig
+
+---
+
+## 1.4 FONDO INNOVAZIONE (Innovationsfonds 2026)
+
+### Was es ist
+Ein staatlicher **Zuschuss** für Innovation und Digitalisierung.
+
+### Fördersatz
+- **30-50%** der Kosten
+
+### Was gefördert wird
+- Innovative Maschinen
+- Digitalisierungsprojekte
+- F&E-Projekte
+
+### Antrag
+- Über **Invitalia** (nationale Förderagentur)
+- Online-Portal
+
+### Status 2026
+- Programm läuft noch
+- Vereinfachte Beantragung
+
+---
+
+# 2. SÜDTIROL-LANDFÖRDERUNGEN
+
+## 2.1 WIRTSCHAFTSFÖRDERUNG (Landesbeiträge)
+
+### Rechtsgrundlage
+**Landesgesetz Nr. 4/1997** — das Hauptgesetz für Wirtschaftsförderung in Südtirol
+
+### Was gefördert wird
+- Investitionen in Maschinen, Anlagen
+- Erweiterung von Betrieben
+- Modernisierung
+- Neue Technologien
+
+### Fördersatz
+- **10-30%** der anrechenbaren Kosten
+- Je nach Größe des Unternehmens und Art der Investition
+
+### Maximum
+- **200.000€** pro Unternehmen (varies)
+
+### Wichtige Bedingungen
+1. **Vorher-Antrag** — Der Antrag muss VOR der Investition eingereicht werden!
+2. Das Unternehmen muss in Südtirol ansässig sein
+3. Die Investition muss förderwürdig sein
+
+### Deadline 2026
+- **1. Dezember 2025 bis 31. März 2026** (12:00 Uhr)
+- **Das heißt: Für 2026 ist die Frist bereits vorbei!**
+- Nächste Frist: wahrscheinlich Dezember 2026
+
+### Antrag
+- **Online** über das Südtiroler Bürgernetz (Civis)
+- https://civis.bz.it
+
+### Was noch wichtig ist
+- **Keine Akonto-Rechnungen vor dem Antrag** — führt zum Ausschluss!
+- Die Investition darf nicht vorher begonnen haben
+
+---
+
+## 2.2 FÖRDERUNG FÜR KLEINUNTERNEHMEN
+
+### Was es ist
+Spezielle Förderung nur für Kleinst- und Kleinunternehmen.
+
+### Budget 2026
+- **3 Millionen Euro** für 2026
+
+### Förderung
+- Zuschuss für Investitionen
+- Bis zu **30-40%** der Kosten
+
+### Was gefördert wird
+- Maschinen
+- Anlagen
+- Geräte
+- Soft- und Hardware
+
+### Antrag
+- Online über Bürgernetz
+- **Frist:** 1. Dezember bis 31. März 2026
+
+---
+
+## 2.3 TOURISMUS-FÖRDERUNG
+
+### Rechtsgrundlage
+Landesgesetz für Tourismus-Förderung
+
+### Was gefördert wird
+- Renovierung von Hotels und Pensionen
+- Ausstattung
+- Digitalisierung von Tourismusbetrieben
+- Barrierefreiheit
+- Nachhaltigkeit
+
+### Fördersatz
+- **20-50%** der Kosten
+
+### Maximum
+- **300.000€** (varies)
+
+### Antrag
+- Über die **Autonome Provinz Bozen**
+- Abteilung Tourismus
+
+### Wichtig
+- Antrag muss vor Investitionsbeginn
+- Nur für Betriebe mit Tourismus-Konzession
+
+---
+
+## 2.4 LANDWIRTSCHAFTS-FÖRDERUNG
+
+### Was gefördert wird
+- Maschinen für die Landwirtschaft
+- Stallbau
+- Umstellung auf Bio
+- Nachhaltige Landwirtschaft
+- Investitionen in landwirtschaftliche Betriebe
+
+### Fördersatz
+- **30-70%** der Kosten
+
+### Antrag
+- Über die **Abteilung Landwirtschaft** der Provinz
+- Auch über **ELER** (EU-Mittel)
+
+---
+
+## 2.5 UMWELT- & ENERGIE-FÖRDERUNG
+
+### Was gefördert wird
+- Photovoltaikanlagen
+- Wärmepumpen
+- Energieeffizienz
+- Erneuerbare Energien
+
+### Fördersatz
+- **20-50%** der Kosten
+
+### Maximum
+- **100.000-150.000€**
+
+### Programme
+- Landesförderungen
+- **Conto Termico 3.0** (staatlich, über GSE)
+
+---
+
+## 2.6 DIGITALISIERUNGS-FÖRDERUNG
+
+### Was es ist
+**Spezielle Voucher** für Digitalisierungsprojekte.
+
+### Was gefördert wird
+- Software
+- Hardware
+- IT-Beratung
+- Digitalisierung von Prozessen
+
+### Fördersatz
+- **20-50%** als Voucher
+
+### Antrag
+- Über die Province / IDM Südtirol
+
+---
+
+# 3. EU-FÖRDERUNGEN
+
+## 3.1 EFRE (Europäischer Fonds für regionale Entwicklung)
+
+### Was es ist
+EU-Regionalförderung für Investitionen in strukturschwachen Regionen.
+
+### Wichtig: Südtirol ist eine "weniger entwickelte Region"
+→ Daher gibt es mehr Förderung!
+
+### Fördersatz
+- **bis 50%** der förderfähigen Kosten
+
+### Maximum
+- **200.000€ - 500.000€** (je nach Programm)
+
+### Was gefördert wird
+- Investitionen in Produktion
+- Investitionen in Dienstleistungen
+- Innovation
+- Umweltschutz
+
+### Antrag
+- Über die **Nationale Verwaltung** oder **Regionale Verwaltung**
+- Es gibt **Calls** (Ausschreibungen) mit Fristen
+- Die Province Bozen leitet oft weiter
+
+### Wo informieren
+- https://www.europa.provinz.bz.it
+- https://www.regione.taa.it
+
+---
+
+## 3.2 ESF+ (Europäischer Sozialfonds)
+
+### Was es ist
+Förderung für Weiterbildung und Soziales.
+
+### Fördersatz
+- **bis 100%** (für bestimmte Maßnahmen)
+
+### Was gefördert wird
+- Weiterbildung von Mitarbeitern
+- Umschulungen
+- Soziale Integration
+- Chancengleichheit
+
+### Antrag
+- Über ESF-Ausschreibungen
+- In Südtirol über die Arbeitsmarktverwaltung
+
+---
+
+## 3.3 HORIZON EUROPE
+
+### Was es ist
+Das größte EU-Forschungsförderprogramm.
+
+### Fördersatz
+- **70-100%** der Projektkosten
+
+### Maximum
+- **Keine Obergrenze** — je nach Projekt
+
+### Was gefördert wird
+- Grundlagenforschung
+- Angewandte Forschung
+- Große Konsortien (mehrere Partner aus Europa)
+- Innovation
+
+### Antrag
+- **SEHR kompliziert!**
+- Über das europäische Portal (Funding & Tenders Portal)
+- Meist mit mehreren Partnern aus verschiedenen EU-Ländern
+- Große, internationale Konsortien
+
+### Ist das was für kleine Unternehmen?
+- **Eher nicht** — es sei denn, du hast Kontakte zu Universitäten/Forschungsinstituten
+- KMU können teilnehmen, aber es ist komplex
+
+---
+
+# 4. PNRR (NATIONALER AUFBAUPLAN)
+
+## Was ist das?
+Der "Piano Nazionale di Ripresa e Resilienza" — Italients Antwort auf die COVID-Krise.
+
+## Bekommt Geld aus dem EU-Wiederaufbaufonds
+- **Über 200 Milliarden Euro** für Italien
+
+## Läuft noch bis 2026 (ursprünglich 2025 verlängert)
+
+## Wichtige Programme für KMU
+
+### M1C2 — Digitalisierung
+- Förderung für Digitalisierung von Unternehmen
+- Verschiedene Maßnahmen
+
+### M1C3 — Tourismus & Kultur
+- Förderung für Tourismus-Betriebe
+- Infrastruktur
+
+### M2C4 — Umwelt & Energie
+- Grüne Investitionen
+- Nachhaltigkeit
+- Kreislaufwirtschaft
+
+### M5C2 — Soziales
+- Investitionen in soziale Dienste
+
+## Antrag
+- Meist über **Invitalia**
+- Spezielle Portale für jeden Bereich
+
+## Wichtig
+- **Viele Deadlines sind 2026** — aber viele Programme sind schon vergeben
+- Es gibt laufend neue Calls
+
+---
+
+# 5. ANTRAGSTELLUNG: SCHRITT FÜR SCHRITT
+
+## Schritt 1: Projekt definieren
+
+### Was du brauchst
+1. **Was will das Unternehmen investieren?**
+2. **Welches Programm kommt in Frage?**
+3. **Ist das Unternehmen förderfähig?**
+4. **Wann soll investiert werden?**
+
+### Fragen zur Förderfähigkeit
+- Sitz des Unternehmens in Südtirol/Italien?
+- Wie groß ist das Unternehmen? (KMU-Definition)
+- Um welche Branche geht es?
+- Wie hoch ist die Investition?
+
+---
+
+## Schritt 2: Programm auswählen
+
+### Matching-Tabelle
+
+| Wenn das Unternehmen... | Dann kommen in Frage... |
+|-------------------------|-------------------------|
+| Maschinen kaufen will | Transizione 4.0, Landesförderung |
+| Digitalisieren will | Transizione 4.0/5.0, Digitalisierungs-Voucher |
+| F&E macht | Credito d'Imposta R&S |
+| Nachhaltig investiert | Transizione 5.0, Umweltförderung |
+| Tourismus betreibt | Tourismus-Landesförderung |
+| Landwirtschaft hat | ELER, Landesförderung |
+
+### WICHTIG
+**Mehrere Programme kombinieren** ist oft möglich!
+- Z.B. Transizione 4.0 (Steuerguthaben) + Landesförderung (Zuschuss)
+
+---
+
+## Schritt 3: Unterlagen sammeln
 
 ### Typische Unterlagen
 
@@ -135,80 +503,149 @@ Unternehmen wollen investieren (Maschinen, Digitalisierung, Renovierung, etc.)
 |----------|---------|
 | **Jahresabschlüsse** | Letzte 2-3 Jahre (Bilancio) |
 | **Businessplan** | Projektbeschreibung, Ziele, Zeitplan |
-| **Kostenvoranschläge** | Von Lieferanten/Herstellern |
-| **Gewerbeanmeldung** | Partita IVA, Registrierung |
-| **Finanzierungsnachweis** | Eigenmittel + Förderung |
-| **Technische Beschreibung** | Was wird angeschafft/umgesetzt? |
+| **Kostenvoranschläge** | Von mindestens 2 Lieferanten (oft Pflicht) |
+| **Gewerbeanmeldung** | Partita IVA |
+| **Handelsregister-Auszug** | Visura Camerale |
+| **Projektbeschreibung** | Detaillierte Erklärung der Investition |
+| **Finanzierungsplan** | Wie wird die Investition bezahlt? |
 
-### Typische Kosten (für Unternehmen)
-
-| Posten | Kosten |
-|--------|--------|
-| **Beratung** (z.B. du) | 10-15% der Fördersumme |
-| **Eigenanteil** | 50-80% der Investition |
-| **Notar** (falls nötig) | 1.000-3.000€ |
-| **Projektierung** | varies |
+### Bei großen Projekten
+- Technisches Gutachten (Perizia)
+- Umweltverträglichkeit
+- Genehmigungen
 
 ---
 
-## 6. Was kostet eine Förderung das Unternehmen?
+## Schritt 4: Antrag einreichen
 
-### Rechenbeispiel: 100.000€ Investition
+### Online-Portale
 
-| Mit Förderung (50%) | Ohne Förderung |
-|---------------------|----------------|
-| Investition: 100.000€ | Investition: 100.000€ |
-| Förderung: -50.000€ | 0€ |
-| **Eigenanteil: 50.000€** | **100.000€** |
+| Programm | Portal |
+|----------|--------|
+| Landesförderungen | https://civis.bz.it |
+| Transizione 4.0 | Steuererklärung (Modello Unico) |
+| Credito d'Imposta R&S | Steuererklärung + BSFZ |
+| PNRR | https://incentivi.gov.it |
+| Invitalia | https://invitalia.it |
 
-**Aber:** Ohne professionelle Hilfe bleibt die Förderung oft liegen!
-
----
-
-## 7. Welche Programme sind 2026 besonders relevant?
-
-### Top-Programme aktuell
-
-1. **Transizione 4.0** — Digitalisierung, läuft permanent
-2. **Credito d'Imposta R&S** — F&E, bis 35%
-3. **Landesförderungen** — Südtirol spezifisch
-4. **PNRR-Mittel** — laufen noch bis 2026
-
-### Was wegfällt / uncertain
-
-- **Nuova Sabatini** — GILT NICHT für Südtirol!
-- **Credito d'Imposta Mezzogiorno** — GILT NICHT für Südtirol!
+### Bei der Handelskammer
+- Die Handelskammer Bozen hilft bei der Antragstellung
+- Sie können auch beraten
 
 ---
 
-## 8. Offene Fragen (must verify!)
+## Schritt 5: Warten
 
-- [ ] Genauester Ablauf bei der Handelskammer erfragen
-- [ ] Aktuelle Deadlines für 2026
-- [ ] Wie lange dauert Transizione 4.0 typischerweise?
-- [ ] Was sind die häufigsten Ablehnungsgründe?
-- [ ] Wie hoch ist die Erfolgsquote bei Anträgen?
+### Typische Wartezeiten
 
----
+| Programm | Wartezeit |
+|----------|-----------|
+| Landesförderungen | 3-6 Monate |
+| Transizione 4.0 | Bei Steuererklärung |
+| Credito d'Imposta R&S | 6-12 Monate |
+| PNRR | varies |
+| EFRE | 6-12 Monate |
 
-## 9. Nächste Schritte für dich
-
-1. [ ] **Handelskammer Bozen anrufen** — Termin für Info-Gespräch vereinbaren
-2. [ ] **Förderfactory.com anschauen** — wie die arbeiten
-3. [ ] **Mit einem Steuerberater sprechen** — der kennt die Programme
-4. [ ] **Selber einen Antrag durchmachen** (üben!) — z.B. für dein eigenes Projekt
-
----
-
-## 📚 Quellen & Links
-
-- https://www.handelskammer.bz.it (Handelskammer Bozen)
-- https://www.provinz.bz.it (Autonome Provinz)
-- https://foerderfactory.com (Konkurrent)
-- https://www.idm-suedtirol.com
-- https://noi.bz.it (NOI Techpark)
+### Was in der Zwischenzeit passiert
+- Manchmal Nachfragen der Behörde
+- Zusätzliche Dokumente nötig
 
 ---
 
-*Dokument wird laufend aktualisiert!*
+## Schritt 6: Zusage oder Absage
+
+### Bei Zusage
+1. Durchführungsnachweis erbringen
+2. Rechnungen vorlegen
+3. Auszahlung beantragen
+4. **Dann bekommst du deine Provision!**
+
+### Bei Absage
+- Ursache klären
+- Manchmal Widerspruch möglich
+- Andere Programme prüfen
+
+---
+
+## Was du als Berater brauchst
+
+### Wissen
+1. Alle Programme kennen
+2. Wissen was förderfähig ist
+3. Antragsprozesse verstehen
+4. Die richtigen Ansprechpartner kennen
+
+### Kontakte
+- Handelskammer Bozen
+- IDM Südtirol
+- Steuerberater
+- BSFZ (für Forschungszulage)
+
+### Dokumentation
+- Alle Programme dokumentieren
+- Checklisten für jeden Schritt
+- Vorlagen für Anträge
+
+---
+
+# ZUSAMMENFASSUNG: DIE WICHTIGSTEN PROGRAMME
+
+| Programm | Typ | Förderung | Für wen | Antrag |
+|----------|-----|-----------|---------|--------|
+| **Transizione 4.0** | Steuerguthaben | bis 50% | Alle | Steuererklärung |
+| **Credito d'Imposta R&S** | Steuerguthaben | bis 35% | F&E-Unternehmen | Steuererklärung + BSFZ |
+| **Landesförderung** | Zuschuss | 10-30% | KMU in Südtirol | Online (Civis) |
+| **Tourismus-Förderung** | Zuschuss | 20-50% | Tourismus | Province |
+| **EFRE** | Zuschuss | bis 50% | KMU | EU-Portal |
+| **PNRR** | Zuschuss | varies | KMU | Invitalia |
+
+---
+
+# CHECKLISTE: FÜR JEDEN AUFTRAG
+
+- [ ] Projekt analysieren
+- [ ] Passende Programme identifizieren
+- [ ] Förderfähigkeit prüfen
+- [ ] Unterlagen sammeln
+- [ ] Antrag stellen (vor Investition!)
+- [ ] Auf Antwort warten
+- [ ] Bei Zusage: Durchführung nachweisen
+- [ ] Auszahlung
+- [ ] Provision kassieren
+
+---
+
+# OFFENE FRAGEN (MÜSSEN NOCH GEKLÄRT WERDEN)
+
+- [ ] Genaue Beträge und Sätze für 2026?
+- [ ] Wann öffnet die nächste Landesförderung?
+- [ ] Wie funktioniert Transizione 5.0 genau?
+- [ ] Welche BSFZ-Bestätigung braucht es?
+- [ ] Wie lange dauern die Verfahren wirklich?
+
+---
+
+# KONTAKTE & LINKS
+
+## Südtirol
+- **Handelskammer Bozen:** https://www.handelskammer.bz.it
+- **Autonome Provinz Bozen:** https://www.provinz.bz.it
+- **IDM Südtirol:** https://www.idm-suedtirol.com
+- **Bürgernetz (Civis):** https://civis.bz.it
+- **NOI Techpark:** https://www.noi.bz.it
+
+## National (Italien)
+- **Invitalia:** https://www.invitalia.it
+- **Agenzia delle Entrate:** https://www.agenziaentrate.gov.it
+- **BSFZ:** https://www.bsfz.de
+
+## EU
+- **Horizon Europe:** https://ec.europa.eu/info/research-and-innovation_de
+
+## Konkurrenten (zum Lernen)
+- **Förderfactory:** https://foerderfactory.com
+
+---
+
+*Dokument erstellt am 26.02.2026 — muss noch verifiziert werden!*
 
