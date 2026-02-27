@@ -7,98 +7,109 @@
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        #map { width: 100%; height: 500px; margin-top: 20px; }
-        .input-area { background: #f5f5f5; padding: 15px; border-radius: 8px; }
-        textarea { width: 100%; height: 150px; margin-bottom: 10px; }
-        button { background: #007bff; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px; }
-        button:hover { background: #0056b3; }
-        .loading { color: #666; font-style: italic; }
+        * { box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f5f5f5; }
+        h1 { text-align: center; color: #333; margin-bottom: 10px; }
+        p { text-align: center; color: #666; margin-top: 0; }
+        #map { width: 100%; height: 600px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .legend { background: white; padding: 15px; border-radius: 8px; margin-top: 20px; }
+        .legend h3 { margin-top: 0; }
+        .legend ul { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 5px; }
+        .legend li { font-size: 14px; }
+        @media (max-width: 768px) {
+            #map { height: 400px; }
+            body { padding: 10px; }
+        }
     </style>
 </head>
 <body>
     <h1>🏔️ Geschäfte in Innichen (San Candido)</h1>
+    <p>Klicke auf die Marker für mehr Infos</p>
     
-    <div class="input-area">
-        <h3>Adressen eingeben (eine pro Zeile):</h3>
-        <textarea id="addresses">Apotheke Hochpustertal, Via Rainer 8, 39038 Innichen
-Kaufhaus Schäfer, Piazza San Michele 8, 39038 Innichen
-Baur Textil, 39038 Innichen
-Sport Papin, Innichen
-Senfter Metzgerei, Innichen
-Sennerei Drei Zinnen, Innichen
-Sport Holzer, Innichen
-Panificio (Bäckerei), Innichen
-Ottica Cadere, Innichen
-Under Colors of Benetton, Innichen</textarea>
-        <button onclick="geocodeAddresses()">Karte aktualisieren</button>
-        <span id="status" class="loading"></span>
-    </div>
-
     <!-- Karte Container -->
     <div id="map"></div>
+
+    <!-- Liste der Geschäfte -->
+    <div class="legend">
+        <h3>📍 Alle Geschäfte:</h3>
+        <ul>
+            <li>🏪 Apotheke Hochpustertal</li>
+            <li>🛒 Kaufhaus Schäfer</li>
+            <li>👕 Baur Textil</li>
+            <li>🎿 Sport Papin</li>
+            <li>🥩 Senfter Metzgerei</li>
+            <li>🧀 Sennerei Drei Zinnen</li>
+            <li>🎿 Sport Holzer</li>
+            <li>🍞 Bäckerei</li>
+            <li>👓 Ottica Cadore</li>
+            <li>👕 Under Colors of Benetton</li>
+            <li>🍷 Wachtler Spezialitäten</li>
+            <li>🎩 Zacher Hüte</li>
+            <li>👕 Unterhuber</li>
+            <li>👕 Pure Fashion</li>
+            <li>🎿 Peak Performance</li>
+            <li>🎿 Class</li>
+            <li>🍷 Villa Stefania</li>
+            <li>📍 P.P. Rainer</li>
+        </ul>
+    </div>
 
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
         // Karte initialisieren - zentriert auf Innichen
-        var map = L.map('map').setView([46.733, 12.2805], 16);
+        var map = L.map('map').setView([46.7325, 12.2815], 17);
         
         // OpenStreetMap Tiles
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
             attribution: '© OpenStreetMap contributors'
         }).addTo(map);
 
-        var markers = [];
+        // Alle Geschäfte mit Koordinaten
+        var geojsonData = {
+            "type": "FeatureCollection",
+            "features": [
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.280537,46.733346]},"properties":{"name":"Apotheke Hochpustertal"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.281645,46.731899]},"properties":{"name":"Baur Textil"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.285292,46.73177]},"properties":{"name":"Blumencenter GmbH"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.280062,46.733519]},"properties":{"name":"Castellanum"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.281524,46.73364]},"properties":{"name":"Elektro Gasser"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.280601,46.733151]},"properties":{"name":"Flora Gourmet"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.281693,46.732826]},"properties":{"name":"Herbert (Mode)"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.282184,46.733493]},"properties":{"name":"Janach"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.281245,46.732669]},"properties":{"name":"Kaufhaus Schäfer"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.284112,46.731757]},"properties":{"name":"Kaufhaus Tempele"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.28125,46.732439]},"properties":{"name":"Lercher Gertraud"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.279971,46.733531]},"properties":{"name":"Mode Herzl"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.282632,46.732037]},"properties":{"name":"Senfter Fleischwaren"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.281749,46.731132]},"properties":{"name":"Sennerei"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.281556,46.732507]},"properties":{"name":"Sport Mode Holzer"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.28562,46.73421]},"properties":{"name":"Villa Stefania"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.282369,46.733502]},"properties":{"name":"Weser"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.281666,46.730735]},"properties":{"name":"Zacher"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.280848,46.733123]},"properties":{"name":"Unterhuber"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.280709,46.733294]},"properties":{"name":"Ottica Cadore"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.282546,46.731792]},"properties":{"name":"Pure Fashion"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.282712,46.731482]},"properties":{"name":"Peak Performance"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.280336,46.733294]},"properties":{"name":"Wachtler"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.280521,46.733234]},"properties":{"name":"Benetton"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.279681,46.733881]},"properties":{"name":"Class"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.280738,46.733013]},"properties":{"name":"Punto Antipico"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.279874,46.733585]},"properties":{"name":"P.P. Rainer"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.281524,46.73364]},"properties":{"name":"Elektro Gasser GmbH"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.2808,46.7331]},"properties":{"name":"Athesia Buch"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.2819,46.7325]},"properties":{"name":"CMP"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.2805,46.7332]},"properties":{"name":"Il Maso dello Speck"}},
+                {"type":"Feature","geometry":{"type":"Point","coordinates":[12.282,46.7328]},"properties":{"name":"Janach Labor"}}
+            ]
+        };
 
-        // Adressen in Koordinaten umwandeln (Nominatim API)
-        async function geocodeAddresses() {
-            var textarea = document.getElementById('addresses');
-            var lines = textarea.value.split('\n').filter(line => line.trim() !== '');
-            var status = document.getElementById('status');
-            
-            // Alte Marker entfernen
-            markers.forEach(m => map.removeLayer(m));
-            markers = [];
-            
-            status.textContent = 'Lade Adressen... (' + lines.length + ')';
-            
-            for (var i = 0; i < lines.length; i++) {
-                var address = lines[i] + ', Südtirol, Italien';
-                status.textContent = 'Suche: ' + lines[i] + ' (' + (i+1) + '/' + lines.length + ')';
-                
-                try {
-                    var response = await fetch('https://nominatim.openstreetmap.org/search?format=json&q=' + encodeURIComponent(address));
-                    var data = await response.json();
-                    
-                    if (data && data.length > 0) {
-                        var lat = parseFloat(data[0].lat);
-                        var lon = parseFloat(data[0].lon);
-                        
-                        // Marker hinzufügen
-                        var marker = L.marker([lat, lon]).addTo(map);
-                        marker.bindPopup('<b>' + lines[i] + '</b><br>' + data[0].display_name);
-                        markers.push(marker);
-                    }
-                } catch (e) {
-                    console.log('Fehler bei: ' + lines[i]);
-                }
-                
-                // API-Limit respektieren
-                await new Promise(r => setTimeout(r, 1000));
+        // Marker + Popups hinzufügen
+        L.geoJSON(geojsonData, {
+            onEachFeature: function (feature, layer) {
+                layer.bindPopup("<b>" + feature.properties.name + "</b>");
             }
-            
-            // Karte anpassen
-            if (markers.length > 0) {
-                var group = new L.featureGroup(markers);
-                map.fitBounds(group.getBounds().pad(0.1));
-            }
-            
-            status.textContent = 'Fertig! ' + markers.length + ' Adressen gefunden.';
-        }
-
-        // Beim Start einmal ausführen
-        geocodeAddresses();
+        }).addTo(map);
     </script>
 </body>
 </html>
